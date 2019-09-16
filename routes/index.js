@@ -1,0 +1,24 @@
+var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+router.get('/minimum_wage', function(req, res, next) {
+  res.render('minimum_wage', { title: 'Information about minimum wage' });
+});
+
+router.get('/working_hour', function(req, res, next) {
+  res.render('working_hour', { title: 'working hours information' });
+});
+
+router.get('/pay_slip', function(req, res, next) {
+  res.render('pay_slip', { title: 'Pay Slips information' });
+});
+
+router.get('/superannuation', function(req, res, next) {
+  res.render('superannuation', { title: 'superannuation information' });
+});
+module.exports = router;

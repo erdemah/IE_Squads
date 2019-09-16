@@ -1,0 +1,60 @@
+.tile {
+  transform: scale(1); // stacking context
+  position: relative;
+  // for demo purposes
+  width: 50%;
+  max-width: 15em;
+  margin: 0.5em;
+}
+
+.tile-thumbnail {
+  // aspect ratio box
+  position: relative;
+  height: 0;
+  padding-bottom: 60%;
+  
+  > img {
+    position: absolute;
+    width: 240px;
+    height: 144px;
+  }
+}
+.tile-title {
+  display: block;
+  margin: 0.25em;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  // ellipsis
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+  &:before {
+    // full-tile clickable area
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: rgba(#f00, 0.25);
+  }
+}
+
+.container{
+    position: relative;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
