@@ -21,4 +21,8 @@ router.get('/pay_slip', function(req, res, next) {
 router.get('/superannuation', function(req, res, next) {
   res.render('superannuation', { title: 'superannuation information' });
 });
+
+router.get('/pay_rate_level', function(req, res, next) {
+  res.render('pay_rate_level', { title: 'superannuation information' });
+});
 module.exports = router;

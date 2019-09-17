@@ -95,7 +95,7 @@ p span{
 }
 .parallax {
     /* The image used */
-    background-image: url("/Background.png");
+    background-image: url("/public/images/Background.png");
 
     /* Set a specific height */
     min-height: 700px;
