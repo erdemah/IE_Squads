@@ -25,4 +25,8 @@ router.get('/superannuation', function(req, res, next) {
 router.get('/pay_rate_level', function(req, res, next) {
   res.render('pay_rate_level', { title: 'superannuation information' });
 });
+
+router.get('/pay_raise_visu', function(req, res, next) {
+  res.render('pay_raise_visu', { title: 'superannuation information' });
+});
 module.exports = router;
