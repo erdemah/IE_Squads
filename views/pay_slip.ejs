@@ -110,7 +110,7 @@
 <!-- TILES CODE END-->
 
 <!-- CAROUSEL CODE-->
-<div class="bs-example">
+<div class="bs-example" id="pay_wrapper">
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
@@ -228,15 +228,121 @@
     }
 
     function delete_motive_au(){
-        let element_1 = document.getElementById("--");
+        let element_1 = document.getElementById("myCarousel");
         element_1.parentNode.removeChild(element_1);
-        document.getElementById("--").innerHTML = "";
+        document.getElementById("pay_wrapper").innerHTML = "    <div id=\"myCarousel\" class=\"carousel slide\" data-interval=\"3000\" data-ride=\"carousel\">\n" +
+            "        <!-- Carousel indicators -->\n" +
+            "        <ol class=\"carousel-indicators\">\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n" +
+            "        </ol>\n" +
+            "        <!-- Wrapper for carousel items -->\n" +
+            "        <div class=\"carousel-inner\">\n" +
+            "            <div class=\"carousel-item active\">\n" +
+            "                <div class=\"numbertext\">1 / 6</div>\n" +
+            "                <img src=\"images/st-board-chinese-1/pay_slip_cn/1.png\" alt=\"First Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">2 / 6</div>\n" +
+            "                <img src=\"images/st-board-chinese-1/pay_slip_cn/2.png\" alt=\"Second Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">3 / 6</div>\n" +
+            "                <img src=\"images/st-board-chinese-1/pay_slip_cn/3.png\" alt=\"Third Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">4 / 6</div>\n" +
+            "                <img src=\"images/st-board-chinese-1/pay_slip_cn/4.png\" alt=\"Fourth Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">5 / 6</div>\n" +
+            "                <img src=\"images/st-board-chinese-1/pay_slip_cn/5.png\" alt=\"Fifth Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">6 / 6</div>\n" +
+            "                <img src=\"images/st-board-chinese-1/pay_slip_cn/6.png\" alt=\"Sixth Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "        <!-- Carousel controls -->\n" +
+            "        <a class=\"carousel-control-prev\" href=\"#myCarousel\" data-slide=\"prev\">\n" +
+            "            <span class=\"carousel-control-prev-icon\"></span>\n" +
+            "        </a>\n" +
+            "        <a class=\"carousel-control-next\" href=\"#myCarousel\" data-slide=\"next\">\n" +
+            "            <span class=\"carousel-control-next-icon\"></span>\n" +
+            "        </a>\n" +
+            "    </div>";
     }
 
     function delete_motive_cn(){
-        let element_1 = document.getElementById("--");
+        let element_1 = document.getElementById("myCarousel");
         element_1.parentNode.removeChild(element_1);
-        document.getElementById("--").innerHTML = "";
+        document.getElementById("pay_wrapper").innerHTML = "    <div id=\"myCarousel\" class=\"carousel slide\" data-interval=\"3000\" data-ride=\"carousel\">\n" +
+            "        <!-- Carousel indicators -->\n" +
+            "        <ol class=\"carousel-indicators\">\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n" +
+            "        </ol>\n" +
+            "        <!-- Wrapper for carousel items -->\n" +
+            "        <div class=\"carousel-inner\">\n" +
+            "            <div class=\"carousel-item active\">\n" +
+            "                <div class=\"numbertext\">1 / 6</div>\n" +
+            "                <img src=\"images/payslip/1.png\" alt=\"First Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">2 / 6</div>\n" +
+            "                <img src=\"images/payslip/2.png\" alt=\"Second Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">3 / 6</div>\n" +
+            "                <img src=\"images/payslip/3.png\" alt=\"Third Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">4 / 6</div>\n" +
+            "                <img src=\"images/payslip/4.png\" alt=\"Fourth Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">5 / 6</div>\n" +
+            "                <img src=\"images/payslip/5.png\" alt=\"Fifth Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">6 / 6</div>\n" +
+            "                <img src=\"images/payslip/6.png\" alt=\"Sixth Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "        <!-- Carousel controls -->\n" +
+            "        <a class=\"carousel-control-prev\" href=\"#myCarousel\" data-slide=\"prev\">\n" +
+            "            <span class=\"carousel-control-prev-icon\"></span>\n" +
+            "        </a>\n" +
+            "        <a class=\"carousel-control-next\" href=\"#myCarousel\" data-slide=\"next\">\n" +
+            "            <span class=\"carousel-control-next-icon\"></span>\n" +
+            "        </a>\n" +
+            "    </div>";
     }
 </script>
 

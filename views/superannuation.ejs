@@ -42,7 +42,45 @@
 </html>
 
 <body>
-<%include header.ejs%>
+<nav class="navbar navbar-expand-lg navbar-dark bg-sharon static-top">
+    <div class="container">
+        <a class="navbar-brand-sharon" href="/">
+            <div class = "logo-image">
+                <img src="images/logo.png" class="img-fluid">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">
+                        <span class="oi oi-home" title="home" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-employee" href="#entitlement">Employee Entitlement
+                        <span id="nav-separator">|</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au();delete_motive_cn();">
+                        <span class="flag-icon flag-icon-au"> </span>
+                        <span id="nav-separator">English</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn();delete_motive_au();">
+                        <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
+                        <span id="nav-separator">中文</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <!--  TILES CODE-->
 <div class="container">
@@ -72,7 +110,7 @@
 <!-- TILES CODE END-->
 
 <!-- CAROUSEL CODE-->
-<div class="bs-example">
+<div class="bs-example" id="super_wrapper">
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
@@ -115,4 +153,142 @@
 <!--    FOOTER CODE-->
 <%include footer.ejs %>
 <%include back_top.ejs%>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.slim.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--<script src="routes/scroll.js"></script>-->
+<script>
+    var dataReload = document.querySelectorAll("[data-reload]");
+
+    //Language translations
+    var language = {
+        au:{
+            welcome: "Welcome to KnowYourRights",
+            home: "Home",
+            minwage: "Minimum Wage"
+        },
+        cn:{
+            welcome: "欢迎来到KnowYourRights",
+            home: "主页",
+            minwage: "最低工资"
+        }
+    };
+    //Define language using window hashing
+    // if (window.location.hash) {
+    //   //console.log(window.location.hash);
+    //   if (window.location.hash === "#cn") {
+    //     homenav.textContent = language.cn.home;
+    //     minwage.textContent = language.cn.minwage;
+    //   } else {
+    //     homenav.textContent = language.au.home;
+    //     minwage.textContent = language.au.minwage;
+    //   }
+    // }
+    // //Language Reload onclick illiteration
+    // for(i=0; i< dataReload.length; i++){
+    //   //console.log(dataReload[i]);
+    //   dataReload[i].onclick = function(){
+    //     //console.log("hello");
+    //     if(window.location.hash === "#au"){
+    //       //window.location.href = "#au";
+    //       alert("hello");
+    //       // window.location.reload();
+    //     }
+    //     else if(window.location.hash === "#cn"){
+    //       //window.location.href = "#cn";
+    //       // window.location.reload();
+    //     }
+    //   };
+    // }
+    function translate_cn() {
+
+
+    }
+    function translate_au() {
+
+    }
+
+    function delete_motive_au(){
+        let element_1 = document.getElementById("myCarousel");
+        element_1.parentNode.removeChild(element_1);
+        document.getElementById("super_wrapper").innerHTML = "<div id=\"myCarousel\" class=\"carousel slide\" data-interval=\"3000\" data-ride=\"carousel\">\n" +
+            "        <!-- Carousel indicators -->\n" +
+            "        <ol class=\"carousel-indicators\">\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n" +
+            "        </ol>\n" +
+            "        <!-- Wrapper for carousel items -->\n" +
+            "        <div class=\"carousel-inner\">\n" +
+            "            <div class=\"carousel-item active\">\n" +
+            "                <div class=\"numbertext\">1 / 3</div>\n" +
+            "                <img src=\"images/st-board-chinese-1/super_cn/1.png\" alt=\"First Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">2 / 3</div>\n" +
+            "                <img src=\"images/st-board-chinese-1/super_cn/2.png\" alt=\"Second Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">3 / 3</div>\n" +
+            "                <img src=\"images/st-board-chinese-1/super_cn/3.png\" alt=\"Third Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "        <!-- Carousel controls -->\n" +
+            "        <a class=\"carousel-control-prev\" href=\"#myCarousel\" data-slide=\"prev\">\n" +
+            "            <span class=\"carousel-control-prev-icon\"></span>\n" +
+            "        </a>\n" +
+            "        <a class=\"carousel-control-next\" href=\"#myCarousel\" data-slide=\"next\">\n" +
+            "            <span class=\"carousel-control-next-icon\"></span>\n" +
+            "        </a>\n" +
+            "    </div>";
+    }
+
+    function delete_motive_cn(){
+        let element_1 = document.getElementById("myCarousel");
+        element_1.parentNode.removeChild(element_1);
+        document.getElementById("super_wrapper").innerHTML = "    <div id=\"myCarousel\" class=\"carousel slide\" data-interval=\"3000\" data-ride=\"carousel\">\n" +
+            "        <!-- Carousel indicators -->\n" +
+            "        <ol class=\"carousel-indicators\">\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n" +
+            "        </ol>\n" +
+            "        <!-- Wrapper for carousel items -->\n" +
+            "        <div class=\"carousel-inner\">\n" +
+            "            <div class=\"carousel-item active\">\n" +
+            "                <div class=\"numbertext\">1 / 3</div>\n" +
+            "                <img src=\"images/superann/1.png\" alt=\"First Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">2 / 3</div>\n" +
+            "                <img src=\"images/superann/2.png\" alt=\"Second Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">3 / 3</div>\n" +
+            "                <img src=\"images/superann/3.png\" alt=\"Third Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "        <!-- Carousel controls -->\n" +
+            "        <a class=\"carousel-control-prev\" href=\"#myCarousel\" data-slide=\"prev\">\n" +
+            "            <span class=\"carousel-control-prev-icon\"></span>\n" +
+            "        </a>\n" +
+            "        <a class=\"carousel-control-next\" href=\"#myCarousel\" data-slide=\"next\">\n" +
+            "            <span class=\"carousel-control-next-icon\"></span>\n" +
+            "        </a>\n" +
+            "    </div>";
+    }
+</script>
 </body>
