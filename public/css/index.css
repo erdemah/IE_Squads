@@ -43,8 +43,10 @@ ul.b {
     margin:0 auto;
 }
 .w3-container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: "Josefin Sans";
+    font-size: 18px;
 }
 
 html {
