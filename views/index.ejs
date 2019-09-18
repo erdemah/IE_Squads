@@ -49,7 +49,8 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link-en" href="#au" data-reload><span class="flag-icon flag-icon-au"> </span>
+          <a class="nav-link" id="nav-link-en" href="#au" data-reload>
+            <span class="flag-icon flag-icon-au"></span>
             <span id="nav-separator">English</span></a>
         </li>
         <li class="nav-item">
@@ -92,7 +93,7 @@
             <span id="about-your-pay">About Your Pay</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="minimum_wage"><span id="min-wage">Minimum Wage</span></a>
+            <a class="dropdown-item" href="minimum_wage"><span id="minwage">Minimum Wage</span></a>
             <a class="dropdown-item" href="pay_slip"><span id="pay-slip">Pay Slip</span></a>
             <a class="dropdown-item" href="superannuation"><span id="super-an">Superannuation</span></a>
             <a class="dropdown-item" href="working_hour"><span id="working-hrs">Working Hours</span></a>
@@ -154,29 +155,33 @@
   let language = {
     en:{
       welcome: "Welcome to KnowYourRights",
-      home: "Home"
+      home: "Home",
+      minwage: "Minimum Wage"
     },
     cn:{
       welcome: "欢迎来到KnowYourRights",
-      home: "主页"
+      home: "主页",
+      minwage: "最低工资"
     }
   };
   //Define language using window hashing
   if (window.location.hash){
     if (window.location.hash === "#cn"){
       homenav.textContent = language.cn.home;
+      minwage.textContent = language.cn.home;
     }
     else{
       homenav.textContent = language.en.home;
+      minwage.textContent = language.en.home;
     }
   }
   //Language Reload onclick illiteration
   for(i=0; i< dataReload.length; i++){
-    // console.log(dataReload[i]);
-    dataReload[i].onclick = function(){
-    location.reload(true);
-    };
-  }
+  //   console.log(dataReload[i]);
+     dataReload[i].onclick = function(){
+     location.reload();
+     };
+   }
 </script>
 
 </body>
