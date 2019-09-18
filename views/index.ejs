@@ -22,7 +22,6 @@
 </head>
 
 <body>
-<!--Navigation Bar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-sharon static-top">
   <div class="container">
     <a class="navbar-brand-sharon" href="/">
@@ -49,14 +48,14 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link-au" href="#au" onclick="translate_au()" data-reload>
-            <span class="flag-icon flag-icon-au"></span>
-            <span id="nav-separator-au">English</span></a>
+          <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au()">
+            <span class="flag-icon flag-icon-au"> </span>
+            <span id="nav-separator">English</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link-cn" href="#cn" onclick="translate_cn()" data-reload>
+          <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn()">
             <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
-            <span id="nav-separator-cn">中文</span></a>
+            <span id="nav-separator">中文</span></a>
         </li>
       </ul>
     </div>
@@ -97,7 +96,7 @@
             <a class="dropdown-item" href="pay_slip"><span id="pay-slip">Pay Slip</span></a>
             <a class="dropdown-item" href="superannuation"><span id="super-an">Superannuation</span></a>
             <a class="dropdown-item" href="working_hour"><span id="working-hrs">Working Hours</span></a>
-            <a class="dropdown-item" href="pay_rate_level"><span id="view-pay-rate">View you pay rate level</span></a>
+            <a class="dropdown-item" href="pay_rate_level"><span id="view-pay-rate">View Your Pay Rate Level</span></a>
           </div>
         </div>
       </div>
@@ -122,7 +121,7 @@
   </div>
 </div>
 <div class="container-fluid" id="aboutus">
-  <span id="page2-entitlement">Our Motive</span>
+  <span id="page2-motive">Our Motive</span>
 </div>
 <div class="container-fluid">
   <div id="rectangle"></div>
@@ -192,9 +191,59 @@
     // }
     function translate_cn() {
       document.getElementById("homenav").textContent = "主页";
+      document.getElementById("nav-link-employee").textContent = "员工权利";
+      document.getElementById("international-st").textContent = "对于国际学生";
+      document.getElementById("know-entitle").textContent = "了解你的工作权利";
+      document.getElementById("page2-entitlement").textContent = "员工权利";
+      document.getElementById("about-your-pay").textContent = "关于你的工资";
+      document.getElementById("minwage").textContent = "最低工资";
+      document.getElementById("pay-slip").textContent = "支付单";
+      document.getElementById("super-an").textContent = "退休金";
+      document.getElementById("working-hrs").textContent = "工作时间";
+      document.getElementById("view-pay-rate").textContent = "查看您的工资水平";
+      document.getElementById("about-your-leave").textContent = "关于你的假期";
+      document.getElementById("pay-raise").textContent = "加薪";
+      document.getElementById("annual-bonus").textContent = "年度奖金";
+      document.getElementById("annual-leave-entitle").textContent = "年假权利";
+      document.getElementById("sick-leave-entitle").textContent = "病假权利";
+      document.getElementById("page2-motive").textContent = "我们的动机";
+      document.getElementById("quick-link").textContent = "快速链接";
+      document.getElementById("pay-raise-2").textContent = "加薪";
+      document.getElementById("working-hours-2").textContent = "工作时间";
+      document.getElementById("super-ann").textContent = "养老金";
+      document.getElementById("sick-leave-ent").textContent = "病假权利";
+      document.getElementById("annual-bonus-2").textContent = "年度奖金";
+      document.getElementById("homenav").textContent = "主页";
+      document.getElementById("homenav").textContent = "主页";
+      document.getElementById("homenav").textContent = "主页";
+
+
+
+
     }
     function translate_au() {
       document.getElementById("homenav").textContent = "Home";
+      document.getElementById("nav-link-employee").textContent = "Employee Entitlement";
+      document.getElementById("international-st").textContent = "For International Students";
+      document.getElementById("know-entitle").textContent = "Know Your Entitlements";
+      document.getElementById("page2-entitlement").textContent = "EMPLOYEE ENTITLEMENT";
+      document.getElementById("about-your-pay").textContent = "About Your Pay";
+      document.getElementById("minwage").textContent = "Minimum Wage";
+      document.getElementById("pay-slip").textContent = "Pay Slip]";
+      document.getElementById("super-an").textContent = "Superannuation";
+      document.getElementById("view-pay-rate").textContent = "View Your Pay Rate Level";
+      document.getElementById("about-your-leave").textContent = "About Your Leave";
+      document.getElementById("pay-raise").textContent = "Pay Raise";
+      document.getElementById("annual-bonus").textContent = "Annual Bonus";
+      document.getElementById("annual-leave-entitle").textContent = "Annual Leave Entitlements";
+      document.getElementById("sick-leave-entitle").textContent = "Sick Leave Entitlements";
+      document.getElementById("page2-motive").textContent = "Our Motive";
+      document.getElementById("quick-link").textContent = "Quick Links";
+      document.getElementById("pay-raise-2").textContent = "Pay Raise";
+      document.getElementById("working-hours-2").textContent = "Working Hours";
+      document.getElementById("super-ann").textContent = "Superannuation";
+      document.getElementById("sick-leave-ent").textContent = "Sick Leave Entitlements";
+      document.getElementById("annual-bonus-2").textContent = "Annual Bonus";
     }
 </script>
 
