@@ -93,6 +93,11 @@ html {
     font-size: 4em;
     font-family: 'Architects Daughter', cursive;
 }
+#page2-motive{
+    color:darkgray;
+    font-size: 4em;
+    font-family: 'Architects Daughter', cursive;
+}
 p span{
     display: block;
 }
