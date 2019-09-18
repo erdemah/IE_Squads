@@ -20,7 +20,44 @@
 </html>
 
 <body>
-<%include header.ejs%>
+<nav class="navbar navbar-expand-lg navbar-dark bg-sharon static-top">
+    <div class="container">
+        <a class="navbar-brand-sharon" href="/">
+            <div class = "logo-image">
+                <img src="images/logo.png" class="img-fluid">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">
+                        <span class="oi oi-home" title="home" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-employee" href="#entitlement">Employee Entitlement
+                        <span id="nav-separator">|</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au()"><span class="flag-icon flag-icon-au"></span>
+                        <span id="nav-separator">English</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn()">
+                        <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
+                        <span id="nav-separator">中文</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <!--  TILES CODE-->
 <div class="container">
     <div class="row">
@@ -81,6 +118,117 @@
         </script>
 </div>
 <!-- Visualisation code end-->
-<%include footer.ejs %>
+<%include footer.ejs%>
+<script>
+    var dataReload = document.querySelectorAll("[data-reload]");
 
+    //Language translations
+    var language = {
+        au:{
+            welcome: "Welcome to KnowYourRights",
+            home: "Home",
+            minwage: "Minimum Wage"
+        },
+        cn:{
+            welcome: "欢迎来到KnowYourRights",
+            home: "主页",
+            minwage: "最低工资"
+        }
+    };
+    //Define language using window hashing
+    // if (window.location.hash) {
+    //   //console.log(window.location.hash);
+    //   if (window.location.hash === "#cn") {
+    //     homenav.textContent = language.cn.home;
+    //     minwage.textContent = language.cn.minwage;
+    //   } else {
+    //     homenav.textContent = language.au.home;
+    //     minwage.textContent = language.au.minwage;
+    //   }
+    // }
+    // //Language Reload onclick illiteration
+    // for(i=0; i< dataReload.length; i++){
+    //   //console.log(dataReload[i]);
+    //   dataReload[i].onclick = function(){
+    //     //console.log("hello");
+    //     if(window.location.hash === "#au"){
+    //       //window.location.href = "#au";
+    //       alert("hello");
+    //       // window.location.reload();
+    //     }
+    //     else if(window.location.hash === "#cn"){
+    //       //window.location.href = "#cn";
+    //       // window.location.reload();
+    //     }
+    //   };
+    // }
+    function translate_cn() {
+        document.getElementById("homenav").textContent = "主页";
+        document.getElementById("nav-link-employee").textContent = "员工权利";
+        document.getElementById("international-st").textContent = "对于国际学生";
+        document.getElementById("know-entitle").textContent = "了解你的工作权利";
+        document.getElementById("page2-entitlement").textContent = "员工权利";
+        document.getElementById("about-your-pay").textContent = "关于你的工资";
+        document.getElementById("minwage").textContent = "最低工资";
+        document.getElementById("pay-slip").textContent = "支付单";
+        document.getElementById("super-an").textContent = "退休金";
+        document.getElementById("working-hrs").textContent = "工作时间";
+        document.getElementById("view-pay-rate").textContent = "查看您的工资水平";
+        document.getElementById("about-your-leave").textContent = "关于你的假期";
+        document.getElementById("pay-raise").textContent = "加薪";
+        document.getElementById("annual-bonus").textContent = "年度奖金";
+        document.getElementById("annual-leave-entitle").textContent = "年假权利";
+        document.getElementById("sick-leave-entitle").textContent = "病假权利";
+        document.getElementById("page2-motive").textContent = "我们的动机";
+        document.getElementById("quick-link").textContent = "快速链接";
+        document.getElementById("pay-raise-2").textContent = "加薪";
+        document.getElementById("working-hours-2").textContent = "工作时间";
+        document.getElementById("super-ann").textContent = "养老金";
+        document.getElementById("sick-leave-ent").textContent = "病假权利";
+        document.getElementById("annual-bonus-2").textContent = "年度奖金";
+        document.getElementById("other-links").textContent = "其他有用的链接";
+        document.getElementById("min-wage-3").textContent = "最低工资";
+        document.getElementById("view-pay-rate-3").textContent = "查看您的工资水平";
+        document.getElementById("pay-slip-3").textContent = "工资单";
+        document.getElementById("annual-leave-3").textContent = "年假权利";
+        document.getElementById("copy-right").textContent = "2019年KnowYourRights。版权所有。";
+        document.getElementById("privacy-pol").textContent = "隐私政策";
+        document.getElementById("terms-of-use").textContent = "使用条款";
+
+
+    }
+    function translate_au() {
+        document.getElementById("homenav").textContent = "Home";
+        document.getElementById("nav-link-employee").textContent = "Employee Entitlement";
+        document.getElementById("international-st").textContent = "For International Students";
+        document.getElementById("know-entitle").textContent = "Know Your Entitlements";
+        document.getElementById("page2-entitlement").textContent = "EMPLOYEE ENTITLEMENT";
+        document.getElementById("about-your-pay").textContent = "About Your Pay";
+        document.getElementById("minwage").textContent = "Minimum Wage";
+        document.getElementById("pay-slip").textContent = "Pay Slip";
+        document.getElementById("super-an").textContent = "Superannuation";
+        document.getElementById("working-hrs").textContent = "Working Hours";
+        document.getElementById("view-pay-rate").textContent = "View Your Pay Rate Level";
+        document.getElementById("about-your-leave").textContent = "About Your Leave";
+        document.getElementById("pay-raise").textContent = "Pay Raise";
+        document.getElementById("annual-bonus").textContent = "Annual Bonus";
+        document.getElementById("annual-leave-entitle").textContent = "Annual Leave Entitlements";
+        document.getElementById("sick-leave-entitle").textContent = "Sick Leave Entitlements";
+        document.getElementById("page2-motive").textContent = "Our Motive";
+        document.getElementById("quick-link").textContent = "Quick Links";
+        document.getElementById("pay-raise-2").textContent = "Pay Raise";
+        document.getElementById("working-hours-2").textContent = "Working Hours";
+        document.getElementById("super-ann").textContent = "Superannuation";
+        document.getElementById("sick-leave-ent").textContent = "Sick Leave Entitlements";
+        document.getElementById("annual-bonus-2").textContent = "Annual Bonus";
+        document.getElementById("other-links").textContent = "Other Useful Links";
+        document.getElementById("min-wage-3").textContent = "Minimum Wage";
+        document.getElementById("view-pay-rate-3").textContent = "View Your Pay Rate Level";
+        document.getElementById("pay-slip-3").textContent = "Pay Slip";
+        document.getElementById("annual-leave-3").textContent = "Annual Leave Entitlements";
+        document.getElementById("copy-right").textContent = "2019 KnowYourRights. All rights reserved.";
+        document.getElementById("privacy-pol").textContent = "Privacy Policy";
+        document.getElementById("terms-of-use").textContent = "Terms of Use";
+    }
+    </script>
 </body>
