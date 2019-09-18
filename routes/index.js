@@ -37,4 +37,12 @@ router.get('/weekly_leave_visu', function(req, res, next) {
 router.get('/annual_leave', function(req, res, next) {
   res.render('annual_leave', { title: 'Annual leave information' });
 });
+
+router.get('/annual_bonus', function(req, res, next) {
+  res.render('annual_bonus', { title: 'Annual bonus information' });
+});
+
+router.get('/sick_leave', function(req, res, next) {
+  res.render('sick_leave', { title: 'Sick leave entitlement information' });
+});
 module.exports = router;
