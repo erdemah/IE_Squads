@@ -23,10 +23,15 @@ router.get('/superannuation', function(req, res, next) {
 });
 
 router.get('/pay_rate_level', function(req, res, next) {
-  res.render('pay_rate_level', { title: 'superannuation information' });
+  res.render('pay_rate_level', { title: 'pay rate information' });
 });
 
 router.get('/pay_raise_visu', function(req, res, next) {
-  res.render('pay_raise_visu', { title: 'superannuation information' });
+  res.render('pay_raise_visu', { title: 'pay raise information' });
 });
+
+router.get('/weekly_leave_visu', function(req, res, next) {
+  res.render('weekly_leave_visu', { title: 'weekly leave information' });
+});
+
 module.exports = router;
