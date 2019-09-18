@@ -159,7 +159,7 @@
                 </div>
             </div>
             <!-- Carousel controls -->
-        </div>>
+        </div>
         <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
@@ -229,7 +229,7 @@
     function delete_motive_ch(){
         let element_1 = document.getElementById("inner_caro");
         element_1.parentNode.removeChild(element_1);
-        document.getElementById("wrapper_caro").innerHTML = "<div class=\"carousel-inner\">\n" +
+        document.getElementById("wrapper_caro").innerHTML = "<div class=\"carousel-inner\" id=\"inner_caro\">\n" +
             "                <div class=\"carousel-item active\">\n" +
             "                    <div class=\"numbertext\">1 / 6</div>\n" +
             "                    <img src=\"images/workhour/Part_time/1.png\" alt=\"First Slide\">\n" +
@@ -266,13 +266,12 @@
             "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
             "                    </div>\n" +
             "                </div>\n" +
-            "            </div>\n" +
-            "            <!-- Carousel controls -->";
+            "            </div>";
     }
     function delete_motive_au(){
         let element_1 = document.getElementById("inner_caro");
         element_1.parentNode.removeChild(element_1);
-        document.getElementById("wrapper_caro").innerHTML = "<div class=\"carousel-inner\">\n" +
+        document.getElementById("wrapper_caro").innerHTML = "<div class=\"carousel-inner\" id=\"inner_caro\">\n" +
             "                <div class=\"carousel-item active\">\n" +
             "                    <div class=\"numbertext\">1 / 6</div>\n" +
             "                    <img src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/1.png\" alt=\"First Slide\">\n" +
