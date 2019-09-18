@@ -42,6 +42,11 @@ ul.b {
     background-size:     cover;
     margin:0 auto;
 }
+.w3-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 html {
     scroll-behavior: smooth;
 }
