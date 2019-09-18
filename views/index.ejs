@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Welcome to KnowYourRights</title>
+  <title>Welcome to knowyourrights</title>
 
   <!-- Bootstrap core CSS -->
   <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
@@ -22,11 +22,49 @@
 </head>
 
 <body>
-<%include header.ejs%>
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-sharon static-top">
+  <div class="container">
+    <a class="navbar-brand-sharon" href="/">
+      <div class = "logo-image">
+        <img src="images/logo.png" class="img-fluid">
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">
+            <span class="oi oi-home" title="home" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link-employee" href="#entitlement">Employee Entitlement
+            <span id="nav-separator">|</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link-en" href="#au" data-reload><span class="flag-icon flag-icon-au"> </span>
+            <span id="nav-separator">English</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link-en" href="#cn" data-reload>
+            <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
+            <span id="nav-separator">中文</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class="title-div-sharon">
-  <p class="title-sharon"><span>For International Students</span>
-    <span>Know Your Working Entitlements</span></p>
+  <p class="title-sharon"><span id="international-st">For International Students</span>
+    <span id="know-entitle">Know Your Working Entitlements</span></p>
 </div>
 <div class="container-fluid">
   <section id="section03" class="demo">
@@ -51,27 +89,16 @@
       <div class="container" id="info-pay">
         <div class="dropdown show">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About Your Pay
+            <span id="about-your-pay">About Your Pay</span>
           </a>
-
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="minimum_wage">Minimum Wage</a>
-            <a class="dropdown-item" href="pay_slip">Pay Slip</a>
-            <a class="dropdown-item" href="superannuation">Superannuation</a>
-            <a class="dropdown-item" href="working_hour">Working Hours</a>
-            <a class="dropdown-item" href="pay_rate_level">View you pay rate level</a>
+            <a class="dropdown-item" href="minimum_wage"><span id="min-wage">Minimum Wage</span></a>
+            <a class="dropdown-item" href="pay_slip"><span id="pay-slip">Pay Slip</span></a>
+            <a class="dropdown-item" href="superannuation"><span id="super-an">Superannuation</span></a>
+            <a class="dropdown-item" href="working_hour"><span id="working-hrs">Working Hours</span></a>
+            <a class="dropdown-item" href="pay_rate_level"><span id="view-pay-rate">View you pay rate level</span></a>
           </div>
         </div>
-        <!--
-                          <span class="page-2-info-title">About Your Pay</span>
-                          <ul class="b">
-                              <li>Minimum Wage</li>
-                              <li>Pay Slip</li>
-                              <li>Superannuation</li>
-                              <li>Working Hours</li>
-                              <li>View Your Pay Rate Level</li>
-                          </ul>
-        -->
       </div>
     </div>
     <div class="col-4">
@@ -81,38 +108,16 @@
       <div class="container" id="info-leave">
         <div class="dropdown show">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About Your Leave
-          </a>
-
+            <span id="about-your-leave">About Your Leave</span></a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="pay_raise_visu">Pay Raise</a>
-            <a class="dropdown-item" href="annual_bonus">Annual Bonus</a>
-            <a class="dropdown-item" href="annual_leave">Annual Leave Entitlements</a>
-            <a class="dropdown-item" href="sick_leave">Sick Leave Entitlements</a>
+            <a class="dropdown-item" href="pay_raise_visu"><span id="pay-raise">Pay Raise</span></a>
+            <a class="dropdown-item" href="/"><span id="annual-bonus">Annual Bonus</span></a>
+            <a class="dropdown-item" href="annual_leave"><span id="annual-leave-entitle">Annual Leave Entitlements</span></a>
+            <a class="dropdown-item" href="/"><span id="sick-leave-entitle">Sick Leave Entitlements</span></a>
           </div>
         </div>
-
       </div>
     </div>
-<!--    <div class="col-4">-->
-<!--      <a href="#">-->
-<!--        <img class="img img-fluid" src="images/home3.png" alt="Injury">-->
-<!--      </a>-->
-<!--      <div class="container" id="info-injury">-->
-<!--        <div class="dropdown show">-->
-<!--          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--            About Your Workplace-->
-<!--          </a>-->
-
-<!--          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">-->
-<!--            <a class="dropdown-item" href="minimum_wage">Minimum Wage</a>-->
-<!--            <a class="dropdown-item" href="pay_slip">Pay Slip</a>-->
-<!--            <a class="dropdown-item" href="superannuation">Superannuation</a>-->
-<!--            <a class="dropdown-item" href="working_hour">Working Hours</a>-->
-<!--            <a class="dropdown-item" href="/">View you pay rate level</a>-->
-<!--          </div>-->
-<!--        </div></div>-->
-<!--    </div>-->
   </div>
 </div>
 <div class="container-fluid" id="aboutus">
@@ -142,18 +147,35 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="routes/scroll.js"></script>
 <script>
-  var language{
-    en:{
+  //Language Reload Anchors
+  let dataReload = document.querySelectorAll("[data-reload]");
 
+  //Language translations
+  let language = {
+    en:{
+      welcome: "Welcome to KnowYourRights",
+      home: "Home"
     },
     cn:{
-
+      welcome: "欢迎来到KnowYourRights",
+      home: "主页"
     }
   };
+  //Define language using window hashing
   if (window.location.hash){
     if (window.location.hash === "#cn"){
-
+      homenav.textContent = language.cn.home;
     }
+    else{
+      homenav.textContent = language.en.home;
+    }
+  }
+  //Language Reload onclick illiteration
+  for(i=0; i< dataReload.length; i++){
+    // console.log(dataReload[i]);
+    dataReload[i].onclick = function(){
+    location.reload(true);
+    };
   }
 </script>
 
