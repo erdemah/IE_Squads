@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
   <link href="css/scroll.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,11 +48,25 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link-sharon" href="/">Home</a>
+          <a class="nav-link" id="nav-link-home" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link-sharon" href="#entitlement">Employee Entitlement</a>
+          <a class="nav-link" id="nav-link-employee" href="#entitlement">Employee Entitlement
+            <span id="nav-separator">|</span>
+          </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link-en" href="#au"><span class="flag-icon flag-icon-au"> </span>
+            <span id="nav-separator">English</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link-en" href="#cn"><span class="flag-icon flag-icon-cn" id="nav-separator"> </span>
+            <span id="nav-separator">中文</span></a>
+        </li>
+
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link nav-link-translate" id="google_translate_element" href="#entitlement">Translate</a>-->
+<!--        </li>-->
         <!--
                   <li class="nav-item">
                     <a class="nav-link" id="nav-link-sharon" href="#">About</a>
@@ -178,6 +193,21 @@
 <script src="vendor/jquery/jquery.slim.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="routes/scroll.js"></script>
+<script>
+  var language{
+    en:{
+
+    },
+    cn:{
+
+    }
+  };
+  if (window.location.hash){
+    if (window.location.hash === "#cn"){
+
+    }
+  }
+</script>
 
 </body>
 

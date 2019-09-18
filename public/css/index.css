@@ -230,7 +230,55 @@ footer ul li a:hover {
 }
 #nav-link-sharon:hover{
     color:white;
+    font-family: "Josefin Sans"
 }
+#nav-link-home{
+    color:black;
+    font-family: "Josefin Sans"
+}
+#nav-link-home:hover{
+    color:white;
+    font-family: "Josefin Sans"
+}
+#nav-link-employee{
+    color:black;
+    font-family: "Josefin Sans"
+}
+#nav-link-employee:hover{
+    color:white;
+    font-family: "Josefin Sans"
+}
+#nav-link-au{
+    color:black;
+    font-family: "Josefin Sans"
+}
+#nav-link-au:hover{
+    color:white;
+    font-family: "Josefin Sans"
+}
+#nav-link-cn{
+    color:black;
+    font-family: "Josefin Sans"
+}
+#nav-link-cn:hover{
+    color:white;
+    font-family: "Josefin Sans"
+}
+#nav-separator{
+    color: black;
+    font-family: "Josefin Sans"
+}
+#nav-separator:hover{
+    color: white;
+    font-family: "Josefin Sans"
+}
+/*.nav-link-translate{*/
+/*    color:black;*/
+/*    font-family: "Josefin Sans"*/
+/*}*/
+/*#nav-link-translate:hover{*/
+/*    color:white;*/
+/*}*/
 .navbar-brand-sharon{
     color:black;
 }
