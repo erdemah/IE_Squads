@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="Garry" content="">
+    <title>Working Hour Page</title>
+
+
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/working_hour.css" rel="stylesheet">
+    <link href="css/scroll.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+    <link href="css/scroll.css" rel="stylesheet">
+</head>
+</html>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-sharon static-top">
+    <div class="container">
+        <a class="navbar-brand-sharon" href="/">
+            <div class = "logo-image">
+                <img src="images/logo.png" class="img-fluid">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <!--
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                              <span class="sr-only">(current)</span>
+                            </a>
+                          </li>
+                -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">
+                        <span class="oi oi-home" title="home" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-sharon" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-sharon" href="#entitlement">Employee Entitlement</a>
+                </li>
+                <!--
+                          <li class="nav-item">
+                            <a class="nav-link" id="nav-link-sharon" href="#">About</a>
+                          </li>
+                -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--  TILES CODE-->
+<div class="container">
+    <div class="row">
+        <div class="tile">
+            <div class="tile-thumbnail" onclick="location.href='pay_raise_visu';" style="cursor: pointer;">
+                <img src="http://placehold.it/240x144?text=Pay Raise" alt="My Awesome Tile">
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-thumbnail" onclick="location.href='pay_slip';" style="cursor: pointer;">
+                <img src="http://placehold.it/240x144?text=Pay Slips" alt="My Awesome Tile">
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-thumbnail" onclick="location.href='superannuation';" style="cursor: pointer;">
+                <img src="http://placehold.it/240x144?text=Superannuation" alt="My Awesome Tile">
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-thumbnail" onclick="location.href='pay_rate_level';" style="cursor: pointer;">
+                <img src="http://placehold.it/240x144?text=Pay Rate Level" alt="My Awesome Tile">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TILES CODE END-->
+
+<!-- CAROUSEL CODE-->
+<%include slider_annual_leave.ejs%>
+<!-- CAROUSEL CODE END-->
+<%include links.ejs%>
+<!--    FOOTER CODE-->
+<%include footer.ejs %>
+<%include back_top.ejs%>
+</body>

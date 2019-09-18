@@ -34,4 +34,7 @@ router.get('/weekly_leave_visu', function(req, res, next) {
   res.render('weekly_leave_visu', { title: 'weekly leave information' });
 });
 
+router.get('/annual_leave', function(req, res, next) {
+  res.render('annual_leave', { title: 'Annual leave information' });
+});
 module.exports = router;
