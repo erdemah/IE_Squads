@@ -48,12 +48,12 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au()">
+          <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au(); delete_motive_ch();">
             <span class="flag-icon flag-icon-au"> </span>
             <span id="nav-separator">English</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn()">
+          <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn(); delete_motive_au();">
             <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
             <span id="nav-separator">中文</span></a>
         </li>
@@ -126,18 +126,22 @@
 <div class="container-fluid">
   <div id="rectangle"></div>
 </div>
-<div class="row">
-  <div class="column">
-    <img src="images/about1.png" alt="about1" style="width:100%">
+<div class="container" id="motive-original">
+  <div class="row" id="motive-au-1">
+    <div class="col-6">
+      <img src="images/about1.png" alt="about1" style="width:100%">
+    </div>
+    <div class="col-6">
+      <img src="images/about2.png" alt="about2" style="width:100%">
+    </div>
   </div>
-  <div class="column">
-    <img src="images/about2.png" alt="about2" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="images/about3.png" alt="about3" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="images/about4.png" alt="about4" style="width:100%">
+  <div class="row" id="motive-au-2">
+    <div class="col-6">
+      <img src="images/about3.png" alt="about3" style="width:100%">
+    </div>
+    <div class="col-6">
+      <img src="images/about4.png" alt="about4" style="width:100%">
+    </div>
   </div>
 </div>
 <%include footer.ejs%>
@@ -232,8 +236,9 @@
       document.getElementById("page2-entitlement").textContent = "EMPLOYEE ENTITLEMENT";
       document.getElementById("about-your-pay").textContent = "About Your Pay";
       document.getElementById("minwage").textContent = "Minimum Wage";
-      document.getElementById("pay-slip").textContent = "Pay Slip]";
+      document.getElementById("pay-slip").textContent = "Pay Slip";
       document.getElementById("super-an").textContent = "Superannuation";
+      document.getElementById("working-hrs").textContent = "Working Hours";
       document.getElementById("view-pay-rate").textContent = "View Your Pay Rate Level";
       document.getElementById("about-your-leave").textContent = "About Your Leave";
       document.getElementById("pay-raise").textContent = "Pay Raise";
@@ -255,6 +260,50 @@
       document.getElementById("copy-right").textContent = "2019 KnowYourRights. All rights reserved.";
       document.getElementById("privacy-pol").textContent = "Privacy Policy";
       document.getElementById("terms-of-use").textContent = "Terms of Use";
+    }
+    function delete_motive_ch(){
+        let element_1 = document.getElementById("motive-au-1");
+        let element_2 = document.getElementById("motive-au-2");
+        element_1.parentNode.removeChild(element_1);
+        element_2.parentNode.removeChild(element_2);
+        document.getElementById("motive-original").innerHTML = "  <div class=\"row\" id=\"motive-au-1\">\n" +
+            "    <div class=\"col-6\">\n" +
+            "      <img src=\"images/about1.png\" alt=\"about1\" style=\"width:100%\">\n" +
+            "    </div>\n" +
+            "    <div class=\"col-6\">\n" +
+            "      <img src=\"images/about2.png\" alt=\"about2\" style=\"width:100%\">\n" +
+            "    </div>\n" +
+            "  </div>\n" +
+            "  <div class=\"row\" id=\"motive-au-2\">\n" +
+            "    <div class=\"col-6\">\n" +
+            "      <img src=\"images/about3.png\" alt=\"about3\" style=\"width:100%\">\n" +
+            "    </div>\n" +
+            "    <div class=\"col-6\">\n" +
+            "      <img src=\"images/about4.png\" alt=\"about4\" style=\"width:100%\">\n" +
+            "    </div>\n" +
+            "  </div>";
+    }
+    function delete_motive_au(){
+      let element_1 = document.getElementById("motive-au-1");
+      let element_2 = document.getElementById("motive-au-2");
+      element_1.parentNode.removeChild(element_1);
+      element_2.parentNode.removeChild(element_2);
+      document.getElementById("motive-original").innerHTML = "  <div class=\"row\" id=\"motive-au-1\">\n" +
+              "    <div class=\"col-6\">\n" +
+              "      <img src=\"images/about_us_cn/1.png\" alt=\"about1\" style=\"width:100%\">\n" +
+              "    </div>\n" +
+              "    <div class=\"col-6\">\n" +
+              "      <img src=\"images/about_us_cn/2.png\" alt=\"about2\" style=\"width:100%\">\n" +
+              "    </div>\n" +
+              "  </div>\n" +
+              "  <div class=\"row\" id=\"motive-au-2\">\n" +
+              "    <div class=\"col-6\">\n" +
+              "      <img src=\"images/about_us_cn/3.png\" alt=\"about3\" style=\"width:100%\">\n" +
+              "    </div>\n" +
+              "    <div class=\"col-6\">\n" +
+              "      <img src=\"images/about_us_cn/4.png\" alt=\"about4\" style=\"width:100%\">\n" +
+              "    </div>\n" +
+              "  </div>";
     }
 </script>
 
