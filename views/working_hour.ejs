@@ -42,7 +42,45 @@
 </html>
 
 <body>
-<%include header.ejs%>
+<nav class="navbar navbar-expand-lg navbar-dark bg-sharon static-top">
+    <div class="container">
+        <a class="navbar-brand-sharon" href="/">
+            <div class = "logo-image">
+                <img src="images/logo.png" class="img-fluid">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">
+                        <span class="oi oi-home" title="home" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-employee" href="#entitlement">Employee Entitlement
+                        <span id="nav-separator">|</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au(); delete_motive_ch();">
+                        <span class="flag-icon flag-icon-au"> </span>
+                        <span id="nav-separator">English</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn(); delete_motive_au();">
+                        <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
+                        <span id="nav-separator">中文</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <!--  TILES CODE-->
 <div class="container">
@@ -81,45 +119,47 @@
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="numbertext">1 / 6</div>
-                <img src="images/workhour/Part time/1.png" alt="First Slide">
-                <div class="carousel-caption d-none d-md-block">
+        <div class="container" id="wrapper_caro">
+            <div class="carousel-inner" id="inner_caro">
+                <div class="carousel-item active">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/workhour/Part_time/1.png" alt="First Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/workhour/Part_time/2.png" alt="Second Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/workhour/Part_time/3.png" alt="Third Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/workhour/Part_time/4.png" alt="Third Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/workhour/Part_time/5.png" alt="Third Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/workhour/Part_time/6.png" alt="Third Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="numbertext">2 / 6</div>
-                <img src="images/workhour/Part time/2.png" alt="Second Slide">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="numbertext">3 / 6</div>
-                <img src="images/workhour/Part time/3.png" alt="Third Slide">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="numbertext">4 / 6</div>
-                <img src="images/workhour/Part time/4.png" alt="Third Slide">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="numbertext">5 / 6</div>
-                <img src="images/workhour/Part time/5.png" alt="Third Slide">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="numbertext">5 / 6</div>
-                <img src="images/workhour/Part time/6.png" alt="Third Slide">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-        </div>
-        <!-- Carousel controls -->
+            <!-- Carousel controls -->
+        </div>>
         <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
@@ -133,4 +173,144 @@
 <!--    FOOTER CODE-->
 <%include footer.ejs %>
 <%include back_top.ejs%>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.slim.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--<script src="routes/scroll.js"></script>-->
+<script>
+    // var dataReload = document.querySelectorAll("[data-reload]");
+    //
+    // //Language translations
+    // var language = {
+    //     au:{
+    //         welcome: "Welcome to KnowYourRights",
+    //         home: "Home",
+    //         minwage: "Minimum Wage"
+    //     },
+    //     cn:{
+    //         welcome: "欢迎来到KnowYourRights",
+    //         home: "主页",
+    //         minwage: "最低工资"
+    //     }
+    // };
+    //Define language using window hashing
+    // if (window.location.hash) {
+    //   //console.log(window.location.hash);
+    //   if (window.location.hash === "#cn") {
+    //     homenav.textContent = language.cn.home;
+    //     minwage.textContent = language.cn.minwage;
+    //   } else {
+    //     homenav.textContent = language.au.home;
+    //     minwage.textContent = language.au.minwage;
+    //   }
+    // }
+    // //Language Reload onclick illiteration
+    // for(i=0; i< dataReload.length; i++){
+    //   //console.log(dataReload[i]);
+    //   dataReload[i].onclick = function(){
+    //     //console.log("hello");
+    //     if(window.location.hash === "#au"){
+    //       //window.location.href = "#au";
+    //       alert("hello");
+    //       // window.location.reload();
+    //     }
+    //     else if(window.location.hash === "#cn"){
+    //       //window.location.href = "#cn";
+    //       // window.location.reload();
+    //     }
+    //   };
+    // }
+    function translate_cn() {
+
+    }
+    function translate_au() {
+
+    }
+    function delete_motive_ch(){
+        let element_1 = document.getElementById("inner_caro");
+        element_1.parentNode.removeChild(element_1);
+        document.getElementById("wrapper_caro").innerHTML = "<div class=\"carousel-inner\">\n" +
+            "                <div class=\"carousel-item active\">\n" +
+            "                    <div class=\"numbertext\">1 / 6</div>\n" +
+            "                    <img src=\"images/workhour/Part_time/1.png\" alt=\"First Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "                <div class=\"carousel-item\">\n" +
+            "                    <div class=\"numbertext\">2 / 6</div>\n" +
+            "                    <img src=\"images/workhour/Part_time/2.png\" alt=\"Second Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "                <div class=\"carousel-item\">\n" +
+            "                    <div class=\"numbertext\">3 / 6</div>\n" +
+            "                    <img src=\"images/workhour/Part_time/3.png\" alt=\"Third Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "                <div class=\"carousel-item\">\n" +
+            "                    <div class=\"numbertext\">4 / 6</div>\n" +
+            "                    <img src=\"images/workhour/Part_time/4.png\" alt=\"Third Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "                <div class=\"carousel-item\">\n" +
+            "                    <div class=\"numbertext\">5 / 6</div>\n" +
+            "                    <img src=\"images/workhour/Part_time/5.png\" alt=\"Third Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "                <div class=\"carousel-item\">\n" +
+            "                    <div class=\"numbertext\">6 / 6</div>\n" +
+            "                    <img src=\"images/workhour/Part_time/6.png\" alt=\"Third Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <!-- Carousel controls -->";
+    }
+    function delete_motive_au(){
+        let element_1 = document.getElementById("inner_caro");
+        element_1.parentNode.removeChild(element_1);
+        document.getElementById("wrapper_caro").innerHTML = "<div class=\"carousel-inner\">\n" +
+            "                <div class=\"carousel-item active\">\n" +
+            "                    <div class=\"numbertext\">1 / 6</div>\n" +
+            "                    <img src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/1.png\" alt=\"First Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "                <div class=\"carousel-item\">\n" +
+            "                    <div class=\"numbertext\">2 / 6</div>\n" +
+            "                    <img src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/2.png\" alt=\"Second Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "                <div class=\"carousel-item\">\n" +
+            "                    <div class=\"numbertext\">3 / 6</div>\n" +
+            "                    <img src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/3.png\" alt=\"Third Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "                <div class=\"carousel-item\">\n" +
+            "                    <div class=\"numbertext\">4 / 6</div>\n" +
+            "                    <img src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/4.png\" alt=\"Fourth Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "                <div class=\"carousel-item\">\n" +
+            "                    <div class=\"numbertext\">5 / 6</div>\n" +
+            "                    <img src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/5.png\" alt=\"Fifth Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "                <div class=\"carousel-item\">\n" +
+            "                    <div class=\"numbertext\">6 / 6</div>\n" +
+            "                    <img src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/6.png\" alt=\"Sixth Slide\">\n" +
+            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <!-- Carousel controls -->";
+    }
+</script>
 </body>
