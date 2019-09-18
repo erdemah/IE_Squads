@@ -49,14 +49,14 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link-en" href="#au" data-reload>
+          <a class="nav-link" id="nav-link-au" href="#au" onclick="myFunction2()" data-reload>
             <span class="flag-icon flag-icon-au"></span>
-            <span id="nav-separator">English</span></a>
+            <span id="nav-separator-au">English</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link-en" href="#cn" data-reload>
+          <a class="nav-link" id="nav-link-cn" href="#cn" onclick="myFunction()" data-reload>
             <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
-            <span id="nav-separator">中文</span></a>
+            <span id="nav-separator-cn">中文</span></a>
         </li>
       </ul>
     </div>
@@ -146,42 +146,56 @@
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.slim.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="routes/scroll.js"></script>
+<!--<script src="routes/scroll.js"></script>-->
 <script>
-  //Language Reload Anchors
-  let dataReload = document.querySelectorAll("[data-reload]");
+    var dataReload = document.querySelectorAll("[data-reload]");
 
-  //Language translations
-  let language = {
-    en:{
-      welcome: "Welcome to KnowYourRights",
-      home: "Home",
-      minwage: "Minimum Wage"
-    },
-    cn:{
-      welcome: "欢迎来到KnowYourRights",
-      home: "主页",
-      minwage: "最低工资"
+    //Language translations
+    var language = {
+      au:{
+        welcome: "Welcome to KnowYourRights",
+        home: "Home",
+        minwage: "Minimum Wage"
+      },
+      cn:{
+        welcome: "欢迎来到KnowYourRights",
+        home: "主页",
+        minwage: "最低工资"
+      }
+    };
+    //Define language using window hashing
+    // if (window.location.hash) {
+    //   //console.log(window.location.hash);
+    //   if (window.location.hash === "#cn") {
+    //     homenav.textContent = language.cn.home;
+    //     minwage.textContent = language.cn.minwage;
+    //   } else {
+    //     homenav.textContent = language.au.home;
+    //     minwage.textContent = language.au.minwage;
+    //   }
+    // }
+    // //Language Reload onclick illiteration
+    // for(i=0; i< dataReload.length; i++){
+    //   //console.log(dataReload[i]);
+    //   dataReload[i].onclick = function(){
+    //     //console.log("hello");
+    //     if(window.location.hash === "#au"){
+    //       //window.location.href = "#au";
+    //       alert("hello");
+    //       // window.location.reload();
+    //     }
+    //     else if(window.location.hash === "#cn"){
+    //       //window.location.href = "#cn";
+    //       // window.location.reload();
+    //     }
+    //   };
+    // }
+    function myFunction() {
+      document.getElementById("homenav").textContent = "主页";
     }
-  };
-  //Define language using window hashing
-  if (window.location.hash){
-    if (window.location.hash === "#cn"){
-      homenav.textContent = language.cn.home;
-      minwage.textContent = language.cn.home;
+    function myFunction2() {
+      document.getElementById("homenav").textContent = "Home";
     }
-    else{
-      homenav.textContent = language.en.home;
-      minwage.textContent = language.en.home;
-    }
-  }
-  //Language Reload onclick illiteration
-  for(i=0; i< dataReload.length; i++){
-  //   console.log(dataReload[i]);
-     dataReload[i].onclick = function(){
-     location.reload();
-     };
-   }
 </script>
 
 </body>
