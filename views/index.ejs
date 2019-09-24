@@ -17,7 +17,6 @@
   <link href="css/scroll.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
-  <link href="css/scroll.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
 </head>
 
@@ -182,33 +181,6 @@
         minwage: "最低工资"
       }
     };
-    //Define language using window hashing
-    // if (window.location.hash) {
-    //   //console.log(window.location.hash);
-    //   if (window.location.hash === "#cn") {
-    //     homenav.textContent = language.cn.home;
-    //     minwage.textContent = language.cn.minwage;
-    //   } else {
-    //     homenav.textContent = language.au.home;
-    //     minwage.textContent = language.au.minwage;
-    //   }
-    // }
-    // //Language Reload onclick illiteration
-    // for(i=0; i< dataReload.length; i++){
-    //   //console.log(dataReload[i]);
-    //   dataReload[i].onclick = function(){
-    //     //console.log("hello");
-    //     if(window.location.hash === "#au"){
-    //       //window.location.href = "#au";
-    //       alert("hello");
-    //       // window.location.reload();
-    //     }
-    //     else if(window.location.hash === "#cn"){
-    //       //window.location.href = "#cn";
-    //       // window.location.reload();
-    //     }
-    //   };
-    // }
     function translate_cn() {
       document.getElementById("homenav").textContent = "主页";
       document.getElementById("nav-link-employee").textContent = "员工权利";
