@@ -175,7 +175,7 @@
     <br>
     <a href="https://www.fairwork.gov.au/pay/minimum-wages/junior-pay-rates" id="link2">Junior Pay rates</a> <br>
     <a href="https://www.fairwork.gov.au/pay/minimum-wages/apprentice-and-trainee-pay-rates" id="link3">Apprentice and trainee pay rates</a> <br>
-    <p id="text2">If you have questions about how much tax comes out of a pay rate, please contact the <a id="link4" href="https://www.ato.gov.au/">Australian Taxation Office</a> </p>
+    <p id="text2">If you have questions about how much tax comes out of a pay rate, please contact the <a href="https://www.ato.gov.au/" id="link4">Australian Taxation Office</a> </p>
     <hr>
 </div>
 
@@ -184,7 +184,7 @@
     <p id="text3">Most student visas allow you to work for up to 40 hours every two weeks while your course is in session,
         and unrestricted hours during any scheduled course break,
         but before you undertake any paid work you need to make sure your visa allows you to work.</p> <br>
-    <p id="text4">Find out more information at the  <a href="https://www.homeaffairs.gov.au/">Department of Home Affairs</a> website.</p> <br>
+    <p id="text4">Find out more information at the  <a href="https://www.homeaffairs.gov.au/" id="link5" >Department of Home Affairs website.</a> </p> <br>
     <hr>
 </article>
 
@@ -323,9 +323,13 @@
         document.getElementById("link2").textContent = "初级工资率";
         document.getElementById("link3").textContent = "学徒和实习生支付费用";
         document.getElementById("text2").textContent = "如果您对工资税的影响有疑问，请联系";
-        // document.getElementById("link4").textContent = "澳大利亚税务局";
+        //document.getElementById("link4").textContent = "澳大利亚税务局";
         document.getElementById("head1").textContent = "工作时间信息";
-        // document.getElementById("text3").textContent = "查看您的工资水平";
+        document.getElementById("text3").textContent = "\n" +
+            "大多数学生签证允许您在课程学习期间每两周最多工作40个小时，\n" +
+            "        在任何计划的课程休息期间不受限制的时间，\n" +
+            "        但是在您从事任何有偿工作之前，您需要确保签证允许您工作。";
+        document.getElementById("text4").textContent = "在内政部网站上查找更多信息。";
         document.getElementById("quick-link").textContent = "快速链接";
         document.getElementById("annual-leave-3").textContent = "年假权利";
         document.getElementById("copy-right").textContent = "2019年KnowYourRights。版权所有。";
@@ -358,9 +362,12 @@
         document.getElementById("link2").textContent = "Junior Pay rates";
         document.getElementById("link3").textContent = "Apprentice and trainee pay rates";
         document.getElementById("text2").textContent = "If you have questions about how much tax comes out of a pay rate, please contact the";
-        // document.getElementById("link4").textContent = "Australian Taxation Office";
+        //document.getElementById("link4").textContent = "Australian Taxation Office";
         document.getElementById("head1").textContent = "Working Hours Information";
-        // document.getElementById("text3").textContent = ;
+        document.getElementById("text3").textContent = "Most student visas allow you to work for up to 40 hours every two weeks while your course is in session,\n" +
+            "        and unrestricted hours during any scheduled course break,\n" +
+            "        but before you undertake any paid work you need to make sure your visa allows you to work.";
+        document.getElementById("text4").textContent = "Find out more information at the Department of Home Affairs website.";
         document.getElementById("quick-link").textContent = "Quick Links";
         document.getElementById("annual-leave-3").textContent = "Annual Leave Entitlements";
         document.getElementById("copy-right").textContent = "2019 KnowYourRights. All rights reserved.";
