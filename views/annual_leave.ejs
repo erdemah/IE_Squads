@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="Garry" content="">
-    <title>Working Hour Page</title>
+    <title>Annual Leave Page</title>
 
 
     <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
@@ -75,7 +75,12 @@
                 <li class="nav-item">
                     <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn();delete_motive_au();">
                         <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
-                        <span id="nav-separator">中文</span></a>
+                        <span id="nav-separator">中文</span>
+                        <span id="nav-separator">|</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#ce" data-reload onclick="casualEmp();">
+                        <span id="nav-separator">Casual Employees</span></a>
                 </li>
             </ul>
         </div>
@@ -121,31 +126,31 @@
         <!-- Wrapper for carousel items -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="numbertext">1 / 5</div>
+                <div class="numbertext">This storyboard provides information for full time employees (1 / 5)</div>
                 <img src="images/annualleave/fulltime/1.png" alt="First Slide">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="numbertext">2 / 5</div>
+                <div class="numbertext">This storyboard provides information for full time employees (2 / 5)</div>
                 <img src="images/annualleave/fulltime/2.png" alt="Second Slide">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="numbertext">3 / 5</div>
+                <div class="numbertext">This storyboard provides information for full time employees (3 / 5)</div>
                 <img src="images/annualleave/fulltime/3.png" alt="Third Slide">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="numbertext">4 / 5</div>
+                <div class="numbertext">This storyboard provides information for full time employees (4 / 5)</div>
                 <img src="images/annualleave/fulltime/4.png" alt="Third Slide">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="numbertext">5 / 5</div>
+                <div class="numbertext">This storyboard provides information for full time employees (5 / 5)</div>
                 <img src="images/annualleave/fulltime/5.png" alt="Third Slide">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
@@ -250,32 +255,85 @@
             "        <!-- Wrapper for carousel items -->\n" +
             "        <div class=\"carousel-inner\">\n" +
             "            <div class=\"carousel-item active\">\n" +
-            "                <div class=\"numbertext\">1 / 5</div>\n" +
+            "                <div class=\"numbertext\">This storyboard provides information for full time employees (1 / 5)</div>\n" +
             "                <img src=\"images/annualleave/fulltime/1.png\" alt=\"First Slide\">\n" +
             "                <div class=\"carousel-caption d-none d-md-block\">\n" +
             "                </div>\n" +
             "            </div>\n" +
             "            <div class=\"carousel-item\">\n" +
-            "                <div class=\"numbertext\">2 / 5</div>\n" +
+            "                <div class=\"numbertext\">This storyboard provides information for full time employees (2 / 5)</div>\n" +
             "                <img src=\"images/annualleave/fulltime/2.png\" alt=\"Second Slide\">\n" +
             "                <div class=\"carousel-caption d-none d-md-block\">\n" +
             "                </div>\n" +
             "            </div>\n" +
             "            <div class=\"carousel-item\">\n" +
-            "                <div class=\"numbertext\">3 / 5</div>\n" +
+            "                <div class=\"numbertext\">This storyboard provides information for full time employees (3 / 5)</div>\n" +
             "                <img src=\"images/annualleave/fulltime/3.png\" alt=\"Third Slide\">\n" +
             "                <div class=\"carousel-caption d-none d-md-block\">\n" +
             "                </div>\n" +
             "            </div>\n" +
             "            <div class=\"carousel-item\">\n" +
-            "                <div class=\"numbertext\">4 / 5</div>\n" +
+            "                <div class=\"numbertext\">This storyboard provides information for full time employees (4 / 5)</div>\n" +
             "                <img src=\"images/annualleave/fulltime/4.png\" alt=\"Fourth Slide\">\n" +
             "                <div class=\"carousel-caption d-none d-md-block\">\n" +
             "                </div>\n" +
             "            </div>\n" +
             "            <div class=\"carousel-item\">\n" +
-            "                <div class=\"numbertext\">5 / 5</div>\n" +
+            "                <div class=\"numbertext\">This storyboard provides information for full time employees (5 / 5)</div>\n" +
             "                <img src=\"images/annualleave/fulltime/5.png\" alt=\"Fifth Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "        <!-- Carousel controls -->\n" +
+            "        <a class=\"carousel-control-prev\" href=\"#myCarousel\" data-slide=\"prev\">\n" +
+            "            <span class=\"carousel-control-prev-icon\"></span>\n" +
+            "        </a>\n" +
+            "        <a class=\"carousel-control-next\" href=\"#myCarousel\" data-slide=\"next\">\n" +
+            "            <span class=\"carousel-control-next-icon\"></span>\n" +
+            "        </a>\n" +
+            "    </div>";
+    }
+
+    function casualEmp(){
+        let element_1 = document.getElementById("myCarousel");
+        element_1.parentNode.removeChild(element_1);
+        document.getElementById("an_leave_wrapper").innerHTML = "    <div id=\"myCarousel\" class=\"carousel slide\" data-interval=\"3000\" data-ride=\"carousel\">\n" +
+            "        <!-- Carousel indicators -->\n" +
+            "        <ol class=\"carousel-indicators\">\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n" +
+            "            <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n" +
+            "        </ol>\n" +
+            "        <!-- Wrapper for carousel items -->\n" +
+            "        <div class=\"carousel-inner\">\n" +
+            "            <div class=\"carousel-item active\">\n" +
+            "                <div class=\"numbertext\">This storyboard provides information for casual employees (1 / 5)</div>\n" +
+            "                <img src=\"images/annualleave/Casual/1.png\" alt=\"First Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">This storyboard provides information for casual employees (2 / 5)</div>\n" +
+            "                <img src=\"images/annualleave/Casual/2.png\" alt=\"Second Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">This storyboard provides information for casual employees (3 / 5)</div>\n" +
+            "                <img src=\"images/annualleave/Casual/3.png\" alt=\"Third Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">This storyboard provides information for casual employees (4 / 5)</div>\n" +
+            "                <img src=\"images/annualleave/Casual/4.png\" alt=\"Fourth Slide\">\n" +
+            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
+            "                </div>\n" +
+            "            </div>\n" +
+            "            <div class=\"carousel-item\">\n" +
+            "                <div class=\"numbertext\">This storyboard provides information for casual employees (5 / 5)</div>\n" +
+            "                <img src=\"images/annualleave/Casual/5.png\" alt=\"Fifth Slide\">\n" +
             "                <div class=\"carousel-caption d-none d-md-block\">\n" +
             "                </div>\n" +
             "            </div>\n" +
