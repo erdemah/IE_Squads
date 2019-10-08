@@ -84,27 +84,34 @@
 </nav>
 
 <!--  TILES CODE-->
-<div class="container">
-    <div class="row">
-        <div class="tile">
-            <div class="tile-thumbnail" onclick="location.href='pay_raise_visu';" style="cursor: pointer;">
-                <img src="images/pay_raise.jpg" alt="My Awesome Tile">
-            </div>
+<div class="pagina">
+    <div class="linha">
+        <div class="tile amarelo" onclick="location.href='superannuation'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Super and Tax</span>
         </div>
-        <div class="tile">
-            <div class="tile-thumbnail" onclick="location.href='sick_leave';" style="cursor: pointer;">
-                <img src="images/sick_leave.jpg" alt="My Awesome Tile">
-            </div>
+        <div class="tile azul" onclick="location.href='minimum_wage'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Minimum Wage</span>
         </div>
-        <div class="tile">
-            <div class="tile-thumbnail" onclick="location.href='annual_leave';" style="cursor: pointer;">
-                <img src="images/annual_leave.jpg" alt="My Awesome Tile">
-            </div>
+        <div class="tile amarelo"  onclick="location.href='working_hour'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Working Hours</span>
         </div>
-        <div class="tile">
-            <div class="tile-thumbnail" onclick="location.href='pay_rate_level';" style="cursor: pointer;">
-                <img src="images/pay_rate_level.jpg" alt="My Awesome Tile">
-            </div>
+        <div class="tile verde"  onclick="location.href='annual_bonus'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Annual Bonus</span>
+        </div>
+        <div class="tile amarelo"  onclick="location.href='annual_leave'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Annual Leave</span>
+        </div>
+        <div class="tile amarelo"  onclick="location.href='pay_raise_visu'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Pay Raise</span>
+        </div>
+        <div class="tile amarelo"  onclick="location.href='pay_rate_level'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Pay Level</span>
+        </div>
+        <div class="tile amarelo"  onclick="location.href='pay_slip'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Pay Slips</span>
+        </div>
+        <div class="tile amarelo"  onclick="location.href='sick_leave'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Sick Leave</span>
         </div>
     </div>
 </div>
@@ -292,5 +299,14 @@
             "        </a>\n" +
             "    </div>";
     }
+    $(function(){
+        $(".tile").mousedown(function(){
+            $(this).addClass("selecionado");
+        });
+
+        $(".tile").mouseup(function(){
+            $(this).removeClass("selecionado");
+        });
+    });
 </script>
 </body>
