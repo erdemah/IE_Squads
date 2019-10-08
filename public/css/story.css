@@ -1,0 +1,166 @@
+body{
+    background-color:#f9f9f9;
+/*    #f9f9f9*/
+/*    #43a2ca*/
+}
+.txt{
+    font-size: 11px; 
+    font-family: Verdana;
+}
+
+/*
+.choropleth{
+    position: relative;
+    display: inline-block;
+}
+*/
+
+h1, h2, h3, p {
+/*
+  margin: 0;
+  padding: 0;
+*/
+  font-family: 'Source Sans Pro', sans-serif;
+/*  font-size: 1em;*/
+  color: #333;
+  font-weight: 400;
+    text-align: center;
+}
+
+#map {
+/*    display: block;*/
+    text-align: center;
+/*    padding-bottom: 5px;*/
+/*  background: #43a2ca;*/
+/*    display: inline-block;*/
+/*
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+*/
+/*    position: absolute;*/
+/*
+    width:1em;
+    height:1em;
+*/
+}
+
+
+/*
+h1, h2 {
+  line-height: 1em;
+  font-size: 1.75em;
+  font-weight: 900;
+  color: #000;
+}
+*/
+
+h2.year {
+  margin: 10px 0px 0px 0px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+p {
+  margin: 10px 0px 0px 0px;
+}
+
+
+#states {
+/*    #eb8034*/
+    stroke: #ccc;
+    stroke-width: 1;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    fill:orange;
+}
+#states .active {
+    fill: black;
+/*    stroke: #ef0;*/
+}
+.head_title{
+    font-family: 'Architects Daughter', cursive;
+}
+/*
+#state-borders{
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+*/
+
+.leg .little_square{
+    
+}
+.little_ruler{
+    
+}
+.little_text{
+    font-family: 'Architects Daughter', cursive;
+/*    color:black;*/
+    font-size: .90em;
+}
+.vic_rect_legend{
+    
+}
+.vic_rect_legend_treemap{
+    
+}
+.leg{
+    fill: rgba(255,255,255,0.95);
+}
+.leg_vic{
+    fill: rgba(255,255,255,0.95);
+}
+.leg_treemap_vic{
+/*
+    font-family: 'Architects Daughter', cursive;
+    font-size: .90em;
+*/
+    fill: rgba(255,255,255,0.95);
+}
+.leg_vic_text{
+    font-family: 'Architects Daughter', cursive;
+    font-size: .90em;
+}
+#vic_categ{
+    text-align: center;
+}
+
+#vic_job_post{
+    text-align: center;
+}
+.tooltip {
+  position: absolute;
+  padding: 7px;
+  font-size: 0.9em;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  -moz-box-shadow:    3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow:         3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tooltip p {
+  margin: 0;
+  padding: 0;
+}
+
+.tooltip table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+/*
+.wide {
+  width: 120px;
+}
+*/
+    
