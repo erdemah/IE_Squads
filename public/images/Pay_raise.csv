@@ -1,0 +1,397 @@
+Year,Industry,Wage
+2000,Mining,1311.2
+2001,Mining,1357.3
+2002,Mining,1384.1
+2003,Mining,1452.8
+2004,Mining,1492.4
+2005,Mining,1500.8
+2006,Mining,1609.3
+2007,Mining,1714.3
+2008,Mining,1818.2
+2009,Mining,1952.9
+2010,Mining,2069.6
+2011,Mining,2172.9
+2012,Mining,2381.2
+2013,Mining,2490.4
+2014,Mining,2518.1
+2015,Mining,2555.1
+2016,Mining,2625.2
+2017,Mining,2619.8
+2018,Mining,2664.1
+2019,Mining,2626.1
+2020,Mining,2862.6
+2021,Mining,2937.73
+2000,Manufacturing,717.9
+2001,Manufacturing,757.9
+2002,Manufacturing,820.2
+2003,Manufacturing,878
+2004,Manufacturing,905
+2005,Manufacturing,935
+2006,Manufacturing,988.5
+2007,Manufacturing,1013.8
+2008,Manufacturing,1050.6
+2009,Manufacturing,1078.7
+2010,Manufacturing,1089.7
+2011,Manufacturing,1144.5
+2012,Manufacturing,1157.5
+2013,Manufacturing,1247.3
+2014,Manufacturing,1268.5
+2015,Manufacturing,1266.9
+2016,Manufacturing,1295.1
+2017,Manufacturing,1309.4
+2018,Manufacturing,1340.3
+2019,Manufacturing,1338.3
+2020,Manufacturing,1434.2
+2021,Manufacturing,1466.91
+2000,"Electricity, Gas, Water and Waste Services",897.1
+2001,"Electricity, Gas, Water and Waste Services",967.7
+2002,"Electricity, Gas, Water and Waste Services",963.4
+2003,"Electricity, Gas, Water and Waste Services",1031.7
+2004,"Electricity, Gas, Water and Waste Services",1062.9
+2005,"Electricity, Gas, Water and Waste Services",1121.7
+2006,"Electricity, Gas, Water and Waste Services",1199
+2007,"Electricity, Gas, Water and Waste Services",1230.1
+2008,"Electricity, Gas, Water and Waste Services",1298.8
+2009,"Electricity, Gas, Water and Waste Services",1385.1
+2010,"Electricity, Gas, Water and Waste Services",1541.8
+2011,"Electricity, Gas, Water and Waste Services",1596.9
+2012,"Electricity, Gas, Water and Waste Services",1665.1
+2013,"Electricity, Gas, Water and Waste Services",1672.2
+2014,"Electricity, Gas, Water and Waste Services",1707.4
+2015,"Electricity, Gas, Water and Waste Services",1745.7
+2016,"Electricity, Gas, Water and Waste Services",1830.7
+2017,"Electricity, Gas, Water and Waste Services",1856.2
+2018,"Electricity, Gas, Water and Waste Services",1868.9
+2019,"Electricity, Gas, Water and Waste Services",1925.8
+2020,"Electricity, Gas, Water and Waste Services",2022.4
+2021,"Electricity, Gas, Water and Waste Services",2076.52
+2000,Construction,738.4
+2001,Construction,751.2
+2002,Construction,802
+2003,Construction,847.3
+2004,Construction,841.9
+2005,Construction,887.1
+2006,Construction,919.7
+2007,Construction,1036.9
+2008,Construction,1079
+2009,Construction,1219.7
+2010,Construction,1218.4
+2011,Construction,1307.2
+2012,Construction,1377.9
+2013,Construction,1458.2
+2014,Construction,1508.2
+2015,Construction,1474.8
+2016,Construction,1439.5
+2017,Construction,1501.8
+2018,Construction,1438.2
+2019,Construction,1489.9
+2020,Construction,1615.091
+2021,Construction,1656.539
+2000,Wholesale Trade,703.5
+2001,Wholesale Trade,749.5
+2002,Wholesale Trade,782.2
+2003,Wholesale Trade,849.2
+2004,Wholesale Trade,892.2
+2005,Wholesale Trade,922.4
+2006,Wholesale Trade,977.4
+2007,Wholesale Trade,1004.2
+2008,Wholesale Trade,1043.3
+2009,Wholesale Trade,1062.4
+2010,Wholesale Trade,1103.5
+2011,Wholesale Trade,1252.4
+2012,Wholesale Trade,1299.2
+2013,Wholesale Trade,1221.4
+2014,Wholesale Trade,1242.8
+2015,Wholesale Trade,1277.7
+2016,Wholesale Trade,1310.1
+2017,Wholesale Trade,1351
+2018,Wholesale Trade,1394.1
+2019,Wholesale Trade,1398.1
+2020,Wholesale Trade,1474.11
+2021,Wholesale Trade,1511.01
+2000,Retail Trade,415.3
+2001,Retail Trade,440.1
+2002,Retail Trade,456.1
+2003,Retail Trade,473.8
+2004,Retail Trade,500.9
+2005,Retail Trade,522.8
+2006,Retail Trade,551.7
+2007,Retail Trade,596.5
+2008,Retail Trade,614.6
+2009,Retail Trade,591.4
+2010,Retail Trade,612
+2011,Retail Trade,624.3
+2012,Retail Trade,647.1
+2013,Retail Trade,672.1
+2014,Retail Trade,669.8
+2015,Retail Trade,703.7
+2016,Retail Trade,687.6
+2017,Retail Trade,723
+2018,Retail Trade,762.7
+2019,Retail Trade,766.7
+2020,Retail Trade,795.6
+2021,Retail Trade,813.88
+2000,Accommodation and Food Services,368.5
+2001,Accommodation and Food Services,371.9
+2002,Accommodation and Food Services,373.9
+2003,Accommodation and Food Services,363.7
+2004,Accommodation and Food Services,372.7
+2005,Accommodation and Food Services,382.1
+2006,Accommodation and Food Services,428.4
+2007,Accommodation and Food Services,434
+2008,Accommodation and Food Services,442.6
+2009,Accommodation and Food Services,464.6
+2010,Accommodation and Food Services,498.9
+2011,Accommodation and Food Services,497.7
+2012,Accommodation and Food Services,530.3
+2013,Accommodation and Food Services,524
+2014,Accommodation and Food Services,513.9
+2015,Accommodation and Food Services,563.2
+2016,Accommodation and Food Services,524.1
+2017,Accommodation and Food Services,561.1
+2018,Accommodation and Food Services,543
+2019,Accommodation and Food Services,549.7
+2020,Accommodation and Food Services,570.8
+2021,Accommodation and Food Services,581.34
+2000,"Transport, Postal and Warehousing",804.7
+2001,"Transport, Postal and Warehousing",827.5
+2002,"Transport, Postal and Warehousing",849
+2003,"Transport, Postal and Warehousing",907.1
+2004,"Transport, Postal and Warehousing",969.2
+2005,"Transport, Postal and Warehousing",999.5
+2006,"Transport, Postal and Warehousing",1015.3
+2007,"Transport, Postal and Warehousing",990
+2008,"Transport, Postal and Warehousing",1070.5
+2009,"Transport, Postal and Warehousing",1088.9
+2010,"Transport, Postal and Warehousing",1185.3
+2011,"Transport, Postal and Warehousing",1219.1
+2012,"Transport, Postal and Warehousing",1317.5
+2013,"Transport, Postal and Warehousing",1365
+2014,"Transport, Postal and Warehousing",1358.6
+2015,"Transport, Postal and Warehousing",1377.6
+2016,"Transport, Postal and Warehousing",1401
+2017,"Transport, Postal and Warehousing",1465.5
+2018,"Transport, Postal and Warehousing",1494.2
+2019,"Transport, Postal and Warehousing",1544.7
+2020,"Transport, Postal and Warehousing",1539.944
+2021,"Transport, Postal and Warehousing",1539.944
+2000,Information Media and Telecommunications,755.5
+2001,Information Media and Telecommunications,812.3
+2002,Information Media and Telecommunications,853
+2003,Information Media and Telecommunications,946.2
+2004,Information Media and Telecommunications,997.6
+2005,Information Media and Telecommunications,1039.7
+2006,Information Media and Telecommunications,1049.9
+2007,Information Media and Telecommunications,1172.7
+2008,Information Media and Telecommunications,1228.8
+2009,Information Media and Telecommunications,1275.4
+2010,Information Media and Telecommunications,1336.5
+2011,Information Media and Telecommunications,1365.2
+2012,Information Media and Telecommunications,1434.9
+2013,Information Media and Telecommunications,1458.7
+2014,Information Media and Telecommunications,1437.1
+2015,Information Media and Telecommunications,1492.4
+2016,Information Media and Telecommunications,1622.2
+2017,Information Media and Telecommunications,1672
+2018,Information Media and Telecommunications,1701.6
+2019,Information Media and Telecommunications,1688.4
+2020,Information Media and Telecommunications,1778.157
+2021,Information Media and Telecommunications,1826.45
+2000,Financial and Insurance Services,805.1
+2001,Financial and Insurance Services,907.8
+2002,Financial and Insurance Services,874.2
+2003,Financial and Insurance Services,976.7
+2004,Financial and Insurance Services,1006
+2005,Financial and Insurance Services,1101
+2006,Financial and Insurance Services,1088.6
+2007,Financial and Insurance Services,1153.6
+2008,Financial and Insurance Services,1210.7
+2009,Financial and Insurance Services,1231.8
+2010,Financial and Insurance Services,1348.8
+2011,Financial and Insurance Services,1374.6
+2012,Financial and Insurance Services,1423.9
+2013,Financial and Insurance Services,1421.9
+2014,Financial and Insurance Services,1483
+2015,Financial and Insurance Services,1612.7
+2016,Financial and Insurance Services,1659.4
+2017,Financial and Insurance Services,1589.5
+2018,Financial and Insurance Services,1666.6
+2019,Financial and Insurance Services,1729.1
+2020,Financial and Insurance Services,1764.073
+2021,Financial and Insurance Services,1809.13
+2000,"Rental, Hiring and Real Estate Services",640.9
+2001,"Rental, Hiring and Real Estate Services",692.7
+2002,"Rental, Hiring and Real Estate Services",697.1
+2003,"Rental, Hiring and Real Estate Services",719.8
+2004,"Rental, Hiring and Real Estate Services",743.5
+2005,"Rental, Hiring and Real Estate Services",833.4
+2006,"Rental, Hiring and Real Estate Services",862.3
+2007,"Rental, Hiring and Real Estate Services",942.1
+2008,"Rental, Hiring and Real Estate Services",1015.1
+2009,"Rental, Hiring and Real Estate Services",1013.2
+2010,"Rental, Hiring and Real Estate Services",1044.4
+2011,"Rental, Hiring and Real Estate Services",998.6
+2012,"Rental, Hiring and Real Estate Services",1074.6
+2013,"Rental, Hiring and Real Estate Services",986.5
+2014,"Rental, Hiring and Real Estate Services",1065.4
+2015,"Rental, Hiring and Real Estate Services",1089.8
+2016,"Rental, Hiring and Real Estate Services",1117.7
+2017,"Rental, Hiring and Real Estate Services",1196.4
+2018,"Rental, Hiring and Real Estate Services",1156.3
+2019,"Rental, Hiring and Real Estate Services",1144.1
+2020,"Rental, Hiring and Real Estate Services",1265.67
+2021,"Rental, Hiring and Real Estate Services",1296.141
+2000,"Professional, Scientific and Technical Services",806.2
+2001,"Professional, Scientific and Technical Services",857.5
+2002,"Professional, Scientific and Technical Services",853.1
+2003,"Professional, Scientific and Technical Services",879.1
+2004,"Professional, Scientific and Technical Services",896.2
+2005,"Professional, Scientific and Technical Services",992.7
+2006,"Professional, Scientific and Technical Services",1031.3
+2007,"Professional, Scientific and Technical Services",1117.2
+2008,"Professional, Scientific and Technical Services",1194.3
+2009,"Professional, Scientific and Technical Services",1243
+2010,"Professional, Scientific and Technical Services",1330.8
+2011,"Professional, Scientific and Technical Services",1353.4
+2012,"Professional, Scientific and Technical Services",1392.7
+2013,"Professional, Scientific and Technical Services",1461.2
+2014,"Professional, Scientific and Technical Services",1568.9
+2015,"Professional, Scientific and Technical Services",1528.9
+2016,"Professional, Scientific and Technical Services",1559.8
+2017,"Professional, Scientific and Technical Services",1597.7
+2018,"Professional, Scientific and Technical Services",1637.2
+2019,"Professional, Scientific and Technical Services",1663.3
+2020,"Professional, Scientific and Technical Services",1748.929
+2021,"Professional, Scientific and Technical Services",1796.114
+2000,Administrative and Support Services,614.6
+2001,Administrative and Support Services,648.7
+2002,Administrative and Support Services,625.7
+2003,Administrative and Support Services,638.5
+2004,Administrative and Support Services,659.9
+2005,Administrative and Support Services,706.7
+2006,Administrative and Support Services,733.3
+2007,Administrative and Support Services,774.2
+2008,Administrative and Support Services,823.6
+2009,Administrative and Support Services,889.9
+2010,Administrative and Support Services,902.4
+2011,Administrative and Support Services,848.3
+2012,Administrative and Support Services,890
+2013,Administrative and Support Services,934.3
+2014,Administrative and Support Services,931.3
+2015,Administrative and Support Services,947.8
+2016,Administrative and Support Services,963.6
+2017,Administrative and Support Services,1016.7
+2018,Administrative and Support Services,1067.4
+2019,Administrative and Support Services,1106.7
+2020,Administrative and Support Services,1105.6
+2021,Administrative and Support Services,1130.38
+2000,Public Administration and Safety,795.1
+2001,Public Administration and Safety,817.5
+2002,Public Administration and Safety,831.9
+2003,Public Administration and Safety,869.3
+2004,Public Administration and Safety,916.4
+2005,Public Administration and Safety,956.4
+2006,Public Administration and Safety,998.7
+2007,Public Administration and Safety,1039.3
+2008,Public Administration and Safety,1091.9
+2009,Public Administration and Safety,1172.1
+2010,Public Administration and Safety,1234.1
+2011,Public Administration and Safety,1269.9
+2012,Public Administration and Safety,1333.1
+2013,Public Administration and Safety,1370.8
+2014,Public Administration and Safety,1355
+2015,Public Administration and Safety,1388.5
+2016,Public Administration and Safety,1422.6
+2017,Public Administration and Safety,1473.1
+2018,Public Administration and Safety,1511.5
+2019,Public Administration and Safety,1513.7
+2020,Public Administration and Safety,1584
+2021,Public Administration and Safety,1623.2
+2000,Education and Training,645.9
+2001,Education and Training,680.7
+2002,Education and Training,698.6
+2003,Education and Training,727
+2004,Education and Training,760
+2005,Education and Training,770.4
+2006,Education and Training,809.5
+2007,Education and Training,820.6
+2008,Education and Training,848.1
+2009,Education and Training,911.2
+2010,Education and Training,954.7
+2011,Education and Training,985.4
+2012,Education and Training,1045.9
+2013,Education and Training,1080.4
+2014,Education and Training,1117.2
+2015,Education and Training,1121.7
+2016,Education and Training,1151.9
+2017,Education and Training,1162.7
+2018,Education and Training,1187.5
+2019,Education and Training,1216
+2020,Education and Training,1243.2
+2021,Education and Training,1271.86
+2000,Health Care and Social Assistance,595.6
+2001,Health Care and Social Assistance,600.9
+2002,Health Care and Social Assistance,626.4
+2003,Health Care and Social Assistance,690.1
+2004,Health Care and Social Assistance,695.4
+2005,Health Care and Social Assistance,706.8
+2006,Health Care and Social Assistance,731.8
+2007,Health Care and Social Assistance,766.4
+2008,Health Care and Social Assistance,789.3
+2009,Health Care and Social Assistance,832.3
+2010,Health Care and Social Assistance,873.4
+2011,Health Care and Social Assistance,898.9
+2012,Health Care and Social Assistance,903
+2013,Health Care and Social Assistance,969.2
+2014,Health Care and Social Assistance,1002.7
+2015,Health Care and Social Assistance,985.2
+2016,Health Care and Social Assistance,1034.6
+2017,Health Care and Social Assistance,1053.1
+2018,Health Care and Social Assistance,1095.5
+2019,Health Care and Social Assistance,1120.4
+2020,Health Care and Social Assistance,1129.8
+2021,Health Care and Social Assistance,1129.8
+2000,Arts and Recreation Services,463.6
+2001,Arts and Recreation Services,516.4
+2002,Arts and Recreation Services,486.1
+2003,Arts and Recreation Services,589.7
+2004,Arts and Recreation Services,597.2
+2005,Arts and Recreation Services,596.1
+2006,Arts and Recreation Services,582.1
+2007,Arts and Recreation Services,601
+2008,Arts and Recreation Services,632.8
+2009,Arts and Recreation Services,649.4
+2010,Arts and Recreation Services,684.6
+2011,Arts and Recreation Services,689
+2012,Arts and Recreation Services,745.3
+2013,Arts and Recreation Services,777.3
+2014,Arts and Recreation Services,710.7
+2015,Arts and Recreation Services,703.8
+2016,Arts and Recreation Services,808.2
+2017,Arts and Recreation Services,827.6
+2018,Arts and Recreation Services,889.5
+2019,Arts and Recreation Services,877.9
+2020,Arts and Recreation Services,876.6
+2021,Arts and Recreation Services,895.93
+2000,Other Services,495.7
+2001,Other Services,500.8
+2002,Other Services,528
+2003,Other Services,542.1
+2004,Other Services,548.1
+2005,Other Services,588.6
+2006,Other Services,671.4
+2007,Other Services,671.7
+2008,Other Services,718.8
+2009,Other Services,754.6
+2010,Other Services,832.9
+2011,Other Services,829.3
+2012,Other Services,878.1
+2013,Other Services,883.5
+2014,Other Services,840.7
+2015,Other Services,891.9
+2016,Other Services,915.6
+2017,Other Services,977.9
+2018,Other Services,976.2
+2019,Other Services,955.5
+2020,Other Services,1021.618
+2021,Other Services,1046.969
