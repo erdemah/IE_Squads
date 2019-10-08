@@ -1,0 +1,12 @@
+,STATE_NAME,abr,avg_salary,category,state
+0,Victoria,M&C,89792,Management and Commerce,VIC
+1,Victoria,IT,107799,Information Technology,VIC
+2,Victoria,S&C,81234,Society and Culture,VIC
+3,Victoria,H,98147,Health,VIC
+4,Victoria,EN,111676,Engineering,VIC
+5,Victoria,A&B,109806,Architecture and Building,VIC
+6,Victoria,ED,94420,Education,VIC
+7,Victoria,F&H,57216,Food and Hospitality,VIC
+8,Victoria,A&E,78571,Agriculture and Environment,VIC
+9,Victoria,CA,78752,Creative Arts,VIC
+10,Victoria,N&P,91128,Natural and Physical Sciences,VIC
