@@ -46,8 +46,8 @@ section::after {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 46px;
-  height: 46px;
+  width: 51px;
+  height: 52px;
   margin-left: -23px;
   border: 2px solid #fff;
   border-radius: 100%;
