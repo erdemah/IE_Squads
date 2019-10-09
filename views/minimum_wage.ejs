@@ -13,34 +13,33 @@
     <link href="css/scroll.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
     <!-- Carousel code-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Activate Bootstrap 4 Carousel via Data Attributes</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>
-        .carousel{
-            background: #eb8034;
-            margin-top: 20px;
-        }
-        .carousel-item{
-            text-align: center;
-            min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-            transition-duration: 10s;
-        }
-        .bs-example{
-            margin: 20px;
-        }
-    </style>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--    <title>Activate Bootstrap 4 Carousel via Data Attributes</title>-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+<!--    <style>-->
+<!--        .carousel{-->
+<!--            background: #eb8034;-->
+<!--            margin-top: 20px;-->
+<!--        }-->
+<!--        .carousel-item{-->
+<!--            text-align: center;-->
+<!--            min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */-->
+<!--            transition-duration: 10s;-->
+<!--        }-->
+<!--        .bs-example{-->
+<!--            margin: 20px;-->
+<!--        }-->
+<!--    </style>-->
     <!-- carousel Code-->
 </head>
 
-<body>
+<body class="gray_style">
 <nav class="navbar navbar-expand-lg navbar-dark bg-sharon static-top">
     <div class="container">
         <a class="navbar-brand-sharon" href="/">
@@ -154,136 +153,163 @@
 <!--</div>-->
 
 <!-- CAROUSEL CODE-->
-<div class="bs-example" id="wrapper_min">
-    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
+<!--<div class="container">-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol id="indicator_carousel" class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
-        <!-- Wrapper for carousel items -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="numbertext">This storyboard provides information for part time employees (1 / 5)</div>
-                <img src="images/minwage/Part&Full time/1.png" alt="First Slide">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <img src="images/minwage/Part&Full time/1.png" alt="First slide">
             </div>
             <div class="carousel-item">
-                <div class="numbertext">This storyboard provides information for part time employees (2 / 5)</div>
-                <img src="images/minwage/Part&Full time/2.png" alt="Second Slide">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <img src="images/minwage/Part&Full time/2.png" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <div class="numbertext">This storyboard provides information for part time employees (3 / 5)</div>
-                <img src="images/minwage/Part&Full time/3.png" alt="Third Slide">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <img src="images/minwage/Part&Full time/3.png" alt="Third slide">
             </div>
             <div class="carousel-item">
-                <div class="numbertext">This storyboard provides information for part time employees (4 / 5)</div>
-                <img src="images/minwage/Part&Full time/4.png" alt="Fourth Slide">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <img src="images/minwage/Part&Full time/4.png" alt="Fourth slide">
             </div>
             <div class="carousel-item">
-                <div class="numbertext">This storyboard provides information for part time employees (5 / 5)</div>
-                <img src="images/minwage/Part&Full time/5.png" alt="Fifth Slide">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <img src="images/minwage/Part&Full time/5.png" alt="Fifth slide">
             </div>
         </div>
-        <!-- Carousel controls -->
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span id="color_prev" class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span id="color_prev" class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
         </a>
     </div>
-</div>
+<!--</div>-->
+<!--<div class="bs-example" id="wrapper_min">-->
+<!--    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">-->
+<!--        &lt;!&ndash; Carousel indicators &ndash;&gt;-->
+<!--        <ol class="carousel-indicators">-->
+<!--            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+<!--            <li data-target="#myCarousel" data-slide-to="1"></li>-->
+<!--            <li data-target="#myCarousel" data-slide-to="2"></li>-->
+<!--        </ol>-->
+<!--        &lt;!&ndash; Wrapper for carousel items &ndash;&gt;-->
+<!--        <div class="carousel-inner">-->
+<!--            <div class="carousel-item active">-->
+<!--                <div class="numbertext">This storyboard provides information for part time employees (1 / 5)</div>-->
+<!--                <img src="images/minwage/Part&Full time/1.png" alt="First Slide">-->
+<!--                <div class="carousel-caption d-none d-md-block">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="carousel-item">-->
+<!--                <div class="numbertext">This storyboard provides information for part time employees (2 / 5)</div>-->
+<!--                <img src="images/minwage/Part&Full time/2.png" alt="Second Slide">-->
+<!--                <div class="carousel-caption d-none d-md-block">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="carousel-item">-->
+<!--                <div class="numbertext">This storyboard provides information for part time employees (3 / 5)</div>-->
+<!--                <img src="images/minwage/Part&Full time/3.png" alt="Third Slide">-->
+<!--                <div class="carousel-caption d-none d-md-block">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="carousel-item">-->
+<!--                <div class="numbertext">This storyboard provides information for part time employees (4 / 5)</div>-->
+<!--                <img src="images/minwage/Part&Full time/4.png" alt="Fourth Slide">-->
+<!--                <div class="carousel-caption d-none d-md-block">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="carousel-item">-->
+<!--                <div class="numbertext">This storyboard provides information for part time employees (5 / 5)</div>-->
+<!--                <img src="images/minwage/Part&Full time/5.png" alt="Fifth Slide">-->
+<!--                <div class="carousel-caption d-none d-md-block">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Carousel controls &ndash;&gt;-->
+<!--        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">-->
+<!--            <span class="carousel-control-prev-icon"></span>-->
+<!--        </a>-->
+<!--        <a class="carousel-control-next" href="#myCarousel" data-slide="next">-->
+<!--            <span class="carousel-control-next-icon"></span>-->
+<!--        </a>-->
+<!--    </div>-->
+<!--</div>-->
 <!-- CAROUSEL CODE END-->
-<div class="container-fluid" id="aboutus">
-    <span id="page2-entitlement">Infographics</span>
-</div>
-<div class="container-fluid">
-    <div id="rectangle"></div>
-</div>
-<div class="row">
-<div class="infographics">
-    <img class="poster" src="images/Wage.png"/>
-    <svg class="bulb" xmlns="http://www.w3.org/2000/svg" xmlns:lucid="lucid"><g transform="translate(-340 -220)" lucid:page-tab-id="0_0"><g filter="url(#a)"><path d="M360 242c0-1.1.9-2 2-2h84c1.1 0 2 .9 2 2v84c0 1.1-.9 2-2 2h-84c-1.1 0-2-.9-2-2z" fill="#fff"/><path d="M394.95 311.14c0 .83.3 1.54.9 2.13.58.6 1.28.9 2.12.9h12.06c.84 0 1.54-.3 2.13-.9.6-.6.9-1.3.9-2.13v-3.02h-18.1zm9.05-57.3c-4.6 0-8.77 1.38-12.48 4.1-3.7 2.73-6.26 6.3-7.64 10.7-1.38 4.4-1.33 8.76.16 13.12 1.5 4.36 4.12 7.87 7.9 10.5v6.82c0 .83.3 1.54.88 2.13.6.6 1.3.9 2.13.9h18.1c.83 0 1.54-.3 2.13-.9.6-.58.88-1.3.88-2.12v-6.82c3.78-2.63 6.4-6.14 7.9-10.5s1.54-8.73.16-13.13c-1.38-4.4-3.93-7.96-7.64-10.68-3.7-2.73-7.87-4.1-12.48-4.1zm8.6 33.48l-2.57 1.8v6.94h-12.06v-6.93l-2.57-1.8c-3.13-2.18-5.14-5.12-6.05-8.82-.9-3.7-.46-7.22 1.3-10.6 1.78-3.36 4.45-5.72 8-7.07 3.57-1.35 7.13-1.35 10.7 0 3.55 1.35 6.22 3.7 8 7.08 1.76 3.38 2.2 6.9 1.3 10.6-.9 3.7-2.92 6.65-6.05 8.82zm0 0" fill="#757575"/></g><defs><filter id="a" filterUnits="objectBoundingBox" x="-.02" y="-.01" width="1.03" height="1.03"><feOffset result="offOut" in="SourceAlpha" dy="1"/><feGaussianBlur result="blurOut" in="offOut" stdDeviation=".75"/><feColorMatrix result="colorOut" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/><feBlend in="SourceGraphic" in2="colorOut"/></filter></defs></g></svg>
-    <svg class="search" xmlns="http://www.w3.org/2000/svg" xmlns:lucid="lucid"><g lucid:page-tab-id="0_0" stroke="#000" stroke-opacity="0"><path d="M125.6 54.04c0-.9.24-2.1.24-3.07 0-17.07-13.92-30.74-31.2-30.74C84.56 20 75.2 24.76 69.44 32.7c-3.6-2.36-7.92-3.57-12.48-3.57-12.96 0-23.52 10.5-23.52 23.3v1.86C24.8 58.9 20 66.33 20 75.47c0 14.4 11.76 25.64 26.88 25.64h66.24c15.12 0 26.88-11.24 26.88-25.64 0-9.63-5.28-17.3-14.4-21.44z" fill="#59b4d9"/><path d="M36.84 87.2c0-9.87 5-17.5 14.34-22.34v-1.93c0-13.66 11.26-24.68 25.02-24.68 4.72 0 9.34 1.2 13.2 3.62 5.96-8.44 16.06-13.75 26.84-13.75-5.77-4.98-13.18-8.12-21.56-8.12-10.1 0-19.44 4.82-25.2 12.7-3.67-2.4-8-3.6-12.52-3.6-13 0-23.5 10.6-23.5 23.3v1.93C24.82 58.9 20 66.3 20 75.48c0 12.22 8.37 22.27 20.1 24.92-2.1-3.86-3.26-8.36-3.26-13.2z" fill="#fff" fill-opacity=".2"/><path d="M102.32 94.38c-2.4 9.38-10.55 15.86-20.15 15.86-1.7 0-3.37-.25-5.07-.7-2.37-.75-4.78-1.7-6.7-3.12-2.15-1.45-3.85-3.36-5.26-5.3-3.16-4.8-4.57-10.56-3.16-16.54 2.4-9.38 10.6-15.86 20.2-15.86 1.65 0 3.35.25 5.02.7 5.27 1.46 9.84 4.57 12.7 9.4 2.92 4.56 3.87 10.3 2.42 15.56" fill="#fff"/><path d="M102.32 94.38c-2.4 9.38-10.55 15.86-20.15 15.86-1.7 0-3.37-.25-5.07-.7-2.37-.75-4.78-1.7-6.7-3.12-2.15-1.45-3.85-3.36-5.26-5.3-3.16-4.8-4.57-10.56-3.16-16.54 2.4-9.38 10.6-15.86 20.2-15.86 1.65 0 3.35.25 5.02.7 5.27 1.46 9.84 4.57 12.7 9.4 2.92 4.56 3.87 10.3 2.42 15.56" fill="#59b4d9" fill-opacity=".1"/><path d="M93.44 72.1c-1.92-1.22-4.07-2.2-6.25-2.65-1.67-.5-3.37-.73-5.04-.73-9.6 0-17.75 6.47-20.15 15.83-1.43 6.02-.25 12 3.12 16.57.48.73 1.2 1.67 1.92 2.4 4.32-13.68 13.9-24.95 26.4-31.42" fill="#59b4d9" fill-opacity=".3"/><path d="M107.6 74.27c-4.08-6.73-10.58-11.54-18.27-13.47-2.4-.48-4.73-.96-7.14-.96-13.72 0-25.5 9.38-28.87 22.52-1.93 7.46-.72 15.16 3.12 21.9L33.92 127c-2.88 2.9-2.88 7.95 0 10.84 1.7 1.44 3.6 2.16 5.54 2.16 1.92 0 3.85-.72 5.53-2.16l22.52-22.77c2.4 1.44 5.05 2.4 7.7 3.13 2.4.48 4.8.96 7.2.96 13.64 0 25.43-9.38 28.8-22.6 1.68-7.7.47-15.64-3.6-22.3zm-5.3 20.12c-2.4 9.37-10.57 15.86-20.1 15.86-1.7 0-3.38-.24-5.06-.72-2.4-.72-4.8-1.68-6.74-3.13-2.16-1.43-3.84-3.35-5.3-5.28-3.1-4.8-4.56-10.58-3.1-16.6 2.4-9.3 10.57-15.78 20.2-15.78 1.67 0 3.36.24 4.96.72 5.3 1.44 9.86 4.57 12.75 9.38 2.9 4.73 3.86 10.26 2.4 15.55z" fill="#3e3e3e"/><path d="M65.36 113.84c-3.12-2.16-5.52-4.56-7.67-7.7-.5-.7-.74-1.17-1.22-1.9l-1.92 2.16-.24.24c.24.48.48.97.96 1.44 2.4 3.35 5.05 6.24 8.4 8.63.24.26.96.5 1.68.74l2.16-2.16c-.96-.72-1.44-.96-2.16-1.44z" fill="#1e1e1e" fill-opacity=".5"/></g></svg>
-</div>
-
-    <div class="infographics">
-        <img class="poster" src="images/Working_hour.png"/>
+<!--iNFOGRAPHICS-->
+<div class="container" id="aboutus">
+    <div class="row">
+        <span id="page2-entitlement">Infographics</span>
+        <div id="rectangle"></div>
+        <div class="infographics">
+            <img class="poster" src="images/Wage.png"/>
+            <svg class="bulb" xmlns="http://www.w3.org/2000/svg" xmlns:lucid="lucid"><g transform="translate(-340 -220)" lucid:page-tab-id="0_0"><g filter="url(#a)"><path d="M360 242c0-1.1.9-2 2-2h84c1.1 0 2 .9 2 2v84c0 1.1-.9 2-2 2h-84c-1.1 0-2-.9-2-2z" fill="#fff"/><path d="M394.95 311.14c0 .83.3 1.54.9 2.13.58.6 1.28.9 2.12.9h12.06c.84 0 1.54-.3 2.13-.9.6-.6.9-1.3.9-2.13v-3.02h-18.1zm9.05-57.3c-4.6 0-8.77 1.38-12.48 4.1-3.7 2.73-6.26 6.3-7.64 10.7-1.38 4.4-1.33 8.76.16 13.12 1.5 4.36 4.12 7.87 7.9 10.5v6.82c0 .83.3 1.54.88 2.13.6.6 1.3.9 2.13.9h18.1c.83 0 1.54-.3 2.13-.9.6-.58.88-1.3.88-2.12v-6.82c3.78-2.63 6.4-6.14 7.9-10.5s1.54-8.73.16-13.13c-1.38-4.4-3.93-7.96-7.64-10.68-3.7-2.73-7.87-4.1-12.48-4.1zm8.6 33.48l-2.57 1.8v6.94h-12.06v-6.93l-2.57-1.8c-3.13-2.18-5.14-5.12-6.05-8.82-.9-3.7-.46-7.22 1.3-10.6 1.78-3.36 4.45-5.72 8-7.07 3.57-1.35 7.13-1.35 10.7 0 3.55 1.35 6.22 3.7 8 7.08 1.76 3.38 2.2 6.9 1.3 10.6-.9 3.7-2.92 6.65-6.05 8.82zm0 0" fill="#757575"/></g><defs><filter id="a" filterUnits="objectBoundingBox" x="-.02" y="-.01" width="1.03" height="1.03"><feOffset result="offOut" in="SourceAlpha" dy="1"/><feGaussianBlur result="blurOut" in="offOut" stdDeviation=".75"/><feColorMatrix result="colorOut" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/><feBlend in="SourceGraphic" in2="colorOut"/></filter></defs></g></svg>
+            <svg class="search" xmlns="http://www.w3.org/2000/svg" xmlns:lucid="lucid"><g lucid:page-tab-id="0_0" stroke="#000" stroke-opacity="0"><path d="M125.6 54.04c0-.9.24-2.1.24-3.07 0-17.07-13.92-30.74-31.2-30.74C84.56 20 75.2 24.76 69.44 32.7c-3.6-2.36-7.92-3.57-12.48-3.57-12.96 0-23.52 10.5-23.52 23.3v1.86C24.8 58.9 20 66.33 20 75.47c0 14.4 11.76 25.64 26.88 25.64h66.24c15.12 0 26.88-11.24 26.88-25.64 0-9.63-5.28-17.3-14.4-21.44z" fill="#59b4d9"/><path d="M36.84 87.2c0-9.87 5-17.5 14.34-22.34v-1.93c0-13.66 11.26-24.68 25.02-24.68 4.72 0 9.34 1.2 13.2 3.62 5.96-8.44 16.06-13.75 26.84-13.75-5.77-4.98-13.18-8.12-21.56-8.12-10.1 0-19.44 4.82-25.2 12.7-3.67-2.4-8-3.6-12.52-3.6-13 0-23.5 10.6-23.5 23.3v1.93C24.82 58.9 20 66.3 20 75.48c0 12.22 8.37 22.27 20.1 24.92-2.1-3.86-3.26-8.36-3.26-13.2z" fill="#fff" fill-opacity=".2"/><path d="M102.32 94.38c-2.4 9.38-10.55 15.86-20.15 15.86-1.7 0-3.37-.25-5.07-.7-2.37-.75-4.78-1.7-6.7-3.12-2.15-1.45-3.85-3.36-5.26-5.3-3.16-4.8-4.57-10.56-3.16-16.54 2.4-9.38 10.6-15.86 20.2-15.86 1.65 0 3.35.25 5.02.7 5.27 1.46 9.84 4.57 12.7 9.4 2.92 4.56 3.87 10.3 2.42 15.56" fill="#fff"/><path d="M102.32 94.38c-2.4 9.38-10.55 15.86-20.15 15.86-1.7 0-3.37-.25-5.07-.7-2.37-.75-4.78-1.7-6.7-3.12-2.15-1.45-3.85-3.36-5.26-5.3-3.16-4.8-4.57-10.56-3.16-16.54 2.4-9.38 10.6-15.86 20.2-15.86 1.65 0 3.35.25 5.02.7 5.27 1.46 9.84 4.57 12.7 9.4 2.92 4.56 3.87 10.3 2.42 15.56" fill="#59b4d9" fill-opacity=".1"/><path d="M93.44 72.1c-1.92-1.22-4.07-2.2-6.25-2.65-1.67-.5-3.37-.73-5.04-.73-9.6 0-17.75 6.47-20.15 15.83-1.43 6.02-.25 12 3.12 16.57.48.73 1.2 1.67 1.92 2.4 4.32-13.68 13.9-24.95 26.4-31.42" fill="#59b4d9" fill-opacity=".3"/><path d="M107.6 74.27c-4.08-6.73-10.58-11.54-18.27-13.47-2.4-.48-4.73-.96-7.14-.96-13.72 0-25.5 9.38-28.87 22.52-1.93 7.46-.72 15.16 3.12 21.9L33.92 127c-2.88 2.9-2.88 7.95 0 10.84 1.7 1.44 3.6 2.16 5.54 2.16 1.92 0 3.85-.72 5.53-2.16l22.52-22.77c2.4 1.44 5.05 2.4 7.7 3.13 2.4.48 4.8.96 7.2.96 13.64 0 25.43-9.38 28.8-22.6 1.68-7.7.47-15.64-3.6-22.3zm-5.3 20.12c-2.4 9.37-10.57 15.86-20.1 15.86-1.7 0-3.38-.24-5.06-.72-2.4-.72-4.8-1.68-6.74-3.13-2.16-1.43-3.84-3.35-5.3-5.28-3.1-4.8-4.56-10.58-3.1-16.6 2.4-9.3 10.57-15.78 20.2-15.78 1.67 0 3.36.24 4.96.72 5.3 1.44 9.86 4.57 12.75 9.38 2.9 4.73 3.86 10.26 2.4 15.55z" fill="#3e3e3e"/><path d="M65.36 113.84c-3.12-2.16-5.52-4.56-7.67-7.7-.5-.7-.74-1.17-1.22-1.9l-1.92 2.16-.24.24c.24.48.48.97.96 1.44 2.4 3.35 5.05 6.24 8.4 8.63.24.26.96.5 1.68.74l2.16-2.16c-.96-.72-1.44-.96-2.16-1.44z" fill="#1e1e1e" fill-opacity=".5"/></g></svg>
+        </div>
+        <div class="infographics">
+            <img class="poster" src="images/Working_hour.png"/>
+        </div>
     </div>
 </div>
 <!-- Links start here-->
-<div class="container-fluid" id="aboutus">
+<div class="container" id="aboutus">
     <span id="page2-entitlement">Government Links and Helplines</span>
-</div>
-<div class="container-fluid">
     <div id="rectangle"></div>
-</div>
-
-<div class="w3-container">
     <h2 id="min_wage">Minimum Wage</h2>
     <p id="text1">Certain employees may have different pay entitlements depending on whether they have a reduced work capacity because of disability, if they're under the age of 21 or if they are an apprentice or trainee.
-        For more information about pay for these employees, visit:</p>
+            For more information about pay for these employees, visit:</p>
     <a href="https://www.fairwork.gov.au/pay/minimum-wages/employees-with-disability-pay-rates" id="link1">Employees with disability pay rates</a>
     <br>
     <a href="https://www.fairwork.gov.au/pay/minimum-wages/junior-pay-rates" id="link2">Junior Pay rates</a> <br>
     <a href="https://www.fairwork.gov.au/pay/minimum-wages/apprentice-and-trainee-pay-rates" id="link3">Apprentice and trainee pay rates</a> <br>
     <p id="text2">If you have questions about how much tax comes out of a pay rate, please contact the <a href="https://www.ato.gov.au/" id="link4">Australian Taxation Office</a> </p>
     <hr>
+    <article>
+        <h2 id="head1">Working Hours Information</h2>
+        <p id="text3">Most student visas allow you to work for up to 40 hours every two weeks while your course is in session,
+            and unrestricted hours during any scheduled course break,
+            but before you undertake any paid work you need to make sure your visa allows you to work.</p> <br>
+        <p id="text4">Find out more information at the  <a href="https://www.homeaffairs.gov.au/" id="link5" >Department of Home Affairs website.</a> </p> <br>
+        <hr>
+    </article>
+    <article>
+        <h2 id="pay">Pay Slips and Record-Keeping</h2>
+        <p>In any business, large or small, record-keeping is vital to success.
+            Record-keeping and pay slip obligations ensure employees receive correct wages and entitlements.</p>
+        Check out the <a href="https://www.fairwork.gov.au/Pay/pay-slips-and-record-keeping/pay-slips">Pay Slips page</a> to learn what has to be included on pay slips and find our pay slip template. <br> <br> <br>
+        <h3>Income Statements</h3>
+        <p> There have been changes to the way some employers need to report payroll information to the Australian Taxation Office (ATO).
+            This includes payments such as:</p>
+        <li>salaries and wages</li>
+        <li>pay as you go (PAYG) withholding</li>
+        <li>superannuation information.</li>
+        <p>This reporting change is called Single Touch Payroll (STP).</p> <br>
+        <p> If an employer reports using STP, they don't have to give employees an end-of-year payment summary.
+            An employee’s end-of-year payment summary - now called an income statement - will be available through their myGov account. <br>
+            Go to the ATO’s website to learn more about <a href="https://www.ato.gov.au/Business/Single-Touch-Payroll/">Single Touch Payroll</a> </p>
+        <hr>
+    </article>
+    <section>
+        <h2>Tax & Superannuation</h2>
+        <p>For questions about your tax contact the ATO on <u>13 28 61</u> or <a href="https://www.ato.gov.au/">Visit Their Website</a></p>
+        <h4>Superannuation Guarantee</h4>
+        <p>Under the superannuation guarantee,
+            employers have to pay superannuation contributions of 9.5%  of an employee's ordinary time earnings if:</p>
+        <p>when an employee is paid $450 or more before tax in a month and is:</p>
+        <li>over 18 years, or</li>
+        <li>under 18 years and works over 30 hours a week.</li>
+        <p>This applies to full-time and part-time employees and some casual employees, and includes temporary residents.</p>
+        <p>Superannuation has to be paid at least every 3 months, into the employee's nominated account.</p>
+        <p>For more information about the superannuation guarantee, visit the <a href="https://www.ato.gov.au/Super/">ATO Website</a> or contact the ATO on <u>13 10 20</u>.</p>
+
+        <hr>
+    </section>
 </div>
 
-<article class="w3-container">
-    <h2 id="head1">Working Hours Information</h2>
-    <p id="text3">Most student visas allow you to work for up to 40 hours every two weeks while your course is in session,
-        and unrestricted hours during any scheduled course break,
-        but before you undertake any paid work you need to make sure your visa allows you to work.</p> <br>
-    <p id="text4">Find out more information at the  <a href="https://www.homeaffairs.gov.au/" id="link5" >Department of Home Affairs website.</a> </p> <br>
-    <hr>
-</article>
-
-<article class="w3-container">
-    <h2 id="pay">Pay Slips and Record-Keeping</h2>
-    <p>In any business, large or small, record-keeping is vital to success.
-        Record-keeping and pay slip obligations ensure employees receive correct wages and entitlements.</p>
-    Check out the <a href="https://www.fairwork.gov.au/Pay/pay-slips-and-record-keeping/pay-slips">Pay Slips page</a> to learn what has to be included on pay slips and find our pay slip template. <br> <br> <br>
-    <h3>Income Statements</h3>
-    <p> There have been changes to the way some employers need to report payroll information to the Australian Taxation Office (ATO).
-        This includes payments such as:</p>
-    <li>salaries and wages</li>
-    <li>pay as you go (PAYG) withholding</li>
-    <li>superannuation information.</li>
-    <p>This reporting change is called Single Touch Payroll (STP).</p> <br>
-    <p> If an employer reports using STP, they don't have to give employees an end-of-year payment summary.
-        An employee’s end-of-year payment summary - now called an income statement - will be available through their myGov account. <br>
-        Go to the ATO’s website to learn more about <a href="https://www.ato.gov.au/Business/Single-Touch-Payroll/">Single Touch Payroll</a> </p>
-    <hr>
-</article>
-
-<section class="w3-container">
-    <h2>Tax & Superannuation</h2>
-    <p>For questions about your tax contact the ATO on <u>13 28 61</u> or <a href="https://www.ato.gov.au/">Visit Their Website</a></p>
-    <h4>Superannuation Guarantee</h4>
-    <p>Under the superannuation guarantee,
-        employers have to pay superannuation contributions of 9.5%  of an employee's ordinary time earnings if:</p>
-    <p>when an employee is paid $450 or more before tax in a month and is:</p>
-    <li>over 18 years, or</li>
-    <li>under 18 years and works over 30 hours a week.</li>
-    <p>This applies to full-time and part-time employees and some casual employees, and includes temporary residents.</p>
-    <p>Superannuation has to be paid at least every 3 months, into the employee's nominated account.</p>
-    <p>For more information about the superannuation guarantee, visit the <a href="https://www.ato.gov.au/Super/">ATO Website</a> or contact the ATO on <u>13 10 20</u>.</p>
-
-    <hr>
-</section>
 
 <!--    FOOTER CODE-->
 <footer>

@@ -9,6 +9,111 @@
     padding-top: 20px;
     white-space: normal;
 }
+.carousel{
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+}
+/*.carousel-inner{*/
+/*    text-align: center;*/
+/*}*/
+#carouselExampleIndicators{
+    text-align: center;
+}
+.carousel-inner > .carousel-item > img {
+    width: 100%;
+    height: 100%;
+    /*margin: 50px 50px 100px 500px;*/
+    /*text-align: center;*/
+}
+.carousel-item{
+    /*margin:auto;*/
+}
+.gray_style{
+    background-color: #f0f0f0;
+}
+.carousel-inner{
+    margin: -60px 50px 50px 400px;
+}
+.carousel-control-prev{
+    width:35%;
+    height:35%;
+    bottom:100px;
+}
+.carousel-control-next{
+    width:35%;
+    height:35%;
+}
+/*.carousel-indicators{*/
+/*    width: auto;*/
+/*    overflow: hidden;*/
+/*}*/
+a.carousel-control-next{
+    right: 75px;
+    top: 150px;
+}
+a.carousel-control-prev{
+    left: 75px;
+    top: 150px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+    content: '>';
+    font-size: 55px;
+    color: #eb8034;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: #eb8034;
+}
+
+.carousel-indicators{
+    position:relative;
+    top:585px;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #eb8034;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators .active {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: #ff9e59;
+}
+/*.carousel-item img {*/
+/*    margin: auto;*/
+/*}*/
+/*.carousel_center{*/
+/*    text-align: center;*/
+/*    !*width:auto;*!*/
+/*    overflow: hidden;*/
+/*}*/
+.carousel-inner {
+    width:45%;
+    height:45%;
+}
 
 #info-pay{
     background-color: #F0F8FF;
@@ -32,16 +137,16 @@ ul.b {
     font-size: 1.5em;
     font-family: 'Architects Daughter', cursive;
 }
-.img {
-    position: relative;
-    float: left;
-    width:  380px;
-    height: 300px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-    margin:0 auto;
-}
+/*.img {*/
+/*    position: relative;*/
+/*    float: left;*/
+/*    width:  380px;*/
+/*    height: 300px;*/
+/*    background-position: 50% 50%;*/
+/*    background-repeat:   no-repeat;*/
+/*    background-size:     cover;*/
+/*    margin:0 auto;*/
+/*}*/
 .w3-container {
     padding-left: 25px;
     padding-right: 25px;
