@@ -66,4 +66,12 @@ router.get('/industrial_action', function(req, res, next) {
     res.render('industrial_action', { title: 'Industrial Action Page' });
 });
 
+router.get('/redundancy', function(req, res, next) {
+  res.render('redundancy', { title: 'redundancy Page' });
+});
+
+router.get('/resignation', function(req, res, next) {
+  res.render('resignation', { title: 'resignation Page' });
+});
+
 module.exports = router;
