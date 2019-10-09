@@ -45,4 +45,17 @@ router.get('/annual_bonus', function(req, res, next) {
 router.get('/sick_leave', function(req, res, next) {
   res.render('sick_leave', { title: 'Sick leave entitlement information' });
 });
+
+router.get('/infographics_epic1', function(req, res, next) {
+  res.render('infographics_epic1', { title: 'Infographics' });
+});
+
+router.get('/infographic_epic2', function(req, res, next) {
+  res.render('infographic_epic2', { title: 'Infographics' });
+});
+
+router.get('/infographic_epic3', function(req, res, next) {
+  res.render('infographic_epic3', { title: 'Infographics' });
+});
+
 module.exports = router;
