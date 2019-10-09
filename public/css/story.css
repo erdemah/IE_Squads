@@ -106,31 +106,92 @@ p {
 .vic_rect_legend{
     
 }
+.qld_rect_legend{
+    
+}
+.nsw_rect_legend{
+    
+}
 .vic_rect_legend_treemap{
+    
+}
+.qld_rect_legend_treemap{
     
 }
 .leg{
     fill: rgba(255,255,255,0.95);
 }
+.text_in_tree_vic{
+    font-family: 'Architects Daughter', cursive;
+/*    font-size: .90em;*/
+}
+.text_in_tree_qld{
+    font-family: 'Architects Daughter', cursive;
+/*    font-size: .90em;*/
+}
+.text_in_tree_nsw{
+    font-family: 'Architects Daughter', cursive;
+/*    font-size: .90em;*/
+}
+.text_in_tree_vic2{
+    font-family: 'Architects Daughter', cursive;
+    font-size: .50em;
+}
+.text_in_tree_qld2{
+    font-family: 'Architects Daughter', cursive;
+    font-size: .50em;
+}
+.text_in_tree_nsw2{
+    font-family: 'Architects Daughter', cursive;
+    font-size: .50em;
+}
 .leg_vic{
     fill: rgba(255,255,255,0.95);
 }
+.leg_qld{
+    fill: rgba(255,255,255,0.95);
+}
+.leg_nsw{
+    fill: rgba(255,255,255,0.95);
+}
 .leg_treemap_vic{
-/*
-    font-family: 'Architects Daughter', cursive;
-    font-size: .90em;
-*/
+    fill: rgba(255,255,255,0.95);
+}
+.leg_treemap_qld{
+    fill: rgba(255,255,255,0.95);
+}
+.leg_treemap_nsw{
     fill: rgba(255,255,255,0.95);
 }
 .leg_vic_text{
     font-family: 'Architects Daughter', cursive;
     font-size: .90em;
 }
+.leg_qld_text{
+    font-family: 'Architects Daughter', cursive;
+    font-size: .90em;
+}
+.leg_nsw_text{
+    font-family: 'Architects Daughter', cursive;
+    font-size: .90em;
+}
 #vic_categ{
+    text-align: center;
+}
+#qld_categ{
+    text-align: center;
+}
+#nsw_categ{
     text-align: center;
 }
 
 #vic_job_post{
+    text-align: center;
+}
+#qld_job_post{
+    text-align: center;
+}
+#nsw_job_post{
     text-align: center;
 }
 .tooltip {
