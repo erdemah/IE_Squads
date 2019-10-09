@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="Garry" content="">
+    <title>Minimum Wage Page</title>
+
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/working_hour.css" rel="stylesheet">
+    <link href="css/scroll.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-sharon static-top">
+    <div class="container">
+        <a class="navbar-brand-sharon" href="/">
+            <div class = "logo-image">
+                <img src="images/logo.png" class="img-fluid">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">
+                        <span class="oi oi-home" title="home" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-employee" href="#entitlement">Employee Entitlement
+                        <span id="nav-separator">|</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au();delete_motive_cn();">
+                        <span class="flag-icon flag-icon-au"> </span>
+                        <span id="nav-separator">English</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn();delete_motive_au();">
+                        <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
+                        <span id="nav-separator">中文</span>
+                        <span id="nav-separator">|</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- TILES CODE-->
+<div class="pagina">
+    <div class="linha">
+        <div class="tile epic1" onclick="location.href='superannuation'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Super and Tax</span>
+        </div>
+        <div class="tile epic1" onclick="location.href='minimum_wage'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Minimum Wage</span>
+        </div>
+        <div class="tile epic1"  onclick="location.href='working_hour'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Working Hours</span>
+        </div>
+        <div class="tile epic1"  onclick="location.href='annual_bonus'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Annual Bonus</span>
+        </div>
+        <div class="tile epic2"  onclick="location.href='annual_leave'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Annual Leave</span>
+        </div>
+        <div class="tile epic1"  onclick="location.href='pay_raise_visu'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Pay Raise</span>
+        </div>
+        <div class="tile epic2"  onclick="location.href='pay_rate_level'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Pay Level</span>
+        </div>
+        <div class="tile epic1"  onclick="location.href='pay_slip'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Pay Slips</span>
+        </div>
+        <div class="tile epic2"  onclick="location.href='sick_leave'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Sick Leave</span>
+        </div>
+    </div>
+</div>
+<!-- TILES CODE END-->
+
+<!-- Infographic code-->
+<div class="container-fluid" id="aboutus">
+    <span id="page2-entitlement">Infographics</span>
+</div>
+<div class="container-fluid">
+    <div id="rectangle"></div>
+</div>
+<div class="row">
+<div class="infographics">
+    <img class="poster" src="images/Infographic/workplace_eng.png"/>
+</div>
+
+    <div class="infographics">
+        <img class="poster" src="images/Infographic/workplace_cn.png"/>
+    </div>
+</div>
+<!-- Infographic code end-->
+
+<!-- FOOTER CODE-->
+
+<footer>
+    <div class="container">
+        <div class="content-footer row">
+            <div class="column-footer col-lg-6 col-md-6 col-sm-6">
+                <h3><span id="quick-link">Quick Links</span></h3>
+                <ul id="restaurant-hours">
+                    <li>
+                        <a href="pay_raise_visu"><span id="pay-raise-2">Pay Raise</span></a>
+                    </li>
+                    <li>
+                        <a href="working_hour"> <span id="working-hours-2">Working Hours</span></a>
+                    </li>
+                    <li>
+                        <a href="superannuation"><span id="super-ann">Superannuation</span></a>
+                    </li>
+                    <li>
+                        <a href="sick_leave"><span id="sick-leave-ent">Sick Leave Entitlements</span></a>
+                    <li>
+                        <a href="annual_bonus"><span id="annual-bonus-2">Annual Bonus</span></a>
+                    </li>
+                </ul>
+                <div class="line-divide first-line"></div>
+            </div>
+
+            <div class="column-footer col-lg-3 col-md-3 col-sm-7">
+                <h3><span id="other-links">Other Useful Links</span></h3>
+                <ul id="useful-links">
+                    <li>
+                        <a href="minimum_wage"><span id="min-wage-3">Minimum Wage</span></a>
+                    </li>
+                    <li>
+                        <a href="pay_rate_level"><span id="view-pay-rate-3">View Your Pay Rate Level</span></a>
+                    </li>
+                    <li>
+                        <a href="pay_slip"><span id="pay-slip-3">Pay Slip</span></a>
+                    </li>
+                    <li>
+                        <a href="annual_leave"><span id="annual-leave-3">Annual Leave Entitlements</span></a>
+                    </li>
+                </ul>
+                <div class="line-divide second-line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-bottom-footer">
+        <div class="container">
+            <div class="bottom-footer row justify-content-between">
+                <div class="col-12 col-sm-7">© <span id="copy-right">2019 KnowYourRights. All rights reserved.</span></div>
+                <div class="col-12 col-sm-5"><span id="privacy-pol">Privacy Policy</span>
+                    <span id="terms-of-use">Terms of use</span></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER CODE END-->
+
+<%include back_top.ejs%>
+
+<script src="vendor/jquery/jquery.slim.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    var dataReload = document.querySelectorAll("[data-reload]");
+
+    //Language translations
+    var language = {
+        au:{
+            welcome: "Welcome to KnowYourRights",
+            home: "Home",
+            minwage: "Minimum Wage"
+        },
+        cn:{
+            welcome: "欢迎来到KnowYourRights",
+            home: "主页",
+            minwage: "最低工资"
+        }
+    };
+
+    function translate_cn() {
+        document.getElementById("homenav").textContent = "主页";
+        document.getElementById("nav-link-employee").textContent = "员工权利";
+        document.getElementById("page2-entitlement").textContent = "信息图表";
+        document.getElementById("quick-link").textContent = "快速链接";
+        document.getElementById("working-hours-2").textContent = "工作时间";
+        document.getElementById("super-ann").textContent = "退休金";
+        document.getElementById("sick-leave-ent").textContent = "病假权利";
+        document.getElementById("annual-bonus-2").textContent = "年度奖金";
+        document.getElementById("pay-raise-2").textContent = "加薪";
+        document.getElementById("other-links").textContent = "其他有用的链接";
+        document.getElementById("min-wage-3").textContent = "最低工资";
+        document.getElementById("view-pay-rate-3").textContent = "查看您的工资水平";
+        document.getElementById("pay-slip-3").textContent = "工资单";
+        document.getElementById("annual-leave-3").textContent = "年假权利";
+        document.getElementById("copy-right").textContent = "2019年KnowYourRights。版权所有。";
+        document.getElementById("privacy-pol").textContent = "隐私政策";
+        document.getElementById("terms-of-use").textContent = "使用条款";
+
+
+    }
+    function translate_au() {
+        document.getElementById("homenav").textContent = "Home";
+        document.getElementById("nav-link-employee").textContent = "Employee Entitlement";
+        document.getElementById("page2-entitlement").textContent = "Infographics";
+        document.getElementById("quick-link").textContent = "Quick Links";
+        document.getElementById("working-hours-2").textContent = "Working Hours";
+        document.getElementById("super-ann").textContent = "Superannuation";
+        document.getElementById("sick-leave-ent").textContent = "Sick Leave Entitlements";
+        document.getElementById("annual-bonus-2").textContent = "Annual Bonus";
+        document.getElementById("pay-raise-2").textContent = "Pay Raise";
+        document.getElementById("other-links").textContent = "Other Useful Links";
+        document.getElementById("min-wage-3").textContent = "Minimum Wage";
+        document.getElementById("view-pay-rate-3").textContent = "View Your Pay Rate Level";
+        document.getElementById("pay-slip-3").textContent = "Pay Slip";
+        document.getElementById("annual-leave-3").textContent = "Annual Leave Entitlements";
+        document.getElementById("copy-right").textContent = "2019 KnowYourRights. All rights reserved.";
+        document.getElementById("privacy-pol").textContent = "Privacy Policy";
+        document.getElementById("terms-of-use").textContent = "Terms of Use";
+    }
+</script>
+</body>
+</html>
