@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://raw.githack.com/jamesleesaunders/d3-ez/master/dist/d3-ez.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/jamesleesaunders/d3.ez/master/dist/d3-ez.css" />
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/working_hour.css" rel="stylesheet">
+    <link href="css/scroll.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+    <link href="css/scroll.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-sharon static-top">
+    <div class="container">
+        <a class="navbar-brand-sharon" href="/">
+            <div class = "logo-image">
+                <img src="images/logo.png" class="img-fluid">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">
+                        <span class="oi oi-home" title="home" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-employee" href="#entitlement">Employee Entitlement
+                        <span id="nav-separator">|</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au()"><span class="flag-icon flag-icon-au"></span>
+                        <span id="nav-separator">English</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn()">
+                        <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
+                        <span id="nav-separator">中文</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="pagina">
+    <div class="linha">
+        <div class="tile epic1" onclick="location.href='superannuation'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Super and Tax</span>
+        </div>
+        <div class="tile epic1" onclick="location.href='minimum_wage'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Minimum Wage</span>
+        </div>
+        <div class="tile epic1"  onclick="location.href='working_hour'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Working Hours</span>
+        </div>
+        <div class="tile epic1"  onclick="location.href='annual_bonus'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Annual Bonus</span>
+        </div>
+        <div class="tile epic2"  onclick="location.href='annual_leave'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Annual Leave</span>
+        </div>
+        <div class="tile epic1"  onclick="location.href='pay_raise_visu'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Pay Raise</span>
+        </div>
+        <div class="tile epic2"  onclick="location.href='pay_rate_level'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Pay Level</span>
+        </div>
+        <div class="tile epic1"  onclick="location.href='pay_slip'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Pay Slips</span>
+        </div>
+        <div class="tile epic2"  onclick="location.href='sick_leave'" style="cursor: pointer">
+            <span class="titulo" style="align-content: center">Sick Leave</span>
+        </div>
+    </div>
+</div>
+
+
+<h1>How many people encountered fatalities in Australia in recent years(2013-2017)?</h1>
+<div id="chartholder", style="text-align:center;"></div>
+<br/>
+<div style="text-align:center;">Value: <span id="message"></span></div>
+
+<script type="text/javascript">
+    // Generate some data
+    function randomDataset() {
+        var _randomNum = function() {
+            return Math.floor(Math.random() * 10);
+        };
+        var data = [
+            {
+                "key": "New South Wales",
+                "values": [
+                    {
+                        "key": "Agriculture, forestry & fishing",
+                        "value": 65.0
+                    },
+                    {
+                        "key": "Transport, postal & warehousing",
+                        "value": 71.0
+                    },
+                    {
+                        "key": "Construction",
+                        "value": 52.0
+                    },
+                    {
+                        "key": "Manufacturing",
+                        "value": 23.0
+                    },
+                    {
+                        "key": "Mining",
+                        "value": 8.0
+                    },
+                    {
+                        "key": "Arts & recreation services",
+                        "value": 9.0
+                    },
+                    {
+                        "key": "Public administration & safety",
+                        "value": 7.0
+                    },
+                    {
+                        "key": "Administrative & support services",
+                        "value": 4.0
+                    },
+                    {
+                        "key": "Other services",
+                        "value": 5.0
+                    },
+                    {
+                        "key": "Electricity, gas, water & waste services",
+                        "value": 5.0
+                    },
+                    {
+                        "key": "Other industries",
+                        "value": 41.0
+                    }
+                ]
+            },
+            {
+                "key": "Queensland",
+                "values": [
+                    {
+                        "key": "Agriculture, forestry & fishing",
+                        "value": 68.0
+                    },
+                    {
+                        "key": "Transport, postal & warehousing",
+                        "value": 54.0
+                    },
+                    {
+                        "key": "Construction",
+                        "value": 37.0
+                    },
+                    {
+                        "key": "Manufacturing",
+                        "value": 13.0
+                    },
+                    {
+                        "key": "Mining",
+                        "value": 10.0
+                    },
+                    {
+                        "key": "Arts & recreation services",
+                        "value": 14.0
+                    },
+                    {
+                        "key": "Public administration & safety",
+                        "value": 9.0
+                    },
+                    {
+                        "key": "Administrative & support services",
+                        "value": 8.0
+                    },
+                    {
+                        "key": "Other services",
+                        "value": 7.0
+                    },
+                    {
+                        "key": "Electricity, gas, water & waste services",
+                        "value": 4.0
+                    },
+                    {
+                        "key": "Other industries",
+                        "value": 21.0
+                    }
+                ]
+            },
+            {
+                "key": "Victoria",
+                "values": [
+                    {
+                        "key": "Agriculture, forestry & fishing",
+                        "value": 64.0
+                    },
+                    {
+                        "key": "Transport, postal & warehousing",
+                        "value": 39.0
+                    },
+                    {
+                        "key": "Construction",
+                        "value": 29.0
+                    },
+                    {
+                        "key": "Manufacturing",
+                        "value": 3.0
+                    },
+                    {
+                        "key": "Mining",
+                        "value": 1.0
+                    },
+                    {
+                        "key": "Arts & recreation services",
+                        "value": 6.0
+                    },
+                    {
+                        "key": "Public administration & safety",
+                        "value": 5.0
+                    },
+                    {
+                        "key": "Administrative & support services",
+                        "value": 6.0
+                    },
+                    {
+                        "key": "Other services",
+                        "value": 3.0
+                    },
+                    {
+                        "key": "Electricity, gas, water & waste services",
+                        "value": 8.0
+                    },
+                    {
+                        "key": "Other industries",
+                        "value": 21.0
+                    }
+                ]
+            },
+            {
+                "key": "Western Australia",
+                "values": [
+                    {
+                        "key": "Agriculture, forestry & fishing",
+                        "value": 25.0
+                    },
+                    {
+                        "key": "Transport, postal & warehousing",
+                        "value": 35.0
+                    },
+                    {
+                        "key": "Construction",
+                        "value": 21.0
+                    },
+                    {
+                        "key": "Manufacturing",
+                        "value": 15.0
+                    },
+                    {
+                        "key": "Mining",
+                        "value": 14.0
+                    },
+                    {
+                        "key": "Arts & recreation services",
+                        "value": 4.0
+                    },
+                    {
+                        "key": "Public administration & safety",
+                        "value": 4.0
+                    },
+                    {
+                        "key": "Administrative & support services",
+                        "value": 5.0
+                    },
+                    {
+                        "key": "Other services",
+                        "value": 6.0
+                    },
+                    {
+                        "key": "Electricity, gas, water & waste services",
+                        "value": 5.0
+                    },
+                    {
+                        "key": "Other industries",
+                        "value": 6.0
+                    }
+                ]
+            },
+            {
+                "key": "South Australia",
+                "values": [
+                    {
+                        "key": "Agriculture, forestry & fishing",
+                        "value": 19.0
+                    },
+                    {
+                        "key": "Transport, postal & warehousing",
+                        "value": 22.0
+                    },
+                    {
+                        "key": "Construction",
+                        "value": 9.0
+                    },
+                    {
+                        "key": "Manufacturing",
+                        "value": 0.0
+                    },
+                    {
+                        "key": "Mining",
+                        "value": 2.0
+                    },
+                    {
+                        "key": "Arts & recreation services",
+                        "value": 2.0
+                    },
+                    {
+                        "key": "Public administration & safety",
+                        "value": 4.0
+                    },
+                    {
+                        "key": "Administrative & support services",
+                        "value": 4.0
+                    },
+                    {
+                        "key": "Other services",
+                        "value": 3.0
+                    },
+                    {
+                        "key": "Electricity, gas, water & waste services",
+                        "value": 1.0
+                    },
+                    {
+                        "key": "Other industries",
+                        "value": 4.0
+                    }
+                ]
+            },
+            {
+                "key": "Tasmania",
+                "values": [
+                    {
+                        "key": "Agriculture, forestry & fishing",
+                        "value": 9.0
+                    },
+                    {
+                        "key": "Transport, postal & warehousing",
+                        "value": 6.0
+                    },
+                    {
+                        "key": "Construction",
+                        "value": 3.0
+                    },
+                    {
+                        "key": "Manufacturing",
+                        "value": 4.0
+                    },
+                    {
+                        "key": "Mining",
+                        "value": 3.0
+                    },
+                    {
+                        "key": "Arts & recreation services",
+                        "value": 0.0
+                    },
+                    {
+                        "key": "Public administration & safety",
+                        "value": 1.0
+                    },
+                    {
+                        "key": "Administrative & support services",
+                        "value": 1.0
+                    },
+                    {
+                        "key": "Other services",
+                        "value": 2.0
+                    },
+                    {
+                        "key": "Electricity, gas, water & waste services",
+                        "value": 0.0
+                    },
+                    {
+                        "key": "Other industries",
+                        "value": 4.0
+                    }
+                ]
+            },
+            {
+                "key": "Northern Territory",
+                "values": [
+                    {
+                        "key": "Agriculture, forestry & fishing",
+                        "value": 4.0
+                    },
+                    {
+                        "key": "Transport, postal & warehousing",
+                        "value": 8.0
+                    },
+                    {
+                        "key": "Construction",
+                        "value": 1.0
+                    },
+                    {
+                        "key": "Manufacturing",
+                        "value": 0.0
+                    },
+                    {
+                        "key": "Mining",
+                        "value": 2.0
+                    },
+                    {
+                        "key": "Arts & recreation services",
+                        "value": 1.0
+                    },
+                    {
+                        "key": "Public administration & safety",
+                        "value": 2.0
+                    },
+                    {
+                        "key": "Administrative & support services",
+                        "value": 0.0
+                    },
+                    {
+                        "key": "Other services",
+                        "value": 0.0
+                    },
+                    {
+                        "key": "Electricity, gas, water & waste services",
+                        "value": 0.0
+                    },
+                    {
+                        "key": "Other industries",
+                        "value": 3.0
+                    }
+                ]
+            }
+        ];
+        return data;
+    }
+
+
+
+
+
+    /* var allGroup = d3.map(data, function(d){return(d.key)}).keys()
+      console.log(allGroup)
+     var myColor = d3.scaleOrdinal()
+        .range(d3.schemeCategory20);*/
+
+
+    var data = randomDataset()
+    console.log(data)
+
+
+    var colors = [ "#398abb", "#f4bc71", "#FBF6C4", "#9bcf95","#D34152"];
+    var chart = d3.ez.chart.heatMapRadial().colors(colors);
+    var legend = d3.ez.component.legend().title('Worker fatality number');
+    var title = d3.ez.component.title().mainText("Worker fatalities").subText("Number of fatalities in different states in Australia");
+
+    // Create chart base
+    var myChart = d3.ez.base()
+        .width(1000)
+        .height(800)
+        .chart(chart)
+        .legend(legend)
+        .title(title)
+        .on("customValueMouseOver", function(d, i) {
+            d3.select("#message").text(d.key);
+        });
+
+    d3.select('#chartholder')
+        .datum(randomDataset())
+        .call(myChart);
+</script>
+
+
+
+
+
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+
+<!-- Create a div where the graph will take place -->
+<h1 style="text-align:center;">How did the number of different age group fatalities change from 2013-2017?</h1>
+<div id="my_dataviz" style="text-align:center;"></div>
+<script>
+
+    // set the dimensions and margins of the graph
+    var margin = {top: 30, right: 0, bottom: 30, left: 50},
+        width = 310 - margin.left - margin.right,
+        height = 310 - margin.top - margin.bottom;
+
+    //Read the data
+    d3.csv("images/age_group.csv", function(data) {
+
+        // group the data: I want to draw one line per group
+        var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
+            .key(function(d) { return d.age;})
+            .entries(data);
+
+        // What is the list of groups?
+        allKeys = sumstat.map(function(d){return d.key})
+
+        // Add an svg element for each group. The will be one beside each other and will go on the next row when no more room available
+        var svg = d3.select("#my_dataviz")
+            .selectAll("uniqueChart")
+            .data(sumstat)
+            .enter()
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        // Add X axis --> it is a date format
+        var x = d3.scaleLinear()
+            .domain(d3.extent(data, function(d) { return String(d.year); }))
+            .range([ 0, width ]);
+        svg
+            .append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x).ticks(3));
+
+        //Add Y axis
+        var y = d3.scaleLinear()
+            .domain([0, d3.max(data, function(d) { return +d.number; })])
+            .range([ height, 0 ]);
+        svg.append("g")
+            .call(d3.axisLeft(y).ticks(5));
+
+        // color palette
+        var color = d3.scaleOrdinal()
+            .domain(allKeys)
+            .range(['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#ffff33','#a65628','#f781bf','#999999'])
+
+        // Draw the line
+        svg
+            .append("path")
+            .attr("fill", "none")
+            .attr("stroke", function(d){ return color(d.key) })
+            .attr("stroke-width", 1.9)
+            .attr("d", function(d){
+                return d3.line()
+                    .x(function(d) { return x(d.year); })
+                    .y(function(d) { return y(+d.number); })
+                    (d.values)
+            })
+
+        // Add titles
+        svg
+            .append("text")
+            .attr("text-anchor", "start")
+            .attr("y", -5)
+            .attr("x", 0)
+            .text(function(d){ return(d.key)})
+            .style("fill", function(d){ return color(d.key) })
+
+    })
+</script>
+<%include footer.ejs%>
+</body>
+</html>

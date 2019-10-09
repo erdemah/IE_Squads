@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
     <link href="css/scroll.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
 </html>
 
@@ -55,14 +56,22 @@
     </div>
 </div>
 <!-- TILES CODE END-->
+<h1 style="text-align: center">How much we will be paid after leaving a company?</h1>
+<p class="text1" style="text-align: center">Pay leave depends on 2 main factors:
+    <br> <span style="text-align: center">1.Which field we worked in?</span><br>
+    <span style="text-align: center">2.Did the contract have leave entitlement?</span><br>
+    <span style="text-align: center">we can find some specific information from the below chat.</span>
+</p>
 
 <!-- Visualisation code-->
 <style>
 
     body {
-        font: 10px sans-serif;
+        font-family: 'Architects Daughter','cursive';
     }
-
+    .text1{
+        font-size: 1.2em;
+    }
     .axis path,
     .axis line {
         fill: none;
@@ -75,6 +84,10 @@
     }
 
 </style>
+</body>
+
+<body>
+
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -139,7 +152,15 @@
             .enter().append("path")
             .each(function(d) { d.outerRadius = 0; })
             .style("fill", function (d) { return color(d.name); })
-            .attr("d", arc);
+            .attr("d", arc)
+            .on("mouseover",function(){
+                d3.select(this).style("stroke","rgb(0,0,255)")
+                    .style("stroke-width","2");
+            })
+            .on("mouseout",function(){
+                d3.select(this).style("stroke","none")
+                    .style("stroke-width","0");
+            });
 
         segments.transition().ease("elastic").duration(1200).delay(function(d,i,u) { return u * 200 + 400;})
             .attrTween("d", function(d,index) {
@@ -186,7 +207,9 @@
             .append("textPath")
             .attr("xlink:href", "#label-path")
             .attr("startOffset", function(d, i) {return i * 100 / numBarsStates + 50 / numBarsStates + '%';})
-            .text(function(d) {return d.toUpperCase(); });
+            .text(function(d) {
+                return d.toUpperCase();
+            });
 
         // legend
         var legend = svg.selectAll(".legend")
@@ -206,6 +229,7 @@
             .attr("y", 9)
             .attr("dy", ".35em")
             .style("text-anchor", "end")
+            .attr("font-size","0.75em")
             .text(function(d) { return d; });
 
     });
