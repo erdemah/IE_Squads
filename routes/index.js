@@ -58,4 +58,12 @@ router.get('/infographic_epic3', function(req, res, next) {
   res.render('infographic_epic3', { title: 'Infographics' });
 });
 
+router.get('/contract_termination', function(req, res, next) {
+  res.render('contract_termination', { title: 'Contract Termination Page' });
+});
+
+router.get('/industrial_action', function(req, res, next) {
+    res.render('industrial_action', { title: 'Industrial Action Page' });
+});
+
 module.exports = router;
