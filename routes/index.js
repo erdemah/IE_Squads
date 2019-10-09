@@ -74,4 +74,12 @@ router.get('/resignation', function(req, res, next) {
   res.render('resignation', { title: 'resignation Page' });
 });
 
+router.get('/unfair_dismissal_case', function(req, res, next) {
+  res.render('unfair_dismissal_case', { title: 'Unfair Dismissal Case Page' });
+});
+
+router.get('/unfair_dismissal', function(req, res, next) {
+  res.render('unfair_dismissal', { title: 'Unfair Dismissal Page' });
+});
+
 module.exports = router;
