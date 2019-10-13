@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<lang="en">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -14,29 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
-    <!-- Carousel code-->
-    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-    <!--    <title>Activate Bootstrap 4 Carousel via Data Attributes</title>-->
-    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>-->
-    <!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
-    <!--    <style>-->
-    <!--        .carousel{-->
-    <!--            background: #eb8034;-->
-    <!--            margin-top: 20px;-->
-    <!--        }-->
-    <!--        .carousel-item{-->
-    <!--            text-align: center;-->
-    <!--            min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */-->
-    <!--            transition-duration: 10s;-->
-    <!--        }-->
-    <!--        .bs-example{-->
-    <!--            margin: 20px;-->
-    <!--        }-->
-    <!--    </style>-->
-    <!-- carousel Code-->
 </head>
 <body>
 <!--<div class="gray_style">-->
@@ -52,9 +29,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <!--        <li class="nav-item active">-->
-                <!--          <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>-->
-                <!--        </li>-->
                 <div id="menu_area" class="menu-area">
                     <div class="container">
                         <div class="row">
@@ -69,28 +43,28 @@
                                             <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employee Entitlements</a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <li class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Pay</a>
+                                                    <a class="dropdown-toggle" href="#" id="navbar1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Pay</a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                         <li ><a  id="myfont_1" href="#">Minimum Wage</a></li>
                                                         <li><a  id="myfont_2" href="#">Pay Slip</a></li>
                                                         <li><a id="myfont_3"  href="#">Superannuation</a></li>
                                                         <li><a id="myfont_4"  href="#">Working Hours</a></li>
                                                         <li><a id="myfont_5" href="#">Annual Bonus</a></li>
-                                                        <li><a id="myfont_6" href="#">Infographic</a></li>
+                                                        <li><a id="myfont_6" href="#">Quick Info</a></li>
                                                         <li><a id="myfont_20" href="#">Salary&Job Analysis</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Leave</a>
+                                                    <a class="dropdown-toggle" href="#" id="navbar2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Leave</a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                         <li><a id="myfont_8" href="#">Annual Leave Entitlements</a></li>
                                                         <li><a id="myfont_9" href="#">Sick Leave Entitlements</a></li>
-                                                        <li><a id="myfont_10" href="#">Infographic</a></li>
+                                                        <li><a id="myfont_10" href="#">Quick Info</a></li>
                                                         <li><a id="myfont_21" href="#">Paid Leave Analysis</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Contract</a>
+                                                    <a class="dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Contract</a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                         <li>
                                                             <a id="myfont_12" href="#">Contract Information</a>
@@ -156,13 +130,13 @@
             <h3 id="min_wage">Minimum Wage</h3>
             <p id="text1">Certain employees may have different pay entitlements depending on whether they have a reduced work capacity because of disability, if they're under the age of 21 or if they are an apprentice or trainee.</p>
             <hr>
-            <p>For more information about pay for these employees, visit:</p>
+            <p id="t1">For more information about pay for these employees, visit:</p>
             <a href="https://www.fairwork.gov.au/pay/minimum-wages/employees-with-disability-pay-rates" id="link1">Employees with disability pay rates</a> <br>
             <a href="https://www.fairwork.gov.au/pay/minimum-wages/junior-pay-rates" id="link2">Junior Pay rates</a> <br>
             <a href="https://www.fairwork.gov.au/pay/minimum-wages/apprentice-and-trainee-pay-rates" id="link3">Apprentice and trainee pay rates</a> <hr>
-            <p id="text2">If you have questions about how much tax comes out of a pay rate, please contact the
+            <p id="text2">If you have questions about how much tax comes out of a pay rate, please contact the: </p>
                 <a href="https://www.ato.gov.au/" id="link4">Australian Taxation Office</a>
-            </p>
+
 
         </div>
         <div class="col-6" style="border-style: solid; border-color: darkgrey;text-align: center;">
@@ -297,20 +271,43 @@
     };
 
     function translate_cn() {
-        document.getElementById("homenav").textContent = "主页";
-        document.getElementById("nav-link-employee").textContent = "员工权利";
+        document.getElementById("nav_home").textContent = "主页";
+        document.getElementById("navbarDropdown").textContent = "员工权利";
+        document.getElementById("navbar1").textContent = "关于您的薪水";
+        document.getElementById("myfont_1").textContent = "最低工资";
+        document.getElementById("myfont_2").textContent = "工资单";
+        document.getElementById("myfont_3").textContent = "退休金";
+        document.getElementById("myfont_4").textContent = "工作时间";
+        document.getElementById("myfont_5").textContent = "年度奖金";
+        document.getElementById("myfont_6").textContent = "快速资讯";
+        document.getElementById("myfont_20").textContent = "薪资和工作分析";
+        document.getElementById("navbar2").textContent = "关于您的假期";
+        document.getElementById("myfont_8").textContent = "年假权利";
+        document.getElementById("myfont_9").textContent = "病假权利";
+        document.getElementById("myfont_10").textContent = "快速资讯";
+        document.getElementById("myfont_21").textContent = "带薪休假分析";
+        document.getElementById("navbar3").textContent = "关于您的合同";
+        document.getElementById("myfont_12").textContent = "合同信息";
+        document.getElementById("myfont_13").textContent = "工业行动";
+        document.getElementById("myfont_14").textContent = "冗余";
+        document.getElementById("myfont_15").textContent = "辞职";
+        document.getElementById("myfont_16").textContent = "不公平解雇案";
+        document.getElementById("myfont_17").textContent = "不公平解雇";
+        document.getElementById("myfont_18").textContent = "快速资讯";
+        document.getElementById("myfont_22").textContent = "损伤分析";
+        document.getElementById("myfont_23").textContent = "外部链接";
         document.getElementById("page2-entitlement").textContent = "政府链接和热线电话";
-        // document.getElementById("page2-entitlement_gov").textContent = "政府链接和帮助热线";
         document.getElementById("min_wage").textContent = "最低工资";
-        document.getElementById("text1").textContent = "某些员工可能有不同的工资待遇，具体取决于他们是否因残疾而工作能力下降，如果他们未满21岁，或者他们是学徒或实习生。\n" +
-            "        有关这些员工薪酬的更多信息，请访问：";
+        document.getElementById("text1").textContent = "某些雇员的工资待遇可能会有所不同，具体取决于他们是否因残障而工作能力下降，年龄在21岁以下，或者是学徒或受训者。";
+        document.getElementById("t1").textContent = "有关这些员工工资的更多信息，请访问：";
         document.getElementById("link1").textContent = "残疾员工支付费用";
         document.getElementById("link2").textContent = "初级工资率";
         document.getElementById("link3").textContent = "学徒和实习生支付费用";
         document.getElementById("text2").textContent = "如果您对工资税的影响有疑问，请联系";
+        document.getElementById("link4").textContent = "澳大利亚税务局";
         document.getElementById("link5").textContent = "\n" +
             "内政部网站";
-        document.getElementById("link4").textContent = "澳大利亚税务局";
+
         document.getElementById("head1").textContent = "工作时间信息";
         document.getElementById("text3").textContent = "\n" +
             "大多数学生签证允许您在课程学习期间每两周最多工作40个小时，\n" +
@@ -340,6 +337,7 @@
             "        在以下情况下，雇主必须支付雇员正常时间收入的9.5％的退休金：";
         document.getElementById("text12").textContent = "当雇员在一个月内获得税前$ 450或以上的报酬是：";
         document.getElementById("list4").textContent = "超过18年，或";
+
         document.getElementById("list5").textContent = "未满18岁，每周工作30小时以上";
         document.getElementById("text13").textContent = "这适用于全职和兼职雇员以及一些临时雇员，包括临时居民。";
         document.getElementById("text14").textContent = "至少每3个月将退休金存入员工的指定帐户中。";
@@ -363,18 +361,40 @@
 
     }
     function translate_au() {
-        document.getElementById("homenav").textContent = "Home";
-        document.getElementById("nav-link-employee").textContent = "Employee Entitlement";
+        document.getElementById("nav_home").textContent = "Home";
+        document.getElementById("navbarDropdown").textContent = "Employee Entitlement";
+        document.getElementById("navbar1").textContent = "About Your Pay";
+        document.getElementById("myfont_1").textContent = "Minimum Wage";
+        document.getElementById("myfont_2").textContent = "Pay Slip";
+        document.getElementById("myfont_3").textContent = "Superannuation";
+        document.getElementById("myfont_4").textContent = "Working Hours";
+        document.getElementById("myfont_5").textContent = "Annual Bonus";
+        document.getElementById("myfont_6").textContent = "Quick Info";
+        document.getElementById("myfont_20").textContent = "Salary&Job Analysis";
+        document.getElementById("navbar2").textContent = "About Your leave";
+        document.getElementById("myfont_8").textContent = "Annual Leave Entitlements";
+        document.getElementById("myfont_9").textContent = "Sick Leave Entitlements";
+        document.getElementById("myfont_10").textContent = "Quick Info";
+        document.getElementById("myfont_21").textContent = "Paid Leave Analysis";
+        document.getElementById("navbar3").textContent = "About Your Contract";
+        document.getElementById("myfont_12").textContent = "Contract Information";
+        document.getElementById("myfont_13").textContent = "industrial Action";
+        document.getElementById("myfont_14").textContent = "Redundancy";
+        document.getElementById("myfont_15").textContent = "Resignation";
+        document.getElementById("myfont_16").textContent = "Unfair Dismissal Case";
+        document.getElementById("myfont_17").textContent = "Unfair Dismissal";
+        document.getElementById("myfont_18").textContent = "Quick Info";
+        document.getElementById("myfont_22").textContent = "Injury Analysis";
+        document.getElementById("myfont_23").textContent = "External Links";
         document.getElementById("page2-entitlement").textContent = "Government Links and Helplines";
-        // document.getElementById("page2-entitlement").textContent = "Infographics";
         document.getElementById("min_wage").textContent = "Minimum Wage";
-        document.getElementById("text1").textContent = "Certain employees may have different pay entitlements depending on whether they have a reduced work capacity because of disability, if they're under the age of 21 or if they are an apprentice or trainee.\n" +
-            "        For more information about pay for these employees, visit:";
+        document.getElementById("text1").textContent = "Certain employees may have different pay entitlements depending on whether they have a reduced work capacity because of disability, if they're under the age of 21 or if they are an apprentice or trainee.";
+        document.getElementById("t1").textContent = "For more information about pay for these employees, visit:";
         document.getElementById("link1").textContent = "Employees with disability pay rates";
         document.getElementById("link2").textContent = "Junior Pay rates";
         document.getElementById("link3").textContent = "Apprentice and trainee pay rates";
         document.getElementById("text2").textContent = "If you have questions about how much tax comes out of a pay rate, please contact the";
-        document.getElementById("link4").textContent = "Australian Taxation Office";
+        document.getElementById("link4").textContent = "Australian taxation Office";
         document.getElementById("head1").textContent = "Working Hours Information";
         document.getElementById("text3").textContent = "Most student visas allow you to work for up to 40 hours every two weeks while your course is in session,\n" +
             "        and unrestricted hours during any scheduled course break,\n" +
@@ -423,132 +443,6 @@
         document.getElementById("privacy-pol").textContent = "Privacy Policy";
         document.getElementById("terms-of-use").textContent = "Terms of Use";
     }
-
-    function delete_motive_au(){
-        let element_1 = document.getElementById("carouselExampleIndicators");
-        element_1.parentNode.removeChild(element_1);
-        document.getElementById("wrapper_min").innerHTML = " <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n" +
-            "        <ol id=\"indicator_carousel\" class=\"carousel-indicators\">\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"3\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"4\"></li>\n" +
-            "        </ol>\n" +
-            "        <div class=\"carousel-inner\">\n" +
-            "            <div class=\"carousel-item active\">\n" +
-            "                <img src=\"images/minwage/part_full/1.png\" alt=\"First slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/part_full/2.png\" alt=\"Second slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/part_full/3.png\" alt=\"Third slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/part_full/4.png\" alt=\"Fourth slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/part_full/5.png\" alt=\"Fifth slide\">\n" +
-            "            </div>\n" +
-            "        </div>\n" +
-            "        <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n" +
-            "            <span id=\"color_prev\" class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n" +
-            "            <span id=\"color_prev\" class=\"sr-only\">Previous</span>\n" +
-            "        </a>\n" +
-            "        <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n" +
-            "            <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n" +
-            "            <span class=\"sr-only\">Next</span>\n" +
-            "        </a>\n" +
-            "    </div>";
-    }
-
-    function delete_motive_cn(){
-        let element_1 = document.getElementById("carouselExampleIndicators");
-        element_1.parentNode.removeChild(element_1);
-        document.getElementById("wrapper_min").innerHTML = " <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n" +
-            "        <ol id=\"indicator_carousel\" class=\"carousel-indicators\">\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"3\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"4\"></li>\n" +
-            "        </ol>\n" +
-            "        <div class=\"carousel-inner\">\n" +
-            "            <div class=\"carousel-item active\">\n" +
-            "                <img src=\"images/minwage/Part&Full time/1.png\" alt=\"First slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/Part&Full time/2.png\" alt=\"Second slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/Part&Full time/3.png\" alt=\"Third slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/Part&Full time/4.png\" alt=\"Fourth slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/Part&Full time/5.png\" alt=\"Fifth slide\">\n" +
-            "            </div>\n" +
-            "        </div>\n" +
-            "        <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n" +
-            "            <span id=\"color_prev\" class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n" +
-            "            <span id=\"color_prev\" class=\"sr-only\">Previous</span>\n" +
-            "        </a>\n" +
-            "        <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n" +
-            "            <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n" +
-            "            <span class=\"sr-only\">Next</span>\n" +
-            "        </a>\n" +
-            "    </div>";
-    }
-
-    function casualEmp(){
-        let element_1 = document.getElementById("carouselExampleIndicators");
-        element_1.parentNode.removeChild(element_1);
-        document.getElementById("wrapper_min").innerHTML = "<div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n" +
-            "        <ol id=\"indicator_carousel\" class=\"carousel-indicators\">\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"3\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"4\"></li>\n" +
-            "        </ol>\n" +
-            "        <div class=\"carousel-inner\">\n" +
-            "            <div class=\"carousel-item active\">\n" +
-            "                <img src=\"images/minwage/casual/1.png\" alt=\"First slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/casual/2.png\" alt=\"Second slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/casual/3.png\" alt=\"Third slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/casual/4.png\" alt=\"Fourth slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/casual/5.png\" alt=\"Fifth slide\">\n" +
-            "            </div>\n" +
-            "        </div>\n" +
-            "        <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n" +
-            "            <span id=\"color_prev\" class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n" +
-            "            <span id=\"color_prev\" class=\"sr-only\">Previous</span>\n" +
-            "        </a>\n" +
-            "        <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n" +
-            "            <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n" +
-            "            <span class=\"sr-only\">Next</span>\n" +
-            "        </a>\n" +
-            "    </div>";
-    }
-    $(function(){
-        $(".tile").mousedown(function(){
-            $(this).addClass("selecionado");
-        });
-
-        $(".tile").mouseup(function(){
-            $(this).removeClass("selecionado");
-        });
-    });
 </script>
 </body>
 </html>
