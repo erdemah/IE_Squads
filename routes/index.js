@@ -85,5 +85,8 @@ router.get('/unfair_dismissal', function(req, res, next) {
 router.get('/injury_visualisation', function(req, res, next) {
   res.render('injury_visualisation', { title: 'visualisation Page' });
 });
+router.get('/external_links', function(req, res, next) {
+  res.render('external_links', { title: 'External Link Page' });
+});
 
 module.exports = router;

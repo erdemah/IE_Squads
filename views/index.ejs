@@ -18,9 +18,10 @@
   <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #f0f0f0;">
 <nav class="navbar navbar-expand-lg navbar-dark bg-sharon static-top">
   <div class="container">
     <a class="navbar-brand-sharon" href="/">
@@ -33,19 +34,87 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">
-            <span class="oi oi-home" title="home" aria-hidden="true"></span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="nav-link-employee" href="#entitlement">Employee Entitlement
-            <span id="nav-separator">|</span>
-          </a>
-        </li>
+<!--        <li class="nav-item active">-->
+<!--          <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>-->
+<!--        </li>-->
+        <div id="menu_area" class="menu-area">
+          <div class="container">
+            <div class="row">
+              <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li><a id="nav_home" href="/" style="font-family: Josefin Sans;">Home</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employee Entitlements</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Pay</a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li ><a  id="myfont_1" href="#">Minimum Wage</a></li>
+                            <li><a  id="myfont_2" href="#">Pay Slip</a></li>
+                            <li><a id="myfont_3"  href="#">Superannuation</a></li>
+                            <li><a id="myfont_4"  href="#">Working Hours</a></li>
+                            <li><a id="myfont_5" href="#">Annual Bonus</a></li>
+                            <li><a id="myfont_20" href="#">Salary&Job Analysis</a></li>
+                            <li><a id="myfont_6" href="infographics_epic1">Quick Info</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Leave</a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a id="myfont_8" href="#">Annual Leave Entitlements</a></li>
+                            <li><a id="myfont_9" href="#">Sick Leave Entitlements</a></li>
+                            <li>
+                              <a id="myfont_21" href="#">Paid Leave Analysis</a>
+                            </li>
+                            <li>
+                              <a id="myfont_10" href="#">Quick Info</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Contract</a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                              <a id="myfont_12" href="#">Contract Information</a>
+                            </li>
+                            <li>
+                              <a id="myfont_13" href="#">Industrial Action</a>
+                            </li>
+                            <li>
+                              <a id="myfont_14" href="#">Redundancy</a>
+                            </li>
+                            <li>
+                              <a id="myfont_15" href="#">Resignation</a>
+                            </li>
+                            <li>
+                              <a id="myfont_16" href="#">Unfair Dismissal Case</a>
+                            </li>
+                            <li>
+                              <a id="myfont_17" href="#">Unfair Dismissal</a>
+                            </li>
+                            <li>
+                              <a id="myfont_22" href="#">Injury Analysis</a>
+                            </li>
+                            <li>
+                              <a id="myfont_18" href="#">Quick Info</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a id="myfont_22" href="/external_links">External Links</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
         <li class="nav-item">
           <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au(); delete_motive_ch();">
             <span class="flag-icon flag-icon-au"> </span>
@@ -74,87 +143,88 @@
 <div class="parallax">
 </div>
 <div class="container-fluid" id="entitlement">
-  <span id="page2-entitlement">EMPLOYEE ENTITLEMENT</span>
+  <span id="page2-entitlement" style="color:black;">EMPLOYEE ENTITLEMENT</span>
 </div>
 <div class="container-fluid">
   <div id="rectangle"></div>
 </div>
 <div class="container">
   <div class="row">
+<!--    style="text-align: center"-->
     <div class="col-4" style="text-align: center">
-        <span id="about-your-pay" style="font-weight: bold; font-family: 'Architects Daughter', cursive;">Pay Entitlements</span>
+      <span id="about-your-pay" style="font-weight: bold; font-family: 'Architects Daughter', cursive;">About Your Pay</span>
       <a href="#">
         <img class="img img-fluid" src="images/home1.png" alt="Pay">
       </a>
-      <div class="container" id="info-pay">
-        <div class="dropdown show">
+        <div class="dropdown">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span id="story1" style="font-family: 'Architects Daughter', cursive;">Storyboards</span>
           </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="minimum_wage"><span id="minwage" style="font-family: 'Architects Daughter', cursive;">Minimum Wage</span></a>
-            <a class="dropdown-item" href="pay_slip"><span id="pay-slip" style="font-family: 'Architects Daughter', cursive;">Pay Slip</span></a>
-            <a class="dropdown-item" href="superannuation"><span id="super-an" style="font-family: 'Architects Daughter', cursive;">Superannuation</span></a>
-            <a class="dropdown-item" href="working_hour"><span id="working-hrs" style="font-family: 'Architects Daughter', cursive;">Working Hours</span></a>
-            <a class="dropdown-item" href="annual_bonus"><span id="annual-bonus" style="font-family: 'Architects Daughter', cursive;">Annual Bonus</span></a>
-            <a class="dropdown-item" href="infographics_epic1"><span id="infograph1" style="font-family: 'Architects Daughter', cursive;">Inforgraphic</span></a>
-          </div>
-          <a class="btn btn-secondary" href="pay_raise_visu" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
-            <span id="visu1" style="font-family: 'Architects Daughter', cursive;">Visualisation</span>
-          </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="minimum_wage"><span id="minwage" style="font-family: 'Architects Daughter', cursive;">Minimum Wage</span></a>
+              <a class="dropdown-item" href="pay_slip"><span id="pay-slip" style="font-family: 'Architects Daughter', cursive;">Pay Slip</span></a>
+              <a class="dropdown-item" href="superannuation"><span id="super-an" style="font-family: 'Architects Daughter', cursive;">Superannuation</span></a>
+              <a class="dropdown-item" href="working_hour"><span id="working-hrs" style="font-family: 'Architects Daughter', cursive;">Working Hours</span></a>
+              <a class="dropdown-item" href="annual_bonus"><span id="annual-bonus" style="font-family: 'Architects Daughter', cursive;">Annual Bonus</span></a>
+              <a class="dropdown-item" href="infographics_epic1"><span id="infograph1" style="font-family: 'Architects Daughter', cursive;">Quick Info</span></a>
+            </div>
+            <a class="btn btn-secondary" href="pay_raise_visu" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+              <span id="myfont_6" style="font-family: 'Architects Daughter', cursive;">Salary&Job Analysis</span>
+            </a>
         </div>
-      </div>
     </div>
+    <!--  style="text-align: center"-->
     <div class="col-4" style="text-align: center">
-      <span id="about-your-leave" style="font-weight: bold; font-family: 'Architects Daughter', cursive;">Leave Entitlements</span>
-      <a href="#">
-        <img class="img img-fluid" src="images/home2.png" alt="Leave">
-      </a>
-      <div class="container" id="info-leave">
-        <div class="dropdown show">
+        <span id="about-your-leave" style="font-weight: bold; font-family: 'Architects Daughter', cursive;">About Your Leave</span>
+        <a href="#">
+          <img class="img img-fluid" src="images/home2.png" alt="Leave">
+        </a>
+        <div class="dropdown">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span id="story2" style="font-family: 'Architects Daughter', cursive;">Storyboards</span></a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="annual_leave"><span id="annual-leave-entitle" style="font-family: 'Architects Daughter', cursive;">Annual Leave Entitlements</span></a>
             <a class="dropdown-item" href="sick_leave"><span id="sick-leave-entitle" style="font-family: 'Architects Daughter', cursive;">Sick Leave Entitlements</span></a>
-            <a class="dropdown-item" href="infographic_epic2"><span id="infograph2" style="font-family: 'Architects Daughter', cursive;">Inforgraphic</span></a>
+            <a class="dropdown-item" href="infographic_epic2"><span id="infograph2" style="font-family: 'Architects Daughter', cursive;">Quick Info</span></a>
           </div>
-          <a class="btn btn-secondary" href="pay_rate_level" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
-            <span id="visu2" style="font-family: 'Architects Daughter', cursive;">Visualisation</span>
-          </a>
+        <a class="btn btn-secondary" href="pay_rate_level" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+          <span id="myfont_11" style="font-family: 'Architects Daughter', cursive;">Paid Leave Analysis</span>
+        </a>
         </div>
-      </div>
     </div>
     <div class="col-4" style="text-align: center">
-      <span id="about-your-workplace" style="font-weight: bold; font-family: 'Architects Daughter', cursive;">Workplace Entitlements</span>
-      <a href="#">
-        <img class="img img-fluid" src="images/home3.png" alt="Leave">
-      </a>
-      <div class="container" id="info-leave">
+        <span id="about-your-workplace" style="font-weight: bold; font-family: 'Architects Daughter', cursive;">About Your Contract</span>
+        <a href="#">
+          <img class="img img-fluid" src="images/home3.png" alt="Leave">
+        </a>
         <div class="dropdown show">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span id="story3" style="font-family: 'Architects Daughter', cursive;">Storyboards</span></a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="contract_termination"><span id="contract_termination" style="font-family: 'Architects Daughter', cursive;">Contract Termination</span></a>
             <a class="dropdown-item" href="industrial_action"><span id="ind_act" style="font-family: 'Architects Daughter', cursive;">Industrial Action</span></a>
-            <a class="dropdown-item" href="redundancy"><span id="red" style="font-family: 'Architects Daughter', cursive;">Workplace Redundancy</span></a>
+            <a class="dropdown-item" href="redundancy"><span id="red" style="font-family: 'Architects Daughter', cursive;">Redundancy</span></a>
             <a class="dropdown-item" href="resignation"><span id="resignation" style="font-family: 'Architects Daughter', cursive;">Resignation</span></a>
             <a class="dropdown-item" href="unfair_dismissal_case"><span id="udc" style="font-family: 'Architects Daughter', cursive;">Unfair Dismissal Case</span></a>
             <a class="dropdown-item" href="unfair_dismissal"><span id="ud" style="font-family: 'Architects Daughter', cursive;">Unfair Dismissal</span></a>
-            <a class="dropdown-item" href="infographic_epic3"><span id="infograph3" style="font-family: 'Architects Daughter', cursive;">Inforgraphic</span></a>
+            <a class="dropdown-item" href="infographic_epic3"><span id="infograph3" style="font-family: 'Architects Daughter', cursive;">Quick Info</span></a>
           </div>
           <a class="btn btn-secondary" href="injury_visualisation" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
-            <span id="visu3" style="font-family: 'Architects Daughter', cursive;">Visualisation</span>
+            <span id="myfont_19" style="font-family: 'Architects Daughter', cursive;">Injury Analysis</span>
           </a>
         </div>
       </div>
+  </div>
+  <div class="row">
+    <div class="col-12" style="text-align: center">
+      <span id="page2-motive"style="color:black;">Our Motive</span>
     </div>
   </div>
 </div>
-<div class="container-fluid" id="aboutus">
-  <span id="page2-motive">Our Motive</span>
-</div>
-<div class="container-fluid">
+<!--<div class="container-fluid" id="aboutus">-->
+<!--  -->
+<!--</div>-->
+<div class="container">
   <div id="rectangle"></div>
 </div>
 <div class="container" id="motive-original">
@@ -175,71 +245,95 @@
     </div>
   </div>
 </div>
+  <!-- FOOTER CODE -->
 
-
-<!-- FOOTER CODE -->
-
-<footer>
-  <div class="container">
-    <div class="content-footer row">
-      <div class="column-footer col-lg-6 col-md-6 col-sm-6">
-        <h3><span id="quick-link">Quick Links</span></h3>
-        <ul id="restaurant-hours">
-          <li>
-            <a href="pay_raise_visu"><span id="pay-raise-2">Pay Raise</span></a>
-          </li>
-          <li>
-            <a href="working_hour"> <span id="working-hours-2">Working Hours</span></a>
-          </li>
-          <li>
-            <a href="superannuation"><span id="super-ann">Superannuation</span></a>
-          </li>
-          <li>
-            <a href="sick_leave"><span id="sick-leave-ent">Sick Leave Entitlements</span></a>
-          <li>
-            <a href="annual_bonus"><span id="annual-bonus-2">Annual Bonus</span></a>
-          </li>
-        </ul>
-        <div class="line-divide first-line"></div>
-      </div>
-
-      <div class="column-footer col-lg-3 col-md-3 col-sm-7">
-        <h3><span id="other-links">Other Useful Links</span></h3>
-        <ul id="useful-links">
-          <li>
-            <a href="minimum_wage"><span id="min-wage-3">Minimum Wage</span></a>
-          </li>
-          <li>
-            <a href="pay_rate_level"><span id="view-pay-rate-3">View Your Pay Rate Level</span></a>
-          </li>
-          <li>
-            <a href="pay_slip"><span id="pay-slip-3">Pay Slip</span></a>
-          </li>
-          <li>
-            <a href="annual_leave"><span id="annual-leave-3">Annual Leave Entitlements</span></a>
-          </li>
-        </ul>
-        <div class="line-divide second-line"></div>
-      </div>
-    </div>
-  </div>
-  <div class="wrap-bottom-footer">
+  <footer>
     <div class="container">
-      <div class="bottom-footer row justify-content-between">
-        <div class="col-12 col-sm-7">© <span id="copy-right">2019 KnowYourRights. All rights reserved.</span></div>
-        <div class="col-12 col-sm-5"><span id="privacy-pol">Privacy Policy</span>
-          <span id="terms-of-use">Terms of use</span></div>
+      <div class="content-footer row">
+        <div class="column-footer col-lg-6 col-md-6 col-sm-6">
+          <h3><span id="quick-link">Quick Links</span></h3>
+          <ul id="restaurant-hours">
+            <li>
+              <a href="pay_raise_visu"><span id="pay-raise-2">Pay Raise</span></a>
+            </li>
+            <li>
+              <a href="working_hour"> <span id="working-hours-2">Working Hours</span></a>
+            </li>
+            <li>
+              <a href="superannuation"><span id="super-ann">Superannuation</span></a>
+            </li>
+            <li>
+              <a href="sick_leave"><span id="sick-leave-ent">Sick Leave Entitlements</span></a>
+            <li>
+              <a href="annual_bonus"><span id="annual-bonus-2">Annual Bonus</span></a>
+            </li>
+          </ul>
+          <div class="line-divide first-line"></div>
+        </div>
+
+        <div class="column-footer col-lg-3 col-md-3 col-sm-7">
+          <h3><span id="other-links">Other Useful Links</span></h3>
+          <ul id="useful-links">
+            <li>
+              <a href="minimum_wage"><span id="min-wage-3">Minimum Wage</span></a>
+            </li>
+            <li>
+              <a href="pay_rate_level"><span id="view-pay-rate-3">View Your Pay Rate Level</span></a>
+            </li>
+            <li>
+              <a href="pay_slip"><span id="pay-slip-3">Pay Slip</span></a>
+            </li>
+            <li>
+              <a href="annual_leave"><span id="annual-leave-3">Annual Leave Entitlements</span></a>
+            </li>
+          </ul>
+          <div class="line-divide second-line"></div>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<!-- FOOTER CODE END-->
+    <div class="wrap-bottom-footer">
+      <div class="container">
+        <div class="bottom-footer row justify-content-between">
+          <div class="col-12 col-sm-7">© <span id="copy-right">2019 KnowYourRights. All rights reserved.</span></div>
+          <div class="col-12 col-sm-5"><span id="privacy-pol">Privacy Policy</span>
+            <span id="terms-of-use">Terms of use</span></div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+<!-- FOOTER CODE END-->
 <%include back_top.ejs%>
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.slim.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!--<script src="routes/scroll.js"></script>-->
+<!--<script>-->
+<!--  $(document).ready(function(){-->
+<!--    $('.dropdown-submenu a.test').on("click", function(e){-->
+<!--      $(this).next('ul').toggle();-->
+<!--      e.stopPropagation();-->
+<!--      e.preventDefault();-->
+<!--    });-->
+<!--  });-->
+<!--</script>-->
+<script>
+(function($){
+$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+if (!$(this).next().hasClass('show')) {
+$(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+}
+var $subMenu = $(this).next(".dropdown-menu");
+$subMenu.toggleClass('show');
+
+$(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+$('.dropdown-submenu .show').removeClass("show");
+});
+
+return false;
+});
+})(jQuery)
+</script>
 <script>
     var dataReload = document.querySelectorAll("[data-reload]");
 
