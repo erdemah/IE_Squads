@@ -161,11 +161,15 @@
     background-color: #f0f0f0;
 }
 .carousel-indicators {
-    bottom: -3em;
+    bottom: -5em;
+}
+#caro_super{
+    width: 10em;
+    height: 1em;
 }
 .carousel-indicators li {
     width: 10em;
-    height: 5em;
+    height: 3em;
 }
         /*.carousel-inner{*/
         /*    margin: -60px 50px 50px 400px;*/
@@ -295,6 +299,7 @@
     /*bottom: 0;*/
     /*width: 100%;*/
     /*height: 2.5rem;*/
+    background-color:#f0f0f0;
 }
 #info-pay{
     background-color: #F0F8FF;
