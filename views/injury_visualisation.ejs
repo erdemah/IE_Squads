@@ -93,10 +93,10 @@
 </div>
 
 
-<h1>How many people encountered fatalities in Australia in recent years(2013-2017)?</h1>
+<h2 style="font-family: 'Josefin Sans'">How many people encountered fatalities in Australia in recent years(2013-2017)?</h2>
 <div id="chartholder", style="text-align:center;"></div>
 <br/>
-<div style="text-align:center;">Value: <span id="message"></span></div>
+<div style="text-align:center;">Industry: <span id="message"></span></div>
 
 <script type="text/javascript">
     // Generate some data
@@ -497,14 +497,14 @@
 
 
 <!-- Create a div where the graph will take place -->
-<h1 style="text-align:center;">How did the number of different age group fatalities change from 2013-2017?</h1>
+<h1 style="text-align:center; font-family: 'Josefin Sans'">How did the number of different age group fatalities change from 2013-2017?</h1>
 <div id="my_dataviz" style="text-align:center;"></div>
 <script>
 
     // set the dimensions and margins of the graph
     var margin = {top: 30, right: 0, bottom: 30, left: 50},
-        width = 310 - margin.left - margin.right,
-        height = 310 - margin.top - margin.bottom;
+        width = 350 - margin.left - margin.right,
+        height = 350 - margin.top - margin.bottom;
 
     //Read the data
     d3.csv("images/age_group.csv", function(data) {
@@ -548,7 +548,7 @@
         // color palette
         var color = d3.scaleOrdinal()
             .domain(allKeys)
-            .range(['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#ffff33','#a65628','#f781bf','#999999'])
+            .range(['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#f781bf','#ffff33','#a65628','#999999'])
 
         // Draw the line
         svg
