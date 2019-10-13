@@ -16,29 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
     <link href="css/scroll.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
-    <!-- Carousel Code-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-<!--    <title>Activate Bootstrap 4 Carousel via Data Attributes</title>-->
-<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>-->
-<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
-<!--    <style>-->
-<!--        .carousel{-->
-<!--            background: #eb8034;-->
-<!--            margin-top: 20px;-->
-<!--        }-->
-<!--        .carousel-item{-->
-<!--            text-align: center;-->
-<!--            min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */-->
-<!--            transition-duration: 10s;-->
-<!--        }-->
-<!--        .bs-example{-->
-<!--            margin: 20px;-->
-<!--        }-->
-<!--    </style>-->
-    <!-- Carousel code-->
 </head>
 </html>
 
@@ -55,26 +32,88 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">
-                        <span class="oi oi-home" title="home" aria-hidden="true"></span>
-                    </a>
-                </li>
+                <!--        <li class="nav-item active">-->
+                <!--          <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>-->
+                <!--        </li>-->
+                <div id="menu_area" class="menu-area">
+                    <div class="container">
+                        <div class="row">
+                            <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li><a id="nav_home" href="/" style="font-family: Josefin Sans;">Home</a></li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employee Entitlements</a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Pay</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li ><a  id="myfont_1" href="#">Minimum Wage</a></li>
+                                                        <li><a  id="myfont_2" href="#">Pay Slip</a></li>
+                                                        <li><a id="myfont_3"  href="#">Superannuation</a></li>
+                                                        <li><a id="myfont_4"  href="#">Working Hours</a></li>
+                                                        <li><a id="myfont_5" href="#">Annual Bonus</a></li>
+                                                        <li><a id="myfont_6" href="#">Infographic</a></li>
+                                                        <li><a id="myfont_20" href="#">Salary&Job Analysis</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Leave</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a id="myfont_8" href="#">Annual Leave Entitlements</a></li>
+                                                        <li><a id="myfont_9" href="#">Sick Leave Entitlements</a></li>
+                                                        <li><a id="myfont_10" href="#">Infographic</a></li>
+                                                        <li><a id="myfont_21" href="#">Paid Leave Analysis</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Contract</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li>
+                                                            <a id="myfont_12" href="#">Contract Information</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_13" href="#">Industrial Action</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_14" href="#">Redundancy</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_15" href="#">Resignation</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_16" href="#">Unfair Dismissal Case</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_17" href="#">Unfair Dismissal</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_18" href="#">Infographic</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_22" href="#">Injury Analysis</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
                 <li class="nav-item">
-                    <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link-employee" href="#entitlement">Employee Entitlement
-                        <span id="nav-separator">|</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au();delete_motive_cn();">
+                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au(); delete_motive_ch();">
                         <span class="flag-icon flag-icon-au"> </span>
                         <span id="nav-separator">English</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn();delete_motive_au();">
+                    <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn(); delete_motive_au();">
                         <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
                         <span id="nav-separator">中文</span></a>
                 </li>
@@ -82,43 +121,6 @@
         </div>
     </div>
 </nav>
-
-<!--  TILES CODE-->
-<div class="pagina">
-    <div class="linha">
-        <div class="tile epic1" onclick="location.href='superannuation'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Super and Tax</span>
-        </div>
-        <div class="tile epic1" onclick="location.href='minimum_wage'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Minimum Wage</span>
-        </div>
-        <div class="tile epic1"  onclick="location.href='working_hour'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Working Hours</span>
-        </div>
-        <div class="tile epic1"  onclick="location.href='annual_bonus'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Annual Bonus</span>
-        </div>
-        <div class="tile epic2"  onclick="location.href='annual_leave'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Annual Leave</span>
-        </div>
-        <div class="tile epic1"  onclick="location.href='contract_termination'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Contract Termination</span>
-        </div>
-        <div class="tile epic2"  onclick="location.href='industrial_action'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Industrial Action</span>
-        </div>
-        <div class="tile epic1"  onclick="location.href='pay_slip'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Pay Slips</span>
-        </div>
-        <div class="tile epic2"  onclick="location.href='sick_leave'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Sick Leave</span>
-        </div>
-        <div class="tile epic2"  onclick="location.href='unfair_dismissal'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Unfair Dismissal</span>
-        </div>
-    </div>
-</div>
-<!-- TILES CODE END-->
 
 <!-- CAROUSEL CODE-->
 <div id="bonus_wrapper">
