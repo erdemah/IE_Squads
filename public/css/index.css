@@ -161,16 +161,15 @@
     background-color: #f0f0f0;
 }
 .carousel-indicators {
-    bottom: -12em;
+    bottom: -3em;
 }
 .carousel-indicators li {
     width: 10em;
-    height: 10em;
-    /*border-radius: 100%;*/
+    height: 5em;
 }
-/*.carousel-inner{*/
-/*    margin: -60px 50px 50px 400px;*/
-/*}*/
+        /*.carousel-inner{*/
+        /*    margin: -60px 50px 50px 400px;*/
+        /*}*/
 /*.carousel-control-next-icon, .carousel-control-prev-icon {*/
 /*    color:#eb8034 !important;*/
 /*}*/
@@ -220,13 +219,13 @@
 .carousel-control-next-icon:after
 {
     content: '>';
-    font-size: 55px;
+    font-size: 4em;
     color: #eb8034;
 }
 
 .carousel-control-prev-icon:after {
     content: '<';
-    font-size: 55px;
+    font-size: 4em;
     color: #eb8034;
 }
 .dropdown-submenu {
@@ -288,7 +287,15 @@
 /*    width:45%;*/
 /*    height:45%;*/
 /*}*/
-
+#indicator_caro{
+    /*position:relative;*/
+    /*overflow: hidden;*/
+}
+#myfooter{
+    /*bottom: 0;*/
+    /*width: 100%;*/
+    /*height: 2.5rem;*/
+}
 #info-pay{
     background-color: #F0F8FF;
     text-align: center;
@@ -321,12 +328,12 @@ ul.b {
 /*    background-size:     cover;*/
 /*    margin:0 auto;*/
 /*}*/
-.w3-container {
-    padding-left: 25px;
-    padding-right: 25px;
-    font-family: "Josefin Sans";
-    font-size: 18px;
-}
+/*.w3-container {*/
+/*    padding-left: 25px;*/
+/*    padding-right: 25px;*/
+/*    font-family: "Josefin Sans";*/
+/*    font-size: 18px;*/
+/*}*/
 /*.sr-only{*/
 /*    color:#eb8034;*/
 /*}*/
@@ -442,10 +449,11 @@ footer ul li a:hover {
     padding-top: 100px;
     padding-bottom: 60px;
     position: relative;
+    /*display: block;*/
 }
-.column-footer{
-    padding-top: 17px;
-}
+/*.column-footer{*/
+/*    padding-top: 17px;*/
+/*}*/
 .line-divide {
     position: absolute;
     width: 1px;
