@@ -136,12 +136,12 @@
     <div class="row">
         <div class="col-2">
             <div class="row">
-                <a class="btn btn-secondary btn-lg btn-block active" href="#" role="button" id="button_full" data-toggle="dropdown" onclick="change_active_2();">
+                <a class="btn btn-secondary btn-lg btn-block active" href="#" role="button" id="button_full" data-toggle="dropdown" onclick="change_active_2(); delete_motive_cn();">
                     <span id="story3" style="font-family: 'Architects Daughter', cursive; ">Part&Full Time</span></a>
             </div>
             <div class="row">
-                <a class="btn btn-secondary btn-sm btn-block" href="#" role="button" id="button_casual" data-toggle="dropdown" onclick="change_active();">
-                    <span id="story3" style="font-family: 'Architects Daughter', cursive;">Casual</span></a>
+                <a class="btn btn-secondary btn-sm btn-block" href="#" role="button" id="button_casual" data-toggle="dropdown" onclick="change_active(); casualEmp();">
+                    <span id="story4" style="font-family: 'Architects Daughter', cursive;">Casual</span></a>
             </div>
         </div>
         <div class="col-8">
@@ -351,6 +351,8 @@
         document.getElementById("myfont_18").textContent = "快速资讯";
         document.getElementById("myfont_22").textContent = "损伤分析";
         document.getElementById("myfont_23").textContent = "外部链接";
+        document.getElementById("story3").textContent = "全日制";
+        document.getElementById("story4").textContent = "休闲装";
         document.getElementById("quick-link").textContent = "快速链接";
         document.getElementById("working-hours-2").textContent = "工作时间";
         document.getElementById("super-ann").textContent = "退休金";
@@ -394,6 +396,8 @@
         document.getElementById("myfont_18").textContent = "Quick Info";
         document.getElementById("myfont_22").textContent = "Injury Analysis";
         document.getElementById("myfont_23").textContent = "External Links";
+        document.getElementById("story3").textContent = "Part&Full Time";
+        document.getElementById("story4").textContent = "Casual";
         document.getElementById("quick-link").textContent = "Quick Links";
         document.getElementById("working-hours-2").textContent = "Working Hours";
         document.getElementById("super-ann").textContent = "Superannuation";
@@ -513,43 +517,106 @@
     }
 
     function casualEmp(){
-        let element_1 = document.getElementById("carouselExampleIndicators");
+        let element_1 = document.getElementById("carousel-thumb");
         element_1.parentNode.removeChild(element_1);
-        document.getElementById("wrapper_min").innerHTML = "<div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n" +
-            "        <ol id=\"indicator_carousel\" class=\"carousel-indicators\">\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"3\"></li>\n" +
-            "            <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"4\"></li>\n" +
-            "        </ol>\n" +
-            "        <div class=\"carousel-inner\">\n" +
-            "            <div class=\"carousel-item active\">\n" +
-            "                <img src=\"images/minwage/casual/1.png\" alt=\"First slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/casual/2.png\" alt=\"Second slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/casual/3.png\" alt=\"Third slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/casual/4.png\" alt=\"Fourth slide\">\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                <img src=\"images/minwage/casual/5.png\" alt=\"Fifth slide\">\n" +
-            "            </div>\n" +
-            "        </div>\n" +
-            "        <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n" +
-            "            <span id=\"color_prev\" class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n" +
-            "            <span id=\"color_prev\" class=\"sr-only\">Previous</span>\n" +
-            "        </a>\n" +
-            "        <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n" +
-            "            <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n" +
-            "            <span class=\"sr-only\">Next</span>\n" +
-            "        </a>\n" +
-            "    </div>";
+        document.getElementById("min_wrapper").innerHTML = " <div id=\"carousel-thumb\" data-interval=\"false\" class=\"carousel slide carousel-fade carousel-thumbnails\" data-ride=\"carousel\">\n" +
+            "                    <!--Slides-->\n" +
+            "                    <div id=\"trial\" class=\"carousel-inner\" role=\"listbox\">\n" +
+            "                        <div class=\"carousel-item active\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Minimum_wage/casual/1.png\" alt=\"First slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Minimum_wage/casual/2.png\" alt=\"Second slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Minimum_wage/casual/3.png\" alt=\"Third slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Minimum_wage/casual/4.png\" alt=\"Fourth slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Minimum_wage/casual/5.png\" alt=\"Fifth slide\">\n" +
+            "                        </div>\n" +
+            "                    </div>\n" +
+            "                    <a class=\"carousel-control-prev\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"prev\">\n" +
+            "                        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n" +
+            "                        <span class=\"sr-only\">Previous</span>\n" +
+            "                    </a>\n" +
+            "                    <a class=\"carousel-control-next\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"next\">\n" +
+            "                        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n" +
+            "                        <span class=\"sr-only\">Next</span>\n" +
+            "                    </a>\n" +
+            "                    <!--/.Controls-->\n" +
+            "                    <ol id =\"indicator_caro\" class=\"carousel-indicators\">\n" +
+            "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"0\" class=\"active\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Minimum_wage/casual/1.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"1\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Minimum_wage/casual/2.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"2\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Minimum_wage/casual/3.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"3\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Minimum_wage/casual/4.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"4\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Minimum_wage/casual/5.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                    </ol>\n" +
+            "                </div>";
     }
+
+    // function casualEmp_cn(){
+    //     let element_1 = document.getElementById("carousel-thumb");
+    //     element_1.parentNode.removeChild(element_1);
+    //     document.getElementById("min_wrapper").innerHTML = " <div id=\"carousel-thumb\" data-interval=\"false\" class=\"carousel slide carousel-fade carousel-thumbnails\" data-ride=\"carousel\">\n" +
+    //         "                    <!--Slides-->\n" +
+    //         "                    <div id=\"trial\" class=\"carousel-inner\" role=\"listbox\">\n" +
+    //         "                        <div class=\"carousel-item active\">\n" +
+    //         "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/min-wage-cn/casual/1.png\" alt=\"First slide\">\n" +
+    //         "                        </div>\n" +
+    //         "                        <div class=\"carousel-item\">\n" +
+    //         "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/min-wage-cn/casual/2.png\" alt=\"Second slide\">\n" +
+    //         "                        </div>\n" +
+    //         "                        <div class=\"carousel-item\">\n" +
+    //         "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/min-wage-cn/casual/3.png\" alt=\"Third slide\">\n" +
+    //         "                        </div>\n" +
+    //         "                        <div class=\"carousel-item\">\n" +
+    //         "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/min-wage-cn/casual/4.png\" alt=\"Fourth slide\">\n" +
+    //         "                        </div>\n" +
+    //         "                        <div class=\"carousel-item\">\n" +
+    //         "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/min-wage-cn/casual/5.png\" alt=\"Fifth slide\">\n" +
+    //         "                        </div>\n" +
+    //         "                    </div>\n" +
+    //         "                    <a class=\"carousel-control-prev\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"prev\">\n" +
+    //         "                        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n" +
+    //         "                        <span class=\"sr-only\">Previous</span>\n" +
+    //         "                    </a>\n" +
+    //         "                    <a class=\"carousel-control-next\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"next\">\n" +
+    //         "                        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n" +
+    //         "                        <span class=\"sr-only\">Next</span>\n" +
+    //         "                    </a>\n" +
+    //         "                    <!--/.Controls-->\n" +
+    //         "                    <ol id =\"indicator_caro\" class=\"carousel-indicators\">\n" +
+    //         "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"0\" class=\"active\">\n" +
+    //         "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/min-wage-cn/casual/1.png\" class=\"img-fluid\">\n" +
+    //         "                        </li>\n" +
+    //         "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"1\">\n" +
+    //         "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/min-wage-cn/casual/2.png\" class=\"img-fluid\">\n" +
+    //         "                        </li>\n" +
+    //         "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"2\">\n" +
+    //         "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/min-wage-cn/casual/3.png\" class=\"img-fluid\">\n" +
+    //         "                        </li>\n" +
+    //         "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"3\">\n" +
+    //         "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/min-wage-cn/casual/4.png\" class=\"img-fluid\">\n" +
+    //         "                        </li>\n" +
+    //         "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"4\">\n" +
+    //         "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/min-wage-cn/casual/5.png\" class=\"img-fluid\">\n" +
+    //         "                        </li>\n" +
+    //         "                    </ol>\n" +
+    //         "                </div>";
+    // }
 </script>
 </body>
 </html>

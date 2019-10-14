@@ -131,7 +131,16 @@
 <!-- CAROUSEL CODE-->
 <div class="container">
     <div class="row">
-        <div class="col-2"></div>
+        <div class="col-2">
+            <div class="row">
+                <a class="btn btn-secondary btn-lg btn-block active" href="#" role="button" id="button_full" data-toggle="dropdown" onclick="change_active_2(); delete_motive_cn();">
+                    <span id="story3" style="font-family: 'Architects Daughter', cursive; ">Part&Full Time</span></a>
+            </div>
+            <div class="row">
+                <a class="btn btn-secondary btn-sm btn-block" href="#" role="button" id="button_casual" data-toggle="dropdown" onclick="change_active(); casualEmp();">
+                    <span id="story4" style="font-family: 'Architects Daughter', cursive;">Casual</span></a>
+            </div>
+        </div>
         <div class="col-8">
             <div class="container my-4" id="min_wrapper">
                 <!--                <hr class="my-4">-->
@@ -265,6 +274,51 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!--<script src="routes/scroll.js"></script>-->
 <script>
+    var dataReload = document.querySelectorAll("[data-reload]");
+
+    //Language translations
+    var language = {
+        au:{
+            welcome: "Welcome to KnowYourRights",
+            home: "Home",
+            minwage: "Minimum Wage"
+        },
+        cn:{
+            welcome: "欢迎来到KnowYourRights",
+            home: "主页",
+            minwage: "最低工资"
+        }
+    };
+    function change_active(){
+        let element = document.getElementById("button_full");
+        element.classList.remove("active");
+        element.classList.remove("btn-lg");
+        element.classList.add("btn-sm");
+        element.style.borderColor = "#4e555b";
+        element.style.borderWidth = "0.15em";
+        let element_to_be_activated = document.getElementById("button_casual");
+        element_to_be_activated.classList.remove("active");
+        element_to_be_activated.classList.remove("btn-sm");
+        element_to_be_activated.classList.add("btn-lg");
+        element_to_be_activated.classList.add("active");
+        element_to_be_activated.style.borderColor = "#eb8034";
+        element_to_be_activated.style.boxShadow = "0 0 0 0em";
+    }
+    function change_active_2(){
+        let element = document.getElementById("button_casual");
+        element.classList.remove("active");
+        element.classList.remove("btn-lg");
+        element.classList.add("btn-sm");
+        element.style.borderColor = "#4e555b";
+        element.style.borderWidth = "0.15em";
+        let element_to_be_activated = document.getElementById("button_full");
+        element_to_be_activated.classList.remove("active");
+        element_to_be_activated.classList.remove("btn-sm");
+        element_to_be_activated.classList.add("btn-lg");
+        element_to_be_activated.classList.add("active");
+        element_to_be_activated.style.borderColor = "#eb8034";
+        element_to_be_activated.style.boxShadow = "0 0 0 0em";
+    }
     function translate_cn() {
         document.getElementById("nav_home").textContent = "主页";
         document.getElementById("navbarDropdown").textContent = "员工权利";
@@ -452,56 +506,54 @@
     }
 
     function casualEmp(){
-        let element_1 = document.getElementById("myCarousel");
+        let element_1 = document.getElementById("carousel-thumb");
         element_1.parentNode.removeChild(element_1);
-        document.getElementById("an_leave_wrapper").innerHTML = "    <div id=\"myCarousel\" class=\"carousel slide\" data-interval=\"3000\" data-ride=\"carousel\">\n" +
-            "        <!-- Carousel indicators -->\n" +
-            "        <ol class=\"carousel-indicators\">\n" +
-            "            <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n" +
-            "            <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n" +
-            "            <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n" +
-            "        </ol>\n" +
-            "        <!-- Wrapper for carousel items -->\n" +
-            "        <div class=\"carousel-inner\">\n" +
-            "            <div class=\"carousel-item active\">\n" +
-            "                " +
-            "                <img src=\"images/annualleave/Casual/1.png\" alt=\"First Slide\">\n" +
-            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
-            "                </div>\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                " +
-            "                <img src=\"images/annualleave/Casual/2.png\" alt=\"Second Slide\">\n" +
-            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
-            "                </div>\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                " +
-            "                <img src=\"images/annualleave/Casual/3.png\" alt=\"Third Slide\">\n" +
-            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
-            "                </div>\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "               " +
-            "                <img src=\"images/annualleave/Casual/4.png\" alt=\"Fourth Slide\">\n" +
-            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
-            "                </div>\n" +
-            "            </div>\n" +
-            "            <div class=\"carousel-item\">\n" +
-            "                " +
-            "                <img src=\"images/annualleave/Casual/5.png\" alt=\"Fifth Slide\">\n" +
-            "                <div class=\"carousel-caption d-none d-md-block\">\n" +
-            "                </div>\n" +
-            "            </div>\n" +
-            "        </div>\n" +
-            "        <!-- Carousel controls -->\n" +
-            "        <a class=\"carousel-control-prev\" href=\"#myCarousel\" data-slide=\"prev\">\n" +
-            "            <span class=\"carousel-control-prev-icon\"></span>\n" +
-            "        </a>\n" +
-            "        <a class=\"carousel-control-next\" href=\"#myCarousel\" data-slide=\"next\">\n" +
-            "            <span class=\"carousel-control-next-icon\"></span>\n" +
-            "        </a>\n" +
-            "    </div>";
+        document.getElementById("min_wrapper").innerHTML = " <div id=\"carousel-thumb\" data-interval=\"false\" class=\"carousel slide carousel-fade carousel-thumbnails\" data-ride=\"carousel\">\n" +
+            "                    <!--Slides-->\n" +
+            "                    <div id=\"trial\" class=\"carousel-inner\" role=\"listbox\">\n" +
+            "                        <div class=\"carousel-item active\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_LEAVE/Leave_Annual _leave/Casual/Leave_Annual _leave_1.png\" alt=\"First slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_LEAVE/Leave_Annual _leave/Casual/Leave_Annual _leave_2.png\" alt=\"Second slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_LEAVE/Leave_Annual _leave/Casual/Leave_Annual _leave_3.png\" alt=\"Third slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_LEAVE/Leave_Annual _leave/Casual/Leave_Annual _leave_4.png\" alt=\"Third slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_LEAVE/Leave_Annual _leave/Casual/Leave_Annual _leave_5.png\" alt=\"Third slide\">\n" +
+            "                        </div>\n" +
+            "                    </div>\n" +
+            "                    <a class=\"carousel-control-prev\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"prev\">\n" +
+            "                        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n" +
+            "                        <span class=\"sr-only\">Previous</span>\n" +
+            "                    </a>\n" +
+            "                    <a class=\"carousel-control-next\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"next\">\n" +
+            "                        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n" +
+            "                        <span class=\"sr-only\">Next</span>\n" +
+            "                    </a>\n" +
+            "                    <!--/.Controls-->\n" +
+            "                    <ol id =\"indicator_caro_super\" class=\"carousel-indicators\">\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"0\" class=\"active\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_LEAVE/Leave_Annual _leave/Casual/Leave_Annual _leave_1.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"1\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_LEAVE/Leave_Annual _leave/Casual/Leave_Annual _leave_2.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"2\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_LEAVE/Leave_Annual _leave/Casual/Leave_Annual _leave_3.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"2\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_LEAVE/Leave_Annual _leave/Casual/Leave_Annual _leave_4.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"2\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_LEAVE/Leave_Annual _leave/CAsual/Leave_Annual _leave_5.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                    </ol>\n" +
+            "                </div> ";
     }
 </script>
 </body>
