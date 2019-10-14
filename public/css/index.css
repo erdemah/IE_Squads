@@ -163,9 +163,17 @@
 .carousel-indicators {
     bottom: -5em;
 }
-#caro_super{
-    width: 10em;
-    height: 1em;
+/*#caro_super{*/
+/*    width: 10em;*/
+/*    height: 1em;*/
+/*}*/
+#indicator_caro_super{
+    bottom: -3.5em;
+}
+
+#caro_super2{
+    width: 5em;
+    height: 0.5em;
 }
 .carousel-indicators li {
     width: 10em;
