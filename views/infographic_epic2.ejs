@@ -29,85 +29,119 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">
-                        <span class="oi oi-home" title="home" aria-hidden="true"></span>
-                    </a>
-                </li>
+                <div id="menu_area" class="menu-area">
+                    <div class="container">
+                        <div class="row">
+                            <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li><a id="nav_home" href="/" style="font-family: Josefin Sans;">Home</a></li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">Employee Entitlements</span></a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li class="dropdown">
+
+                                                    <a class="dropdown-toggle" href="#" id="navbar1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Pay</span></a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li ><a  id="myfont_1" href="#">Minimum Wage</a></li>
+                                                        <li><a  id="myfont_2" href="#">Pay Slip</a></li>
+                                                        <li><a id="myfont_3"  href="#">Superannuation</a></li>
+                                                        <li><a id="myfont_4"  href="#">Working Hours</a></li>
+                                                        <li><a id="myfont_5" href="#">Annual Bonus</a></li>
+                                                        <li><a id="myfont_6" href="#">Quick Info</a></li>
+                                                        <li><a id="myfont_20" href="#">Salary&Job Analysis</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" href="#" id="navbar2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Leave</span></a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a id="myfont_8" href="#">Annual Leave Entitlements</a></li>
+                                                        <li><a id="myfont_9" href="#">Sick Leave Entitlements</a></li>
+                                                        <li><a id="myfont_10" href="#">Quick Info</a></li>
+                                                        <li><a id="myfont_21" href="#">Paid Leave Analysis</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Contract</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li>
+                                                            <a id="myfont_12" href="#">Contract Information</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_13" href="#">Industrial Action</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_14" href="#">Redundancy</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_15" href="#">Resignation</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_16" href="#">Unfair Dismissal Case</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_17" href="#">Unfair Dismissal</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_18" href="#">Infographic</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_22" href="#">Injury Analysis</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a id="myfont_23" href="#">External Links</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
                 <li class="nav-item">
-                    <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link-employee" href="#entitlement">Employee Entitlement
-                        <span id="nav-separator">|</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au();delete_motive_cn();">
+                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au(); delete_motive_cn();">
                         <span class="flag-icon flag-icon-au"> </span>
                         <span id="nav-separator">English</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn();delete_motive_au();">
+                    <a class="nav-link" id="nav-link-au" href="#cn" data-reload onclick="translate_cn(); delete_motive_au();">
                         <span class="flag-icon flag-icon-cn" id="nav-separator"></span>
-                        <span id="nav-separator">中文</span>
-                        <span id="nav-separator">|</span></a>
+                        <span id="nav-separator">中文</span></a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- TILES CODE-->
-<div class="pagina">
-    <div class="linha">
-        <div class="tile epic1" onclick="location.href='superannuation'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Super and Tax</span>
-        </div>
-        <div class="tile epic1" onclick="location.href='minimum_wage'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Minimum Wage</span>
-        </div>
-        <div class="tile epic1"  onclick="location.href='working_hour'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Working Hours</span>
-        </div>
-        <div class="tile epic1"  onclick="location.href='annual_bonus'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Annual Bonus</span>
-        </div>
-        <div class="tile epic2"  onclick="location.href='annual_leave'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Annual Leave</span>
-        </div>
-        <div class="tile epic1"  onclick="location.href='pay_raise_visu'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Pay Raise</span>
-        </div>
-        <div class="tile epic2"  onclick="location.href='pay_rate_level'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Pay Level</span>
-        </div>
-        <div class="tile epic1"  onclick="location.href='pay_slip'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Pay Slips</span>
-        </div>
-        <div class="tile epic2"  onclick="location.href='sick_leave'" style="cursor: pointer">
-            <span class="titulo" style="align-content: center">Sick Leave</span>
+<!-- Infographic code-->
+<div class="container" id="aboutus">
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <span id="page2-entitlement">Quick Info</span>
         </div>
     </div>
-</div>
-<!-- TILES CODE END-->
-
-<!-- Infographic code-->
-<div class="container-fluid" id="aboutus">
-    <span id="page2-entitlement">Infographics</span>
-</div>
-<div class="container-fluid">
-    <div id="rectangle"></div>
+    <div class="row">
+        <div class="col-12">
+            <div id="rectangle"></div>
+        </div>
+    </div>
 </div>
 <div class="row">
     <div class="infographics">
-        <img class="poster" src="images/Infographic/leave_eng.png"/>
+        <img class="poster" src="images/Infographic/leave_en.png"/>
     </div>
-
     <div class="infographics">
-        <img class="poster" src="images/Infographic/leave_cn.png"/>
+        <img class="poster" src="images/Infographic/leave_ch.png"/>
     </div>
 </div>
+
 <!-- Infographic code end-->
 
 <!-- FOOTER CODE-->
@@ -191,9 +225,32 @@
     };
 
     function translate_cn() {
-        document.getElementById("homenav").textContent = "主页";
-        document.getElementById("nav-link-employee").textContent = "员工权利";
-        document.getElementById("page2-entitlement").textContent = "信息图表";
+        document.getElementById("nav_home").textContent = "主页";
+        document.getElementById("navbarDropdown").textContent = "员工权利";
+        document.getElementById("navbar1").textContent = "关于您的薪水";
+        document.getElementById("myfont_1").textContent = "最低工资";
+        document.getElementById("myfont_2").textContent = "工资单";
+        document.getElementById("myfont_3").textContent = "退休金";
+        document.getElementById("myfont_4").textContent = "工作时间";
+        document.getElementById("myfont_5").textContent = "年度奖金";
+        document.getElementById("myfont_6").textContent = "快速资讯";
+        document.getElementById("myfont_20").textContent = "薪资和工作分析";
+        document.getElementById("navbar2").textContent = "关于您的假期";
+        document.getElementById("myfont_8").textContent = "年假权利";
+        document.getElementById("myfont_9").textContent = "病假权利";
+        document.getElementById("myfont_10").textContent = "快速资讯";
+        document.getElementById("myfont_21").textContent = "带薪休假分析";
+        document.getElementById("navbar3").textContent = "关于您的合同";
+        document.getElementById("myfont_12").textContent = "合同信息";
+        document.getElementById("myfont_13").textContent = "工业行动";
+        document.getElementById("myfont_14").textContent = "冗余";
+        document.getElementById("myfont_15").textContent = "辞职";
+        document.getElementById("myfont_16").textContent = "不公平解雇案";
+        document.getElementById("myfont_17").textContent = "不公平解雇";
+        document.getElementById("myfont_18").textContent = "快速资讯";
+        document.getElementById("myfont_22").textContent = "损伤分析";
+        document.getElementById("myfont_23").textContent = "外部链接";
+        document.getElementById("page2-entitlement").textContent = "快速资讯";
         document.getElementById("quick-link").textContent = "快速链接";
         document.getElementById("working-hours-2").textContent = "工作时间";
         document.getElementById("super-ann").textContent = "退休金";
@@ -212,9 +269,32 @@
 
     }
     function translate_au() {
-        document.getElementById("homenav").textContent = "Home";
-        document.getElementById("nav-link-employee").textContent = "Employee Entitlement";
-        document.getElementById("page2-entitlement").textContent = "Infographics";
+        document.getElementById("nav_home").textContent = "Home";
+        document.getElementById("navbarDropdown").textContent = "Employee Entitlement";
+        document.getElementById("navbar1").textContent = "About Your Pay";
+        document.getElementById("myfont_1").textContent = "Minimum Wage";
+        document.getElementById("myfont_2").textContent = "Pay Slip";
+        document.getElementById("myfont_3").textContent = "Superannuation";
+        document.getElementById("myfont_4").textContent = "Working Hours";
+        document.getElementById("myfont_5").textContent = "Annual Bonus";
+        document.getElementById("myfont_6").textContent = "Quick Info";
+        document.getElementById("myfont_20").textContent = "Salary&Job Analysis";
+        document.getElementById("navbar2").textContent = "About Your leave";
+        document.getElementById("myfont_8").textContent = "Annual Leave Entitlements";
+        document.getElementById("myfont_9").textContent = "Sick Leave Entitlements";
+        document.getElementById("myfont_10").textContent = "Quick Info";
+        document.getElementById("myfont_21").textContent = "Paid Leave Analysis";
+        document.getElementById("navbar3").textContent = "About Your Contract";
+        document.getElementById("myfont_12").textContent = "Contract Information";
+        document.getElementById("myfont_13").textContent = "industrial Action";
+        document.getElementById("myfont_14").textContent = "Redundancy";
+        document.getElementById("myfont_15").textContent = "Resignation";
+        document.getElementById("myfont_16").textContent = "Unfair Dismissal Case";
+        document.getElementById("myfont_17").textContent = "Unfair Dismissal";
+        document.getElementById("myfont_18").textContent = "Quick Info";
+        document.getElementById("myfont_22").textContent = "Injury Analysis";
+        document.getElementById("myfont_23").textContent = "External Links";
+        document.getElementById("page2-entitlement").textContent = "Quick Info";
         document.getElementById("quick-link").textContent = "Quick Links";
         document.getElementById("working-hours-2").textContent = "Working Hours";
         document.getElementById("super-ann").textContent = "Superannuation";
