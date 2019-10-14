@@ -24,6 +24,17 @@
 #dropdownMenuLink{
     margin:0.2em;
 }
+#button_full{
+    margin:1.2em auto auto auto;
+    border-color: #eb8034;
+    border-width: 0.15em;
+}
+
+#button_casual{
+    margin:1.7em auto auto auto;
+    border-color: #4e555b;
+    border-width: 0.15em;
+}
 .dropdown{
     margin-top: 0.1em;
 }
