@@ -34,9 +34,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-<!--        <li class="nav-item active">-->
-<!--          <a class="nav-link" id="nav-link-home" href="/"><span id="homenav">Home</span></a>-->
-<!--        </li>-->
         <div id="menu_area" class="menu-area">
           <div class="container">
             <div class="row">
@@ -48,22 +45,23 @@
                   <ul class="navbar-nav mr-auto">
                     <li><a id="nav_home" href="/" style="font-family: Josefin Sans;">Home</a></li>
                     <li class="dropdown">
-                      <a class="dropdown-toggle" href="#" style="font-family:Josefin Sans;" id="navbarDropdown_emp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employee Entitlements</a>
+                      <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">Employee Entitlements</span></a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li class="dropdown">
-                          <a class="dropdown-toggle" href="#" id="navbarDropdown_pay" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Pay</span></a>
-                          <ul class="dropdown-menu" style="font-family:Josefin Sans;" aria-labelledby="navbarDropdown_pay_under">
+
+                          <a class="dropdown-toggle" href="#" id="navbar1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Pay</span></a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li ><a  id="myfont_1" href="minimum_wage">Minimum Wage</a></li>
                             <li><a  id="myfont_2" href="pay_slip">Pay Slip</a></li>
                             <li><a id="myfont_3"  href="superannuation">Superannuation</a></li>
                             <li><a id="myfont_4"  href="working_hour">Working Hours</a></li>
                             <li><a id="myfont_5" href="annual_bonus">Annual Bonus</a></li>
-                            <li><a id="myfont_20" href="pay_raise_visu">Salary&Job Analysis</a></li>
                             <li><a id="myfont_6" href="infographics_epic1">Quick Info</a></li>
+                            <li><a id="myfont_20" href="pay_raise_visu">Salary&Job Analysis</a></li>
                           </ul>
                         </li>
                         <li class="dropdown">
-                          <a class="dropdown-toggle" href="#" id="navbarDropdown_leave" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Leave</span></a>
+                          <a class="dropdown-toggle" href="#" id="navbar2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Leave</span></a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a id="myfont_8" href="annual_leave">Annual Leave Entitlements</a></li>
                             <li><a id="myfont_9" href="sick_leave">Sick Leave Entitlements</a></li>
@@ -76,7 +74,7 @@
                           </ul>
                         </li>
                         <li class="dropdown">
-                          <a class="dropdown-toggle" href="#" id="navbarDropdown_contract" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Contract</span></a>
+                          <a class="dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Contract</a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
                               <a id="myfont_12" href="contract_termination">Contract Termination</a>
@@ -115,6 +113,7 @@
             </div>
           </div>
         </div>
+
         <li class="nav-item">
           <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au(); delete_motive_ch();">
             <span class="flag-icon flag-icon-au"> </span>
@@ -169,7 +168,7 @@
               <a class="dropdown-item" href="infographics_epic1"><span id="infograph1" style="font-family: 'Architects Daughter', cursive;">Quick Info</span></a>
             </div>
             <a class="btn btn-secondary" href="pay_raise_visu" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
-              <span id="myfont_6" style="font-family: 'Architects Daughter', cursive;">Salary&Job Analysis</span>
+              <span id="visu1" style="font-family: 'Architects Daughter', cursive;">Salary&Job Analysis</span>
             </a>
         </div>
     </div>
@@ -188,7 +187,7 @@
             <a class="dropdown-item" href="infographic_epic2"><span id="infograph2" style="font-family: 'Architects Daughter', cursive;">Quick Info</span></a>
           </div>
         <a class="btn btn-secondary" href="pay_rate_level" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
-          <span id="myfont_11" style="font-family: 'Architects Daughter', cursive;">Paid Leave Analysis</span>
+          <span id="visu2" style="font-family: 'Architects Daughter', cursive;">Paid Leave Analysis</span>
         </a>
         </div>
     </div>
@@ -210,7 +209,7 @@
             <a class="dropdown-item" href="infographic_epic3"><span id="infograph3" style="font-family: 'Architects Daughter', cursive;">Quick Info</span></a>
           </div>
           <a class="btn btn-secondary" href="injury_visualisation" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
-            <span id="myfont_19" style="font-family: 'Architects Daughter', cursive;">Injury Analysis</span>
+            <span id="visu3" style="font-family: 'Architects Daughter', cursive;">Injury Analysis</span>
           </a>
         </div>
       </div>
@@ -358,33 +357,49 @@ return false;
     };
     function translate_cn() {
       document.getElementById("nav_home").textContent = "主页";
-      document.getElementById("navbarDropdown_emp").textContent = "员工权益";
+      document.getElementById("navbarDropdown").textContent = "员工权利";
+      document.getElementById("navbar1").textContent = "关于您的薪水";
+      document.getElementById("myfont_1").textContent = "最低工资";
+      document.getElementById("myfont_2").textContent = "工资单";
+      document.getElementById("myfont_3").textContent = "退休金";
+      document.getElementById("myfont_4").textContent = "工作时间";
+      document.getElementById("myfont_5").textContent = "年度奖金";
+      document.getElementById("myfont_6").textContent = "快速资讯";
+      document.getElementById("myfont_20").textContent = "薪资和工作分析";
+      document.getElementById("navbar2").textContent = "关于您的假期";
+      document.getElementById("myfont_8").textContent = "年假权利";
+      document.getElementById("myfont_9").textContent = "病假权利";
+      document.getElementById("myfont_10").textContent = "快速资讯";
+      document.getElementById("myfont_21").textContent = "带薪休假分析";
+      document.getElementById("navbar3").textContent = "关于您的合同";
+      document.getElementById("myfont_12").textContent = "合同信息";
+      document.getElementById("myfont_13").textContent = "工业行动";
+      document.getElementById("myfont_14").textContent = "冗余";
+      document.getElementById("myfont_15").textContent = "辞职";
+      document.getElementById("myfont_16").textContent = "不公平解雇案";
+      document.getElementById("myfont_17").textContent = "不公平解雇";
+      document.getElementById("myfont_18").textContent = "快速资讯";
+      document.getElementById("myfont_22").textContent = "损伤分析";
+      document.getElementById("myfont_23").textContent = "外部链接";
       document.getElementById("international-st").textContent = "对于国际学生";
       document.getElementById("know-entitle").textContent = "了解您的工作权利";
-
-
-
-
-      document.getElementById("nav-link-employee").textContent = "员工权利";
-
-      document.getElementById("know-entitle").textContent = "了解你的工作权利";
       document.getElementById("page2-entitlement").textContent = "员工权利";
-      document.getElementById("about-your-pay").textContent = "支付权利";
+      document.getElementById("about-your-pay").textContent = "关于您的薪水";
       document.getElementById("story1").textContent = "故事板";
       document.getElementById("minwage").textContent = "最低工资";
       document.getElementById("pay-slip").textContent = "支付单";
       document.getElementById("super-an").textContent = "退休金";
       document.getElementById("working-hrs").textContent = "工作时间";
       document.getElementById("annual-bonus").textContent = "年度奖金";
-      document.getElementById("infograph1").textContent = "信息图";
-      document.getElementById("infograph2").textContent = "信息图";
-      document.getElementById("infograph3").textContent = "信息图";
-      document.getElementById("visu1").textContent = "可视化";
+      document.getElementById("infograph1").textContent = "快速资讯";
+      document.getElementById("infograph2").textContent = "快速资讯";
+      document.getElementById("infograph3").textContent = "快速资讯";
+      document.getElementById("visu1").textContent = "薪资和工作分析";
       document.getElementById("about-your-leave").textContent = "休假权利";
       document.getElementById("story2").textContent = "故事板";
       document.getElementById("annual-leave-entitle").textContent = "年假权利";
       document.getElementById("sick-leave-entitle").textContent = "病假权利";
-      document.getElementById("visu2").textContent = "可视化";
+      document.getElementById("visu2").textContent = "带薪休假分析";
       document.getElementById("about-your-workplace").textContent = "工作场所权益";
       document.getElementById("story3").textContent = "故事板";
       document.getElementById("contract_termination").textContent = "合同终止";
@@ -393,13 +408,7 @@ return false;
       document.getElementById("resignation").textContent = "辞职";
       document.getElementById("udc").textContent = "不公平解雇案";
       document.getElementById("ud").textContent = "不公平解雇";
-      document.getElementById("visu3").textContent = "可视化";
-      // document.getElementById("view-pay-rate").textContent = "查看您的工资水平";
-      // document.getElementById("about-your-leave").textContent = "关于你的假期";
-      // document.getElementById("pay-raise").textContent = "加薪";
-
-      // document.getElementById("annual-leave-entitle").textContent = "年假权利";
-      // document.getElementById("sick-leave-entitle").textContent = "病假权利";
+      document.getElementById("visu3").textContent = "损伤分析";
       document.getElementById("page2-motive").textContent = "我们的动机";
       document.getElementById("quick-link").textContent = "快速链接";
       document.getElementById("pay-raise-2").textContent = "加薪";
@@ -420,32 +429,49 @@ return false;
     }
     function translate_au() {
       document.getElementById("nav_home").textContent = "Home";
-      document.getElementById("navbarDropdown_emp").textContent = "Employee Entitlements";
+      document.getElementById("navbarDropdown").textContent = "Employee Entitlement";
+      document.getElementById("navbar1").textContent = "About Your Pay";
+      document.getElementById("myfont_1").textContent = "Minimum Wage";
+      document.getElementById("myfont_2").textContent = "Pay Slip";
+      document.getElementById("myfont_3").textContent = "Superannuation";
+      document.getElementById("myfont_4").textContent = "Working Hours";
+      document.getElementById("myfont_5").textContent = "Annual Bonus";
+      document.getElementById("myfont_6").textContent = "Quick Info";
+      document.getElementById("myfont_20").textContent = "Salary&Job Analysis";
+      document.getElementById("navbar2").textContent = "About Your leave";
+      document.getElementById("myfont_8").textContent = "Annual Leave Entitlements";
+      document.getElementById("myfont_9").textContent = "Sick Leave Entitlements";
+      document.getElementById("myfont_10").textContent = "Quick Info";
+      document.getElementById("myfont_21").textContent = "Paid Leave Analysis";
+      document.getElementById("navbar3").textContent = "About Your Contract";
+      document.getElementById("myfont_12").textContent = "Contract Information";
+      document.getElementById("myfont_13").textContent = "industrial Action";
+      document.getElementById("myfont_14").textContent = "Redundancy";
+      document.getElementById("myfont_15").textContent = "Resignation";
+      document.getElementById("myfont_16").textContent = "Unfair Dismissal Case";
+      document.getElementById("myfont_17").textContent = "Unfair Dismissal";
+      document.getElementById("myfont_18").textContent = "Quick Info";
+      document.getElementById("myfont_22").textContent = "Injury Analysis";
+      document.getElementById("myfont_23").textContent = "External Links";
       document.getElementById("international-st").textContent = "For International Students";
       document.getElementById("know-entitle").textContent = "Know Your Working Entitlements";
-
-
-
-      document.getElementById("nav-link-employee").textContent = "Employee Entitlement";
-
-
       document.getElementById("page2-entitlement").textContent = "EMPLOYEE ENTITLEMENT";
-      document.getElementById("about-your-pay").textContent = "Pay Entitlements";
+      document.getElementById("about-your-pay").textContent = "About Your Pay";
       document.getElementById("story1").textContent = "Storyboards";
       document.getElementById("minwage").textContent = "Minimum Wage";
       document.getElementById("pay-slip").textContent = "Pay Slip";
       document.getElementById("super-an").textContent = "Superannuation";
       document.getElementById("working-hrs").textContent = "Working Hours";
       document.getElementById("annual-bonus").textContent = "Annual Bonus";
-      document.getElementById("infograph1").textContent = "Infographic";
-      document.getElementById("infograph2").textContent = "Infographic";
-      document.getElementById("infograph3").textContent = "Infographic";
-      document.getElementById("visu1").textContent = "Visualisation";
+      document.getElementById("infograph1").textContent = "Quick Info";
+      document.getElementById("infograph2").textContent = "Quick Info";
+      document.getElementById("infograph3").textContent = "Quick Info";
+      document.getElementById("visu1").textContent = "Salary&Job Analysis";
       document.getElementById("about-your-leave").textContent = "Leave Entitlements";
-      document.getElementById("story2").textContent = "故事板";
+      document.getElementById("story2").textContent = "Storyboards";
       document.getElementById("annual-leave-entitle").textContent = "Annual Leave Entitlements";
       document.getElementById("sick-leave-entitle").textContent = "Sick Leave Entitlements";
-      document.getElementById("visu2").textContent = "Visualisation";
+      document.getElementById("visu2").textContent = "Paid Leave Analysis";
       document.getElementById("about-your-workplace").textContent = "Workplace Entitlements";
       document.getElementById("story3").textContent = "Storyboards";
       document.getElementById("contract_termination").textContent = "Contract Termination";
@@ -454,13 +480,7 @@ return false;
       document.getElementById("resignation").textContent = "Resignation";
       document.getElementById("udc").textContent = "Unfair Dismissal Case";
       document.getElementById("ud").textContent = "Unfair Dismissal";
-      document.getElementById("visu3").textContent = "Visualisation";
-      // document.getElementById("view-pay-rate").textContent = "View Your Pay Rate Level";
-      // document.getElementById("about-your-leave").textContent = "About Your Leave";
-      // document.getElementById("pay-raise").textContent = "Pay Raise";
-
-      // document.getElementById("annual-leave-entitle").textContent = "Annual Leave Entitlements";
-      // document.getElementById("sick-leave-entitle").textContent = "Sick Leave Entitlements";
+      document.getElementById("visu3").textContent = "Injury Analysis";
       document.getElementById("page2-motive").textContent = "Our Motive";
       document.getElementById("quick-link").textContent = "Quick Links";
       document.getElementById("pay-raise-2").textContent = "Pay Raise";
@@ -485,18 +505,18 @@ return false;
         element_2.parentNode.removeChild(element_2);
         document.getElementById("motive-original").innerHTML = "  <div class=\"row\" id=\"motive-au-1\">\n" +
             "    <div class=\"col-6\">\n" +
-            "      <img src=\"images/about1.png\" alt=\"about1\" style=\"width:100%\">\n" +
+            "      <img src=\"images/About_US/About_us_1.png\" alt=\"about1\" style=\"width:100%\">\n" +
             "    </div>\n" +
             "    <div class=\"col-6\">\n" +
-            "      <img src=\"images/about2.png\" alt=\"about2\" style=\"width:100%\">\n" +
+            "      <img src=\"images/About_US/About_us_2.png\" alt=\"about2\" style=\"width:100%\">\n" +
             "    </div>\n" +
             "  </div>\n" +
             "  <div class=\"row\" id=\"motive-au-2\">\n" +
             "    <div class=\"col-6\">\n" +
-            "      <img src=\"images/about3.png\" alt=\"about3\" style=\"width:100%\">\n" +
+            "      <img src=\"images/About_US/About_us_3.png\" alt=\"about3\" style=\"width:100%\">\n" +
             "    </div>\n" +
             "    <div class=\"col-6\">\n" +
-            "      <img src=\"images/about4.png\" alt=\"about4\" style=\"width:100%\">\n" +
+            "      <img src=\"images/About_US/About_us_4.jpg\" alt=\"about4\" style=\"width:100%\">\n" +
             "    </div>\n" +
             "  </div>";
     }
@@ -508,18 +528,18 @@ return false;
       element_2.parentNode.removeChild(element_2);
       document.getElementById("motive-original").innerHTML = "  <div class=\"row\" id=\"motive-au-1\">\n" +
               "    <div class=\"col-6\">\n" +
-              "      <img src=\"images/about_us_cn/1.png\" alt=\"about1\" style=\"width:100%\">\n" +
+              "      <img src=\"images/About_US/about_us_cn/1.png\" alt=\"about1\" style=\"width:100%\">\n" +
               "    </div>\n" +
               "    <div class=\"col-6\">\n" +
-              "      <img src=\"images/about_us_cn/2.png\" alt=\"about2\" style=\"width:100%\">\n" +
+              "      <img src=\"images/About_US/about_us_cn/2.png\" alt=\"about2\" style=\"width:100%\">\n" +
               "    </div>\n" +
               "  </div>\n" +
               "  <div class=\"row\" id=\"motive-au-2\">\n" +
               "    <div class=\"col-6\">\n" +
-              "      <img src=\"images/about_us_cn/3.png\" alt=\"about3\" style=\"width:100%\">\n" +
+              "      <img src=\"images/About_US/about_us_cn/3.png\" alt=\"about3\" style=\"width:100%\">\n" +
               "    </div>\n" +
               "    <div class=\"col-6\">\n" +
-              "      <img src=\"images/about_us_cn/4.png\" alt=\"about4\" style=\"width:100%\">\n" +
+              "      <img src=\"images/About_US/about_us_cn/4.png\" alt=\"about4\" style=\"width:100%\">\n" +
               "    </div>\n" +
               "  </div>";
     }
