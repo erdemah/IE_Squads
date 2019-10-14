@@ -130,7 +130,16 @@
 <!--Carousel Wrapper-->
 <div class="container">
     <div class="row">
-        <div class="col-2"></div>
+        <div class="col-2">
+            <div class="row">
+                <a class="btn btn-secondary btn-lg btn-block active" href="#" role="button" id="button_full" data-toggle="dropdown" onclick="change_active_2();">
+                    <span id="story3" style="font-family: 'Architects Daughter', cursive; ">Part&Full Time</span></a>
+            </div>
+            <div class="row">
+                <a class="btn btn-secondary btn-sm btn-block" href="#" role="button" id="button_casual" data-toggle="dropdown" onclick="change_active();">
+                    <span id="story3" style="font-family: 'Architects Daughter', cursive;">Casual</span></a>
+            </div>
+        </div>
         <div class="col-8">
             <div class="container my-4" id="min_wrapper">
 <!--                <hr class="my-4">-->
@@ -281,6 +290,36 @@
             minwage: "最低工资"
         }
     };
+    function change_active(){
+        let element = document.getElementById("button_full");
+        element.classList.remove("active");
+        element.classList.remove("btn-lg");
+        element.classList.add("btn-sm");
+        element.style.borderColor = "#4e555b";
+        element.style.borderWidth = "0.15em";
+        let element_to_be_activated = document.getElementById("button_casual");
+        element_to_be_activated.classList.remove("active");
+        element_to_be_activated.classList.remove("btn-sm");
+        element_to_be_activated.classList.add("btn-lg");
+        element_to_be_activated.classList.add("active");
+        element_to_be_activated.style.borderColor = "#eb8034";
+        element_to_be_activated.style.boxShadow = "0 0 0 0em";
+    }
+    function change_active_2(){
+        let element = document.getElementById("button_casual");
+        element.classList.remove("active");
+        element.classList.remove("btn-lg");
+        element.classList.add("btn-sm");
+        element.style.borderColor = "#4e555b";
+        element.style.borderWidth = "0.15em";
+        let element_to_be_activated = document.getElementById("button_full");
+        element_to_be_activated.classList.remove("active");
+        element_to_be_activated.classList.remove("btn-sm");
+        element_to_be_activated.classList.add("btn-lg");
+        element_to_be_activated.classList.add("active");
+        element_to_be_activated.style.borderColor = "#eb8034";
+        element_to_be_activated.style.boxShadow = "0 0 0 0em";
+    }
 
     function translate_cn() {
         document.getElementById("nav_home").textContent = "主页";
