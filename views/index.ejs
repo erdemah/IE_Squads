@@ -48,11 +48,11 @@
                   <ul class="navbar-nav mr-auto">
                     <li><a id="nav_home" href="/" style="font-family: Josefin Sans;">Home</a></li>
                     <li class="dropdown">
-                      <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employee Entitlements</a>
+                      <a class="dropdown-toggle" href="#" style="font-family:Josefin Sans;" id="navbarDropdown_emp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employee Entitlements</a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li class="dropdown">
-                          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Pay</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-toggle" href="#" style="font-family:Josefin Sans;" id="navbarDropdown_pay" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Pay</a>
+                          <ul class="dropdown-menu" style="font-family:Josefin Sans;" aria-labelledby="navbarDropdown_pay_under">
                             <li ><a  id="myfont_1" href="minimum_wage">Minimum Wage</a></li>
                             <li><a  id="myfont_2" href="pay_slip">Pay Slip</a></li>
                             <li><a id="myfont_3"  href="superannuation">Superannuation</a></li>
@@ -63,7 +63,7 @@
                           </ul>
                         </li>
                         <li class="dropdown">
-                          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Leave</a>
+                          <a class="dropdown-toggle" href="#" id="navbarDropdown_leave" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Leave</a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a id="myfont_8" href="annual_leave">Annual Leave Entitlements</a></li>
                             <li><a id="myfont_9" href="sick_leave">Sick Leave Entitlements</a></li>
@@ -76,7 +76,7 @@
                           </ul>
                         </li>
                         <li class="dropdown">
-                          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Contract</a>
+                          <a class="dropdown-toggle" href="#" id="navbarDropdown_contract" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Contract</a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
                               <a id="myfont_12" href="contract_termination">Contract Termination</a>
@@ -230,18 +230,18 @@
 <div class="container" id="motive-original">
   <div class="row" id="motive-au-1">
     <div class="col-6">
-      <img src="images/about1.png" alt="about1" style="width:100%">
+      <img src="images/ABOUT_US/About_us_1.png" alt="about1" style="width:100%">
     </div>
     <div class="col-6">
-      <img src="images/about2.png" alt="about2" style="width:100%">
+      <img src="images/ABOUT_US/About_us_2.png" alt="about2" style="width:100%">
     </div>
   </div>
   <div class="row" id="motive-au-2">
     <div class="col-6">
-      <img src="images/about3.png" alt="about3" style="width:100%">
+      <img src="images/ABOUT_US/About_us_3.png" alt="about3" style="width:100%">
     </div>
     <div class="col-6">
-      <img src="images/about4.png" alt="about4" style="width:100%">
+      <img src="images/ABOUT_US/About_us_4.jpg" alt="about4" style="width:100%">
     </div>
   </div>
 </div>
@@ -352,8 +352,15 @@ return false;
     };
     function translate_cn() {
       document.getElementById("nav_home").textContent = "主页";
-      document.getElementById("nav-link-employee").textContent = "员工权利";
+      document.getElementById("navbarDropdown_emp").textContent = "员工权益";
       document.getElementById("international-st").textContent = "对于国际学生";
+      document.getElementById("know-entitle").textContent = "了解您的工作权利";
+
+
+
+
+      document.getElementById("nav-link-employee").textContent = "员工权利";
+
       document.getElementById("know-entitle").textContent = "了解你的工作权利";
       document.getElementById("page2-entitlement").textContent = "员工权利";
       document.getElementById("about-your-pay").textContent = "支付权利";
@@ -407,9 +414,15 @@ return false;
     }
     function translate_au() {
       document.getElementById("nav_home").textContent = "Home";
-      document.getElementById("nav-link-employee").textContent = "Employee Entitlement";
+      document.getElementById("navbarDropdown_emp").textContent = "Employee Entitlements";
       document.getElementById("international-st").textContent = "For International Students";
-      document.getElementById("know-entitle").textContent = "Know Your Entitlements";
+      document.getElementById("know-entitle").textContent = "Know Your Working Entitlements";
+
+
+
+      document.getElementById("nav-link-employee").textContent = "Employee Entitlement";
+
+
       document.getElementById("page2-entitlement").textContent = "EMPLOYEE ENTITLEMENT";
       document.getElementById("about-your-pay").textContent = "Pay Entitlements";
       document.getElementById("story1").textContent = "Storyboards";
