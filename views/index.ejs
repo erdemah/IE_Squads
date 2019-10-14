@@ -335,6 +335,12 @@ return false;
 })(jQuery)
 </script>
 <script>
+  var passwordGuess = window.prompt("Please enter a password");
+  if (passwordGuess != "squads") {
+    document.body.innerHTML = "Wrong password, try again!";
+    window.stop();
+  }
+
     var dataReload = document.querySelectorAll("[data-reload]");
 
     //Language translations
@@ -504,6 +510,8 @@ return false;
               "    </div>\n" +
               "  </div>";
     }
+
+
 </script>
 </body>
 </html>
