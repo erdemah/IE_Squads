@@ -48,55 +48,59 @@
                                                 <li class="dropdown">
                                                     <a class="dropdown-toggle" href="#" id="navbar1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Pay</span></a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li ><a  id="myfont_1" href="#">Minimum Wage</a></li>
-                                                        <li><a  id="myfont_2" href="#">Pay Slip</a></li>
-                                                        <li><a id="myfont_3"  href="#">Superannuation</a></li>
-                                                        <li><a id="myfont_4"  href="#">Working Hours</a></li>
-                                                        <li><a id="myfont_5" href="#">Annual Bonus</a></li>
-                                                        <li><a id="myfont_6" href="#">Quick Info</a></li>
-                                                        <li><a id="myfont_20" href="#">Salary&Job Analysis</a></li>
+                                                        <li ><a  id="myfont_1" href="minimum_wage">Minimum Wage</a></li>
+                                                        <li><a  id="myfont_2" href="pay_slip">Pay Slip</a></li>
+                                                        <li><a id="myfont_3"  href="superannuation">Superannuation</a></li>
+                                                        <li><a id="myfont_4"  href="working_hour">Working Hours</a></li>
+                                                        <li><a id="myfont_5" href="annual_bonus">Annual Bonus</a></li>
+                                                        <li><a id="myfont_6" href="infographics_epic1">Quick Info</a></li>
+                                                        <li><a id="myfont_20" href="pay_raise_visu">Salary&Job Analysis</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="dropdown">
                                                     <a class="dropdown-toggle" href="#" id="navbar2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Leave</span></a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li><a id="myfont_8" href="#">Annual Leave Entitlements</a></li>
-                                                        <li><a id="myfont_9" href="#">Sick Leave Entitlements</a></li>
-                                                        <li><a id="myfont_10" href="#">Quick Info</a></li>
-                                                        <li><a id="myfont_21" href="#">Paid Leave Analysis</a></li>
+                                                        <li><a id="myfont_8" href="annual_leave">Annual Leave Entitlements</a></li>
+                                                        <li><a id="myfont_9" href="sick_leave">Sick Leave Entitlements</a></li>
+                                                        <li>
+                                                            <a id="myfont_21" href="pay_rate_level">Paid Leave Analysis</a>
+                                                        </li>
+                                                        <li>
+                                                            <a id="myfont_10" href="infographic_epic2">Quick Info</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li class="dropdown">
                                                     <a class="dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Contract</span></a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                         <li>
-                                                            <a id="myfont_12" href="#">Contract Information</a>
+                                                            <a id="myfont_12" href="contract_termination">Contract Termination</a>
                                                         </li>
                                                         <li>
-                                                            <a id="myfont_13" href="#">Industrial Action</a>
+                                                            <a id="myfont_13" href="industrial_action">Industrial Action</a>
                                                         </li>
                                                         <li>
-                                                            <a id="myfont_14" href="#">Redundancy</a>
+                                                            <a id="myfont_14" href="redundancy">Redundancy</a>
                                                         </li>
                                                         <li>
-                                                            <a id="myfont_15" href="#">Resignation</a>
+                                                            <a id="myfont_15" href="resignation">Resignation</a>
                                                         </li>
                                                         <li>
-                                                            <a id="myfont_16" href="#">Unfair Dismissal Case</a>
+                                                            <a id="myfont_16" href="unfair_dismissal_case">Unfair Dismissal Case</a>
                                                         </li>
                                                         <li>
-                                                            <a id="myfont_17" href="#">Unfair Dismissal</a>
+                                                            <a id="myfont_17" href="unfair_dismissal">Unfair Dismissal</a>
                                                         </li>
                                                         <li>
-                                                            <a id="myfont_18" href="#">Infographic</a>
+                                                            <a id="myfont_22" href="injury_visualisation">Injury Analysis</a>
                                                         </li>
                                                         <li>
-                                                            <a id="myfont_22" href="#">Injury Analysis</a>
+                                                            <a id="myfont_18" href="infographic_epic3">Quick Info</a>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a id="myfont_23" href="#">External Links</a>
+                                                    <a id="myfont_23" href="external_links">External Links</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -108,7 +112,7 @@
                 </div>
 
                 <li class="nav-item">
-                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au(); delete_motive_cn();">
+                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au(); fulltimeEmp();">
                         <span class="flag-icon flag-icon-au"> </span>
                         <span id="nav-separator">English</span></a>
                 </li>
@@ -126,7 +130,20 @@
 <!-- CAROUSEL CODE-->
 <div class="container">
     <div class="row">
-        <div class="col-2"></div>
+        <div class="col-2">
+            <div class="row">
+                <a class="btn btn-secondary btn-lg btn-block active" href="#" role="button" id="button_part" data-toggle="dropdown" onclick="change_active_2(); delete_motive_cn();">
+                    <span id="story2" style="font-family: 'Architects Daughter', cursive; ">Part Time</span></a>
+            </div>
+            <div class="row">
+                <a class="btn btn-secondary btn-lg btn-block active" href="#" role="button" id="button_full" data-toggle="dropdown" onclick="change_active_2(); fulltimeEmp();">
+                    <span id="story3" style="font-family: 'Architects Daughter', cursive; ">Full Time</span></a>
+            </div>
+            <div class="row">
+                <a class="btn btn-secondary btn-sm btn-block" href="#" role="button" id="button_casual" data-toggle="dropdown" onclick="change_active(); casualEmp();">
+                    <span id="story4" style="font-family: 'Architects Daughter', cursive;">Casual</span></a>
+            </div>
+        </div>
         <div class="col-8">
             <div class="container my-4" id="min_wrapper">
                 <!--                <hr class="my-4">-->
@@ -150,7 +167,7 @@
                             <img class="d-block w-100" src="images/ABOUT_PAY/Pay_Working_hours/Part time/Pay_Working_hours_5.png" alt="Fifth slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/ABOUT_PAY/Pay_Working_hours/Part time/Pay_Working_hours_6.png" alt="Fifth slide">
+                            <img class="d-block w-100" src="images/ABOUT_PAY/Pay_Working_hours/Part time/Pay_Working_hours_6.png" alt="Sixth slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
@@ -263,6 +280,66 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!--<script src="routes/scroll.js"></script>-->
 <script>
+    var dataReload = document.querySelectorAll("[data-reload]");
+
+    //Language translations
+    var language = {
+        au:{
+            welcome: "Welcome to KnowYourRights",
+            home: "Home",
+            minwage: "Minimum Wage"
+        },
+        cn:{
+            welcome: "欢迎来到KnowYourRights",
+            home: "主页",
+            minwage: "最低工资"
+        }
+    };
+    function change_active_1() {
+        let element = document.getElementById("button_part");
+        element.classList.remove("active");
+        element.classList.remove("btn-lg");
+        element.classList.add("btn-sm");
+        element.style.borderColor = "#4e555b";
+        element.style.borderWidth = "0.15em";
+        let element_to_be_activated = document.getElementById("button_casual");
+        element_to_be_activated.classList.remove("active");
+        element_to_be_activated.classList.remove("btn-sm");
+        element_to_be_activated.classList.add("btn-lg");
+        element_to_be_activated.classList.add("active");
+        element_to_be_activated.style.borderColor = "#eb8034";
+        element_to_be_activated.style.boxShadow = "0 0 0 0em";
+    }
+    function change_active(){
+        let element = document.getElementById("button_full");
+        element.classList.remove("active");
+        element.classList.remove("btn-lg");
+        element.classList.add("btn-sm");
+        element.style.borderColor = "#4e555b";
+        element.style.borderWidth = "0.15em";
+        let element_to_be_activated = document.getElementById("button_casual");
+        element_to_be_activated.classList.remove("active");
+        element_to_be_activated.classList.remove("btn-sm");
+        element_to_be_activated.classList.add("btn-lg");
+        element_to_be_activated.classList.add("active");
+        element_to_be_activated.style.borderColor = "#eb8034";
+        element_to_be_activated.style.boxShadow = "0 0 0 0em";
+    }
+    function change_active_2(){
+        let element = document.getElementById("button_casual");
+        element.classList.remove("active");
+        element.classList.remove("btn-lg");
+        element.classList.add("btn-sm");
+        element.style.borderColor = "#4e555b";
+        element.style.borderWidth = "0.15em";
+        let element_to_be_activated = document.getElementById("button_full");
+        element_to_be_activated.classList.remove("active");
+        element_to_be_activated.classList.remove("btn-sm");
+        element_to_be_activated.classList.add("btn-lg");
+        element_to_be_activated.classList.add("active");
+        element_to_be_activated.style.borderColor = "#eb8034";
+        element_to_be_activated.style.boxShadow = "0 0 0 0em";
+    }
 
     function translate_cn() {
         document.getElementById("nav_home").textContent = "主页";
@@ -290,6 +367,9 @@
         document.getElementById("myfont_18").textContent = "快速资讯";
         document.getElementById("myfont_22").textContent = "损伤分析";
         document.getElementById("myfont_23").textContent = "外部链接";
+        document.getElementById("story2").textContent = "兼职";
+        document.getElementById("story3").textContent = "全职";
+        document.getElementById("story4").textContent = "休闲装";
         document.getElementById("quick-link").textContent = "快速链接";
         document.getElementById("working-hours-2").textContent = "工作时间";
         document.getElementById("super-ann").textContent = "退休金";
@@ -331,6 +411,9 @@
         document.getElementById("myfont_18").textContent = "Quick Info";
         document.getElementById("myfont_22").textContent = "Injury Analysis";
         document.getElementById("myfont_23").textContent = "External Links";
+        document.getElementById("story2").textContent = "Part Time";
+        document.getElementById("story3").textContent = "Full Time";
+        document.getElementById("story4").textContent = "Casual";
         document.getElementById("quick-link").textContent = "Quick Links";
         document.getElementById("working-hours-2").textContent = "Working Hours";
         document.getElementById("super-ann").textContent = "Superannuation";
@@ -409,22 +492,22 @@
             "                    <!--Slides-->\n" +
             "                    <div id=\"trial\" class=\"carousel-inner\" role=\"listbox\">\n" +
             "                        <div class=\"carousel-item active\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/1.png\" alt=\"First slide\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_1.png\" alt=\"First slide\">\n" +
             "                        </div>\n" +
             "                        <div class=\"carousel-item\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/2.png\" alt=\"Second slide\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_2.png\" alt=\"Second slide\">\n" +
             "                        </div>\n" +
             "                        <div class=\"carousel-item\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/3.png\" alt=\"Third slide\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_3.png\" alt=\"Third slide\">\n" +
             "                        </div>\n" +
             "                        <div class=\"carousel-item\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/4.png\" alt=\"Fourth slide\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_4.png\" alt=\"Fourth slide\">\n" +
             "                        </div>\n" +
             "                        <div class=\"carousel-item\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/5.png\" alt=\"Fifth slide\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_5.png\" alt=\"Fifth slide\">\n" +
             "                        </div>\n" +
             "                        <div class=\"carousel-item\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/6.png\" alt=\"Fifth slide\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_6.png\" alt=\"Fifth slide\">\n" +
             "                        </div>\n" +
             "                    </div>\n" +
             "                    <a class=\"carousel-control-prev\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"prev\">\n" +
@@ -438,80 +521,102 @@
             "                    <!--/.Controls-->\n" +
             "                    <ol id =\"indicator_caro\" class=\"carousel-indicators\">\n" +
             "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"0\" class=\"active\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/1.png\" class=\"img-fluid\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_1.png\" class=\"img-fluid\">\n" +
             "                        </li>\n" +
             "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"1\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/2.png\" class=\"img-fluid\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_2.png\" class=\"img-fluid\">\n" +
             "                        </li>\n" +
             "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"2\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/3.png\" class=\"img-fluid\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_3.png\" class=\"img-fluid\">\n" +
             "                        </li>\n" +
             "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"3\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/4.png\" class=\"img-fluid\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_4.png\" class=\"img-fluid\">\n" +
             "                        </li>\n" +
             "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"4\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/5.png\" class=\"img-fluid\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_5.png\" class=\"img-fluid\">\n" +
             "                        </li>\n" +
             "                        <li data-target=\"#carousel-thumb\" data-slide-to=\"4\">\n" +
-            "                            <img class=\"d-block w-100\" src=\"images/st-board-chinese-1/working_hrs_cn/Part_time/6.png\" class=\"img-fluid\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/Chinese_pay/Pay_Working_hours/Part time/Pay_Working_hours_6.png\" class=\"img-fluid\">\n" +
             "                        </li>\n" +
             "                    </ol>\n" +
             "                </div>";
             "            <!-- Carousel controls -->";
     }
     function casualEmp(){
-        let element_1 = document.getElementById("inner_caro");
+        let element_1 = document.getElementById("carousel-thumb");
         element_1.parentNode.removeChild(element_1);
-        document.getElementById("wrapper_caro").innerHTML = "<div class=\"carousel-inner\" id=\"inner_caro\">\n" +
-            "                <div class=\"carousel-item active\">\n" +
-            "                    " +
-            "                    <img src=\"images/workhour/Casual/1.png\" alt=\"First Slide\">\n" +
-            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+        document.getElementById("min_wrapper").innerHTML = "  <div id=\"carousel-thumb\" data-interval=\"false\" class=\"carousel slide carousel-fade carousel-thumbnails\" data-ride=\"carousel\">\n" +
+            "                    <!--Slides-->\n" +
+            "                    <div id=\"trial\" class=\"carousel-inner\" role=\"listbox\">\n" +
+            "                        <div class=\"carousel-item active\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Casual/Pay_Working_hours_1.png\" alt=\"First slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Casual/Pay_Working_hours_2.png\" alt=\"Second slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Casual/Pay_Working_hours_3.png\" alt=\"Third slide\">\n" +
+            "                        </div>\n" +
             "                    </div>\n" +
-            "                </div>\n" +
-            "                <div class=\"carousel-item\">\n" +
-            "                    " +
-            "                    <img src=\"images/workhour/Casual/2.png\" alt=\"Second Slide\">\n" +
-            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
-            "                    </div>\n" +
-            "                </div>\n" +
-            "                <div class=\"carousel-item\">\n" +
-            "                    " +
-            "                    <img src=\"images/workhour/Casual/3.png\" alt=\"Third Slide\">\n" +
-            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
-            "                    </div>\n" +
-            "                </div>\n" +
-            "            </div>";
+            "                    <a class=\"carousel-control-prev\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"prev\">\n" +
+            "                        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n" +
+            "                        <span class=\"sr-only\">Previous</span>\n" +
+            "                    </a>\n" +
+            "                    <a class=\"carousel-control-next\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"next\">\n" +
+            "                        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n" +
+            "                        <span class=\"sr-only\">Next</span>\n" +
+            "                    </a>\n" +
+            "                    <!--/.Controls-->\n" +
+            "                    <ol id =\"indicator_caro_super\" class=\"carousel-indicators\">\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"0\" class=\"active\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Casual/Pay_Working_hours_1.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"1\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Casual/Pay_Working_hours_2.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"2\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Casual/Pay_Working_hours_3.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                    </ol>\n" +
+            "                </div>";
     }
     function fulltimeEmp(){
-        let element_1 = document.getElementById("inner_caro");
+        let element_1 = document.getElementById("carousel-thumb");
         element_1.parentNode.removeChild(element_1);
-        document.getElementById("wrapper_caro").innerHTML = "<div class=\"carousel-inner\" id=\"inner_caro\">\n" +
-            "                <div class=\"carousel-item active\">\n" +
-            "                    " +
-            "                    <img src=\"images/workhour/Full_time/1.png\" alt=\"First Slide\">\n" +
-            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
+        document.getElementById("min_wrapper").innerHTML = " <div id=\"carousel-thumb\" data-interval=\"false\" class=\"carousel slide carousel-fade carousel-thumbnails\" data-ride=\"carousel\">\n" +
+            "                    <!--Slides-->\n" +
+            "                    <div id=\"trial\" class=\"carousel-inner\" role=\"listbox\">\n" +
+            "                        <div class=\"carousel-item active\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Full time/Pay_Working_hours_1.png\" alt=\"First slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Full time/Pay_Working_hours_2.png\" alt=\"Second slide\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"carousel-item\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Full time/Pay_Working_hours_3.png\" alt=\"Third slide\">\n" +
+            "                        </div>\n" +
             "                    </div>\n" +
-            "                </div>\n" +
-            "                <div class=\"carousel-item\">\n" +
-            "                    " +
-            "                    <img src=\"images/workhour/Full_time/2.png\" alt=\"Second Slide\">\n" +
-            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
-            "                    </div>\n" +
-            "                </div>\n" +
-            "                <div class=\"carousel-item\">\n" +
-            "                    " +
-            "                    <img src=\"images/workhour/Full_time/3.png\" alt=\"Third Slide\">\n" +
-            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
-            "                    </div>\n" +
-            "                </div>\n" +
-            "                <div class=\"carousel-item\">\n" +
-            "                    " +
-            "                    <img src=\"images/workhour/Full_time/4.png\" alt=\"Third Slide\">\n" +
-            "                    <div class=\"carousel-caption d-none d-md-block\">\n" +
-            "                    </div>\n" +
-            "                </div>\n" +
-            "            </div>";
+            "                    <a class=\"carousel-control-prev\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"prev\">\n" +
+            "                        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n" +
+            "                        <span class=\"sr-only\">Previous</span>\n" +
+            "                    </a>\n" +
+            "                    <a class=\"carousel-control-next\" href=\"#carousel-thumb\" role=\"button\" data-slide=\"next\">\n" +
+            "                        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n" +
+            "                        <span class=\"sr-only\">Next</span>\n" +
+            "                    </a>\n" +
+            "                    <!--/.Controls-->\n" +
+            "                    <ol id =\"indicator_caro_super\" class=\"carousel-indicators\">\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"0\" class=\"active\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Full time/Pay_Working_hours_1.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"1\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Full time/Pay_Working_hours_2.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                        <li id=\"caro_super2\" data-target=\"#carousel-thumb\" data-slide-to=\"2\">\n" +
+            "                            <img class=\"d-block w-100\" src=\"images/ABOUT_PAY/Pay_Working_hours/Full time/Pay_Working_hours_3.png\" class=\"img-fluid\">\n" +
+            "                        </li>\n" +
+            "                    </ol>\n" +
+            "                </div>";
     }
 </script>
 </body>
