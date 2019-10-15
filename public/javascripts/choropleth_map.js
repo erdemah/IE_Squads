@@ -123,7 +123,7 @@ function clicked(d) {
         //Ruler will also turn blue based on the clicked state
 //        d3.select('.leg').selectAll(".little_ruler").style("fill", ["red","blue","purple", "red","blue","purple", "red","black"]);
         d3.selectAll(".little_ruler").remove();
-        d3.json("au_states_3.json", function(error, australia) {
+        d3.json("datasets/about_your_pay/au_states_3.json", function(error, australia) {
             var rects = d3.select('.leg').selectAll(".little_ruler")
             .data(australia.features)
             .enter().append("rect")
