@@ -16,9 +16,9 @@ var width = 800,
 var projection = d3.geoConicConformal()
     .parallels([-18, -36])
     .rotate([-132, 0])
-    .scale(width*1.3)
+    .scale(width)
     .center([0, -27])
-    .translate([width / 2, height / 2])
+    .translate([width / 2, height / 2.5])
 //    .clipExtent([[0, 0], [width, height]])
     .precision(0.2);
 
@@ -60,7 +60,7 @@ var width_legend = 250,
     height_legend = 95;
 
 var legend = svg.append("g")
-.attr("transform", "translate(240, 540)")
+.attr("transform", "translate(240, 440)")
 .attr("class","leg");
 legend.append("rect")
     .attr("width", width_legend)

@@ -18,9 +18,7 @@
     <link href="css/scroll.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
-    <link href="css/scroll.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/story.css">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
 <!--    <link-->
@@ -61,7 +59,6 @@
 
                                                     <a class="dropdown-toggle" href="#" id="navbar1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Pay</span></a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li ><a  id="myfont_1" href="#">Minimum Wage</a></li>
                                                         <li ><a  id="myfont_1" href="minimum_wage">Minimum Wage</a></li>
                                                         <li><a  id="myfont_2" href="pay_slip">Pay Slip</a></li>
                                                         <li><a id="myfont_3"  href="superannuation">Superannuation</a></li>
@@ -125,8 +122,9 @@
                     </div>
                 </div>
 
-                <li class="dropdown">
-                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au(); delete_motive_cn();">
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-link-au" href="#au" data-reload onclick="translate_au(); delete_motive_ch();">
+
                         <span class="flag-icon flag-icon-au"> </span>
                         <span id="nav-separator">English</span></a>
                 </li>
@@ -139,8 +137,8 @@
         </div>
     </div>
 </nav>
-<div class="container">
-    <div class="row">
+<div class="container vis_1_head">
+    <div class="row each_vis_box">
         <div class="col-12">
             <h1 class="head_title">How was employment across Australia in 2018?</h1>
             <h2 class="head_title">How was full time employment based on salary?</h2>
@@ -148,13 +146,13 @@
             <div id="map"></div>
         </div>
     </div>
-    <div class="row">
+    <div class="row each_vis_box">
         <div class="col-12">
             <h2 class="head_title">Which category had the highest salary in <b class="question">Victoria?</b></h2>
             <div id="vic_categ"></div>
         </div>
     </div>
-    <div class="row">
+    <div class="row each_vis_box">
         <div class="col-12">
             <h2 class="head_title">Which category had the most job posts in <b class="question">Victoria?</b></h2>
             <div id="vic_job_post"></div>
@@ -313,7 +311,6 @@
 <!--        <font size="3" color="red">Claim: the predictions may not 100% correct, it is just a reference. If your salary was too much lower than it, please find some entitlement from our website.</font>    </p>-->
 <!--</div>-->
 <!--&lt;!&ndash; Color Scale &ndash;&gt;-->
-<!--<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>-->
 
 <script>
 

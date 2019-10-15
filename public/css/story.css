@@ -48,8 +48,12 @@ h1, h2, h3, p {
     height:1em;
 */
 }
-
-
+.vis_1_head{
+    margin-top: 1em;
+}
+.each_vis_box{
+    margin-top: 1em;
+}
 /*
 h1, h2 {
   line-height: 1em;
