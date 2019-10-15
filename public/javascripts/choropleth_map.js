@@ -952,7 +952,7 @@ var svg_qld_job_post = d3.select("#qld_job_post").append("svg")
 .attr("height", height-100);
     //adding group to svg
 var g_qld_job_post = svg_qld_job_post.append("g")
-.attr("transform", "translate(50,50)");
+.attr("transform", "translate(100,100)");
 //+ margin_treemap.left + "," + margin_treemap.top + ","+ margin_treemap.right + "," + margin_treemap.bottom +")");
 //treemap legend coloring
 //key:abr, value:color
@@ -1049,7 +1049,7 @@ d3.csv("datasets/about_your_pay/Qld_post_Tree.csv", type, function(data_qld_tree
         .attr("class","leg_qld_text")
         .style("fill","black")
         .attr("x",12)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Highest");
     d3.select('.leg_treemap_qld')
         .append("text")
@@ -1058,7 +1058,7 @@ d3.csv("datasets/about_your_pay/Qld_post_Tree.csv", type, function(data_qld_tree
         .attr("class","leg_qld_text")
         .style("fill","black")
         .attr("x",295)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Lowest");
     //LEGEND QLD TREEMAP ENDS
       // and to add the text labels ON THE TREEMAP
@@ -1126,7 +1126,7 @@ d3.csv("datasets/about_your_pay/Qld_post_legend.csv", type, function(data_qld_tr
         return 69 +i*20;
     })
     .attr("y",function(){
-        return 10;
+        return -90;
     })
     .style("fill", function(d){
         return d3.interpolateRdYlGn(parseFloat(parseFloat(d.color)));
@@ -1339,7 +1339,7 @@ var svg_nsw_job_post = d3.select("#nsw_job_post").append("svg")
 .attr("height", height-100);
     //adding group to svg
 var g_nsw_job_post = svg_nsw_job_post.append("g")
-.attr("transform", "translate(50,50)");
+.attr("transform", "translate(100,100)");
 //+ margin_treemap.left + "," + margin_treemap.top + ","+ margin_treemap.right + "," + margin_treemap.bottom +")");
 //treemap legend coloring
 //key:abr, value:color
@@ -1436,7 +1436,7 @@ d3.csv("datasets/about_your_pay/Nsw_post_Tree.csv", type, function(data_nsw_tree
         .attr("class","leg_nsw_text")
         .style("fill","black")
         .attr("x",12)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Highest");
     d3.select('.leg_treemap_nsw')
         .append("text")
@@ -1445,7 +1445,7 @@ d3.csv("datasets/about_your_pay/Nsw_post_Tree.csv", type, function(data_nsw_tree
         .attr("class","leg_nsw_text")
         .style("fill","black")
         .attr("x",295)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Lowest");
     //LEGEND NSW TREEMAP ENDS
       // and to add the text labels ON THE TREEMAP
@@ -1513,7 +1513,7 @@ d3.csv("datasets/about_your_pay/Nsw_post_legend.csv", type, function(data_nsw_tr
         return 69 +i*20;
     })
     .attr("y",function(){
-        return 10;
+        return -90;
     })
     .style("fill", function(d){
         return d3.interpolateRdYlBu(parseFloat(parseFloat(d.color)));
@@ -1726,7 +1726,7 @@ var svg_tas_job_post = d3.select("#tas_job_post").append("svg")
 .attr("height", height-100);
     //adding group to svg
 var g_tas_job_post = svg_tas_job_post.append("g")
-.attr("transform", "translate(50,50)");
+.attr("transform", "translate(100,100)");
 //+ margin_treemap.left + "," + margin_treemap.top + ","+ margin_treemap.right + "," + margin_treemap.bottom +")");
 //treemap legend coloring
 //key:abr, value:color
@@ -1823,7 +1823,7 @@ d3.csv("datasets/about_your_pay/Tas_post_Tree.csv", type, function(data_tas_tree
         .attr("class","leg_tas_text")
         .style("fill","black")
         .attr("x",12)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Highest");
     d3.select('.leg_treemap_tas')
         .append("text")
@@ -1832,7 +1832,7 @@ d3.csv("datasets/about_your_pay/Tas_post_Tree.csv", type, function(data_tas_tree
         .attr("class","leg_tas_text")
         .style("fill","black")
         .attr("x",295)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Lowest");
     //LEGEND TAS TREEMAP ENDS
       // and to add the text labels ON THE TREEMAP
@@ -1895,7 +1895,7 @@ d3.csv("datasets/about_your_pay/Tas_post_legend.csv", type, function(data_tas_tr
         return 69 +i*20;
     })
     .attr("y",function(){
-        return 10;
+        return -90;
     })
     .style("fill", function(d){
         return d3.interpolateRdBu(parseFloat(parseFloat(d.color)));
@@ -2108,7 +2108,7 @@ var svg_wa_job_post = d3.select("#wa_job_post").append("svg")
 .attr("height", height-100);
     //adding group to svg
 var g_wa_job_post = svg_wa_job_post.append("g")
-.attr("transform", "translate(50,50)");
+.attr("transform", "translate(100,100)");
 //+ margin_treemap.left + "," + margin_treemap.top + ","+ margin_treemap.right + "," + margin_treemap.bottom +")");
 //treemap legend coloring
 //key:abr, value:color
@@ -2205,7 +2205,7 @@ d3.csv("datasets/about_your_pay/Wa_post_Tree.csv", type, function(data_wa_treema
         .attr("class","leg_wa_text")
         .style("fill","black")
         .attr("x",12)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Highest");
     d3.select('.leg_treemap_wa')
         .append("text")
@@ -2214,7 +2214,7 @@ d3.csv("datasets/about_your_pay/Wa_post_Tree.csv", type, function(data_wa_treema
         .attr("class","leg_wa_text")
         .style("fill","black")
         .attr("x",295)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Lowest");
     //LEGEND WA TREEMAP ENDS
       // and to add the text labels ON THE TREEMAP
@@ -2282,7 +2282,7 @@ d3.csv("datasets/about_your_pay/Wa_post_legend.csv", type, function(data_wa_tree
         return 69 +i*20;
     })
     .attr("y",function(){
-        return 10;
+        return -90;
     })
     .style("fill", function(d){
         return d3.interpolatePuOr(parseFloat(parseFloat(d.color)));
@@ -2495,7 +2495,7 @@ var svg_sa_job_post = d3.select("#sa_job_post").append("svg")
 .attr("height", height-100);
     //adding group to svg
 var g_sa_job_post = svg_sa_job_post.append("g")
-.attr("transform", "translate(50,50)");
+.attr("transform", "translate(100,100)");
 //+ margin_treemap.left + "," + margin_treemap.top + ","+ margin_treemap.right + "," + margin_treemap.bottom +")");
 //treemap legend coloring
 //key:abr, value:color
@@ -2592,7 +2592,7 @@ d3.csv("datasets/about_your_pay/Sa_post_Tree.csv", type, function(data_sa_treema
         .attr("class","leg_sa_text")
         .style("fill","black")
         .attr("x",12)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Highest");
     d3.select('.leg_treemap_sa')
         .append("text")
@@ -2601,7 +2601,7 @@ d3.csv("datasets/about_your_pay/Sa_post_Tree.csv", type, function(data_sa_treema
         .attr("class","leg_sa_text")
         .style("fill","black")
         .attr("x",295)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Lowest");
     //LEGEND SA TREEMAP ENDS
       // and to add the text labels ON THE TREEMAP
@@ -2668,7 +2668,7 @@ d3.csv("datasets/about_your_pay/Sa_post_legend.csv", type, function(data_sa_tree
         return 69 +i*20;
     })
     .attr("y",function(){
-        return 10;
+        return -90;
     })
     .style("fill", function(d){
         return d3.interpolateSpectral(parseFloat(parseFloat(d.color)));
@@ -2881,7 +2881,7 @@ var svg_act_job_post = d3.select("#act_job_post").append("svg")
 .attr("height", height-100);
     //adding group to svg
 var g_act_job_post = svg_act_job_post.append("g")
-.attr("transform", "translate(50,50)");
+.attr("transform", "translate(100,100)");
 //+ margin_treemap.left + "," + margin_treemap.top + ","+ margin_treemap.right + "," + margin_treemap.bottom +")");
 //treemap legend coloring
 //key:abr, value:color
@@ -2978,7 +2978,7 @@ d3.csv("datasets/about_your_pay/Act_post_Tree.csv", type, function(data_act_tree
         .attr("class","leg_act_text")
         .style("fill","black")
         .attr("x",12)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Highest");
     d3.select('.leg_treemap_act')
         .append("text")
@@ -2987,7 +2987,7 @@ d3.csv("datasets/about_your_pay/Act_post_Tree.csv", type, function(data_act_tree
         .attr("class","leg_act_text")
         .style("fill","black")
         .attr("x",295)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Lowest");
     //LEGEND act TREEMAP ENDS
       // and to add the text labels ON THE TREEMAP
@@ -3055,7 +3055,7 @@ d3.csv("datasets/about_your_pay/Act_post_legend.csv", type, function(data_act_tr
         return 69 +i*20;
     })
     .attr("y",function(){
-        return 10;
+        return -90;
     })
     .style("fill", function(d){
         return d3.interpolatePiYG(parseFloat(parseFloat(d.color)));
@@ -3268,7 +3268,7 @@ var svg_nt_job_post = d3.select("#nt_job_post").append("svg")
 .attr("height", height-100);
     //adding group to svg
 var g_nt_job_post = svg_nt_job_post.append("g")
-.attr("transform", "translate(50,50)");
+.attr("transform", "translate(100,100)");
 //+ margin_treemap.left + "," + margin_treemap.top + ","+ margin_treemap.right + "," + margin_treemap.bottom +")");
 //treemap legend coloring
 //key:abr, value:color
@@ -3365,7 +3365,7 @@ d3.csv("datasets/about_your_pay/Nt_post_Tree.csv", type, function(data_nt_treema
         .attr("class","leg_nt_text")
         .style("fill","black")
         .attr("x",12)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Highest");
     d3.select('.leg_treemap_nt')
         .append("text")
@@ -3374,7 +3374,7 @@ d3.csv("datasets/about_your_pay/Nt_post_Tree.csv", type, function(data_nt_treema
         .attr("class","leg_nt_text")
         .style("fill","black")
         .attr("x",295)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Lowest");
     //LEGEND nt TREEMAP ENDS
       // and to add the text labels ON THE TREEMAP
@@ -3442,7 +3442,7 @@ d3.csv("datasets/about_your_pay/Nt_post_legend.csv", type, function(data_nt_tree
         return 69 +i*20;
     })
     .attr("y",function(){
-        return 10;
+        return -90;
     })
     .style("fill", function(d){
         return d3.interpolatePRGn(parseFloat(parseFloat(d.color)));
