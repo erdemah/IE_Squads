@@ -1,5 +1,5 @@
 body{
-    background-color:#f9f9f9;
+    background-color:#f0f0f0;
 /*    #f9f9f9*/
 /*    #43a2ca*/
 }
@@ -135,7 +135,7 @@ p {
     
 }
 .leg{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .text_in_tree_vic{
     font-family: 'Architects Daughter', cursive;
@@ -172,6 +172,7 @@ p {
 .text_in_tree_vic2{
     font-family: 'Architects Daughter', cursive;
     font-size: .50em;
+    fill:white;
 }
 .text_in_tree_qld2{
     font-family: 'Architects Daughter', cursive;
@@ -205,53 +206,53 @@ p {
     fill:white;
 }
 .leg_vic{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_qld{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_nsw{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_tas{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_wa{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_sa{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_nt{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_act{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_treemap_vic{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_treemap_qld{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_treemap_nsw{
 /*    fill: rgba(255,255,255,0.95);*/
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_treemap_tas{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_treemap_wa{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_treemap_sa{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_treemap_act{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_treemap_nt{
-    fill:#f9f9f9;
+    fill:#f0f0f0;
 }
 .leg_vic_text{
     font-family: 'Architects Daughter', cursive;
