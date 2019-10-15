@@ -1352,7 +1352,7 @@ nsw_treemap_legend.append("rect")
     .attr("width", nsw_legend_w-200)
     .attr("height", nsw_legend_h);
 //LEGEND FOR TREEMAP END --------------
-d3.csv("datasets/about_your_pay/Nsw_post_Tree.csv", type, function(data_nsw_treemap){
+d3.csv("datasets/about_your_pay/NSW_post_Tree.csv", type, function(data_nsw_treemap){
     //reversing color
     var my_color = d3.schemeSpectral[11];
     my_color.sort(function(a,b){
@@ -1486,7 +1486,7 @@ d3.csv("datasets/about_your_pay/Nsw_post_Tree.csv", type, function(data_nsw_tree
     });
 });
 //LEGEND RECTANGLES NEW SOUTH WALES TREEMAP
-d3.csv("datasets/about_your_pay/Nsw_post_legend.csv", type, function(data_nsw_treemap_legend){
+d3.csv("datasets/about_your_pay/NSW_post_legend.csv", type, function(data_nsw_treemap_legend){
     //reversing color
     var my_color = d3.schemeSpectral[11];
     my_color.sort(function(a,b){
