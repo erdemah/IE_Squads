@@ -1,0 +1,12 @@
+state,STATE_NAME,category,avg_salary,abr,color
+NT,Northern Territory,Architecture and Building,115952.28711484598,A&B,0.91
+NT,Northern Territory,Engineering,104082.01256817688,EN,0.82
+NT,Northern Territory,Information Technology,100714.16979949875,IT,0.73
+NT,Northern Territory,Health,93170.99636728146,H,0.64
+NT,Northern Territory,Management and Commerce,90466.116988279,M&C,0.55
+NT,Northern Territory,Education,87327.79165714285,ED,0.45
+NT,Northern Territory,Society and Culture,77199.3420199174,S&C,0.36
+NT,Northern Territory,Food and Hospitality,59194.04922637935,F&H,0.27
+NT,Northern Territory,Natural and Physical Sciences,89.93,N&P,0.18
+NT,Northern Territory,Creative Arts,77.89,CA,0.09
+NT,Northern Territory,Agriculture and Environment,70.12,A&E,0.0

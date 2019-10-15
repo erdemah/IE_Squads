@@ -1,0 +1,12 @@
+state,STATE_NAME,category,avg_salary,abr,color
+WA,Western Australia,Architecture and Building,115515.14450327844,A&B,0.91
+WA,Western Australia,Information Technology,107412.50800719729,IT,0.82
+WA,Western Australia,Engineering,107252.7991523408,EN,0.73
+WA,Western Australia,Health,99105.41609582085,H,0.64
+WA,Western Australia,Education,88155.91006315792,ED,0.55
+WA,Western Australia,Management and Commerce,86831.81345501509,M&C,0.45
+WA,Western Australia,Natural and Physical Sciences,86165.31333333332,N&P,0.36
+WA,Western Australia,Society and Culture,79723.80392951838,S&C,0.27
+WA,Western Australia,Agriculture and Environment,75854.55489577465,A&E,0.18
+WA,Western Australia,Creative Arts,73736.10239808081,CA,0.09
+WA,Western Australia,Food and Hospitality,56795.78504845115,F&H,0.0

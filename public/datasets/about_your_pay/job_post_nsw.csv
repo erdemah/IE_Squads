@@ -1,13 +1,13 @@
-,STATE_NAME,abr,category,job_post,state
+,state,STATE_NAME,category,abr,job_post
 0,,,NSW,,
-1,New South Wales,M&C,Management and Commerce,1518.0,NSW
-2,New South Wales,IT,Information Technology,160.0,NSW
-3,New South Wales,S&C,Society and Culture,242.0,NSW
-4,New South Wales,H,Health,247.0,NSW
-5,New South Wales,EN,Engineering,247.0,NSW
-6,New South Wales,A&B,Architecture and Building,184.0,NSW
-7,New South Wales,ED,Education,94.0,NSW
-8,New South Wales,F&H,Food and Hospitality,190.0,NSW
-9,New South Wales,A&E,Agriculture and Environment,16.0,NSW
-10,New South Wales,CA,Creative Arts,14.0,NSW
-11,New South Wales,N&P,Natural and Physical Sciences,20.0,NSW
+1,NSW,New South Wales,Management and Commerce,M&C,3798.0
+2,NSW,New South Wales,Information Technology,IT,694.0
+3,NSW,New South Wales,Society and Culture,S&C,578.0
+4,NSW,New South Wales,Health,H,393.0
+5,NSW,New South Wales,Engineering,EN,294.0
+6,NSW,New South Wales,Architecture and Building,A&B,518.0
+7,NSW,New South Wales,Education,ED,237.0
+8,NSW,New South Wales,Food and Hospitality,F&H,518.0
+9,NSW,New South Wales,Agriculture and Environment,A&E,30.0
+10,NSW,New South Wales,Creative Arts,CA,67.0
+11,NSW,New South Wales,Natural and Physical Sciences,N&P,37.0

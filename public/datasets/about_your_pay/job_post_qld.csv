@@ -1,13 +1,13 @@
-,STATE_NAME,abr,category,job_post,state
+,state,STATE_NAME,category,abr,job_post
 0,,,QLD,,
-1,Queensland,M&C,Management and Commerce,1518.0,QLD
-2,Queensland,IT,Information Technology,160.0,QLD
-3,Queensland,S&C,Society and Culture,242.0,QLD
-4,Queensland,H,Health,247.0,QLD
-5,Queensland,EN,Engineering,247.0,QLD
-6,Queensland,A&B,Architecture and Building,184.0,QLD
-7,Queensland,ED,Education,94.0,QLD
-8,Queensland,F&H,Food and Hospitality,190.0,QLD
-9,Queensland,A&E,Agriculture and Environment,16.0,QLD
-10,Queensland,CA,Creative Arts,14.0,QLD
-11,Queensland,N&P,Natural and Physical Sciences,20.0,QLD
+1,QLD,Queensland,Management and Commerce,M&C,1518.0
+2,QLD,Queensland,Information Technology,IT,160.0
+3,QLD,Queensland,Society and Culture,S&C,242.0
+4,QLD,Queensland,Health,H,247.0
+5,QLD,Queensland,Engineering,EN,247.0
+6,QLD,Queensland,Architecture and Building,A&B,184.0
+7,QLD,Queensland,Education,ED,94.0
+8,QLD,Queensland,Food and Hospitality,F&H,190.0
+9,QLD,Queensland,Agriculture and Environment,A&E,16.0
+10,QLD,Queensland,Creative Arts,CA,14.0
+11,QLD,Queensland,Natural and Physical Sciences,N&P,20.0

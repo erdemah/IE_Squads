@@ -5,7 +5,11 @@
     <meta name="description" content="">
     <meta name="Garry" content="">
     <title>View you pay level</title>
-
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
     <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,12 +20,14 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
     <link href="css/scroll.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
-    <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-            crossorigin="anonymous"
-    />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/story.css">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+<!--    <link-->
+<!--            rel="stylesheet"-->
+<!--            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"-->
+<!--            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"-->
+<!--            crossorigin="anonymous"/>-->
 </head>
 </html>
 
@@ -133,63 +139,180 @@
         </div>
     </div>
 </nav>
-
-<!-- Visualisation code-->
-<script src="https://d3js.org/d3.v4.js"></script>
-<script src="https://unpkg.com/d3-simple-slider"></script>
-
 <div class="container">
-
-    <div class="row align-items-center">
-        <div><h1>How did weekly earning change from the last 20 years?</h1></div>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="head_title">How was employment across Australia in 2018?</h1>
+            <h2 class="head_title">How was full time employment based on salary?</h2>
+            <!--                <div class="center-block" id="map"></div>-->
+            <div id="map"></div>
+        </div>
     </div>
-    <p>The dataset used in the below figure was about the weekly earnings from several industries during the last 20 years and it includes the predicting wage in 2020 and 2021.How to use this figure? First, we can choose a category that we are interested in, the line graph will change according to which industry we select. We can find employees from mining always had the highest wage in the same year and they wage was increased faster than every other industry. Oppositely, people who worked in accommodation and food service had a very low wage, which climbed very slowly as well </p>
-    <p>After checking each category, we can find that employees from all industries had higher and higher wages year by year. Based on this information, we can calculate the percentage that the wage increased from the last year. Some predictions can be done as well. For example, we can predict how much we can earn per week in 2020, if your wage is too much lower than the prediction, you can find some entitlements from our story boards. After that, you can negotiate with your boss.</p>
-</div>
-
-<!-- Create a div where the graph will take place -->
-<div class="container">
-
-    <div class="row align-items-center">
-
-
-        <h3>Select a category: &nbsp;&nbsp;</h3>
-
-        <div><select id="selectButton" style="text-align: center"></select></div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the highest salary in <b class="question">Victoria?</b></h2>
+            <div id="vic_categ"></div>
+        </div>
     </div>
-
-    <!-- Create a div where the graph will take place -->
-    <div id="my_dataviz" style="text-align: center"></div>
-
-</div>
-
-<div class="container">
-
-    <div class="row align-items-center">
-        <div><h3>How much can you earn in 2020 or 2021?</h3></div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the most job posts in <b class="question">Victoria?</b></h2>
+            <div id="vic_job_post"></div>
+        </div>
     </div>
-    <p>The prediction for <b>Mining</b> may be around $2862.6 and $2937.73 in 2020 and 2021.
-        <br>The prediction for <b>Manufacturing</b> may be around $1434.2 and $1466.91 in 2020 and 2021.
-        <br>The prediction for <b>Electricity, Gas, Water and Waste Services</b> maybe around $2022.4 and $2076.52 in 2020 and 2021.
-        <br>The prediction for <b>Construction</b> maybe around $1615.091 and $1656.539 in 2020 and 2021.
-        <br>The prediction for <b>Wholesale Trade</b> maybe around $1474.11 and $1511.01 in 2020 and 2021.
-        <br>The prediction for <b>Retail Trade</b> maybe around $795.6 and $813.88 in 2020 and 2021.
-        <br>The prediction for <b>Accommodation and Food Services</b> maybe around $570.8 and $581.34 in 2020 and 2021.
-        <br>The prediction for <b>Transport, Postal and Warehousing</b> maybe around $1539.944 and $1574.735 in 2020 and 2021.
-        <br>The prediction for <b>Information Media and Telecommunications</b> maybe around $1778.157 and $1826.45 in 2020 and 2021.
-        <br>The prediction for <b>Financial and Insurance Services</b> maybe around $1764.073 and $1809.13 in 2020 and 2021.
-        <br>The prediction for <b>Rental, Hiring and Real Estate Services</b> maybe around $1265.67 and $1296.141 in 2020 and 2021.
-        <br>The prediction for <b>Professional, Scientific and Technical Services</b> maybe around $1748.929 and $1796.114 in 2020 and 2021.
-        <br>The prediction for <b>Administrative and Support Services</b> maybe around $1105.6 and $1130.38 in 2020 and 2021.
-        <br>The prediction for <b>Public Administration and Safety</b> maybe around $1584 and $1623.2 in 2020 and 2021.
-        <br>The prediction for <b>Education and Training</b> maybe around $1243.2 and $1271.86 in 2020 and 2021.
-        <br>The prediction for <b>Health Care and Social Assistance</b> maybe around $1129.8 and $1156.29 in 2020 and 2021.
-        <br>The prediction for <b>Arts and Recreation Services</b> maybe around $876.6 and $895.93 in 2020 and 2021.
-        <br>The prediction for <b>Other Services</b> maybe around $1021.618 and $1046.969 in 2020 and 2021.<br>
-        <font size="3" color="red">Claim: the predictions may not 100% correct, it is just a reference. If your salary was too much lower than it, please find some entitlement from our website.</font>    </p>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the highest salary in <b class="question">Queensland?</b></h2>
+            <div id="qld_categ"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the most job posts in <b class="question">Queensland?</b></h2>
+            <div id="qld_job_post"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the highest salary in <b class="question">New South Wales?</b></h2>
+            <div id="nsw_categ"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the most job posts in <b class="question">New South Wales?</b></h2>
+            <div id="nsw_job_post"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the highest salary in <b class="question">Tasmania?</b></h2>
+            <div id="tas_categ"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the most job posts in <b class="question">Tasmania?</b></h2>
+            <div id="tas_job_post"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the highest salary in <b class="question">Western Australia?</b></h2>
+            <div id="wa_categ"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the most job posts in <b class="question">Western Australia?</b></h2>
+            <div id="wa_job_post"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the highest salary in <b class="question">South Australia?</b></h2>
+            <div id="sa_categ"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the most job posts in <b class="question">South Australia?</b></h2>
+            <div id="sa_job_post"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the highest salary in <b class="question">Australian Capital Territory?</b></h2>
+            <div id="act_categ"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the most job posts in <b class="question">Australian Capital Territory?</b></h2>
+            <div id="act_job_post"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the highest salary in <b class="question">Northern Territory?</b></h2>
+            <div id="nt_categ"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="head_title">Which category had the most job posts in <b class="question">Northern Territory?</b></h2>
+            <div id="nt_job_post"></div>
+        </div>
+    </div>
+    <!--
+            <div class="row">
+                <div class="col-12 ying_div">
+                    <h1 class="head_title">How did weekly earning change from the last 20 years?</h1>
+                    <h2 class="head_title">Weekly earnings from several industries over the last 20 years (vertical axis - wage; horizontal axis - years)</h2>
+                    <h3 class="head_title" style="font-family:Architects Daughter, cursive;">Select a category: &nbsp;&nbsp;</h3>
+                    <select id="selectButton"></select>
+                    <div id="ying_wage"></div>
+                </div>
+            </div>
+    -->
 </div>
-<!-- Color Scale -->
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script type="text/javascript" src="javascripts/choropleth_map.js"></script>
+<!--&lt;!&ndash; Visualisation code&ndash;&gt;-->
+<!--<script src="https://d3js.org/d3.v4.js"></script>-->
+<!--<script src="https://unpkg.com/d3-simple-slider"></script>-->
+
+<!--<div class="container">-->
+
+<!--    <div class="row align-items-center">-->
+<!--        <div><h1>How did weekly earning change from the last 20 years?</h1></div>-->
+<!--    </div>-->
+<!--    <p>The dataset used in the below figure was about the weekly earnings from several industries during the last 20 years and it includes the predicting wage in 2020 and 2021.How to use this figure? First, we can choose a category that we are interested in, the line graph will change according to which industry we select. We can find employees from mining always had the highest wage in the same year and they wage was increased faster than every other industry. Oppositely, people who worked in accommodation and food service had a very low wage, which climbed very slowly as well </p>-->
+<!--    <p>After checking each category, we can find that employees from all industries had higher and higher wages year by year. Based on this information, we can calculate the percentage that the wage increased from the last year. Some predictions can be done as well. For example, we can predict how much we can earn per week in 2020, if your wage is too much lower than the prediction, you can find some entitlements from our story boards. After that, you can negotiate with your boss.</p>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Create a div where the graph will take place &ndash;&gt;-->
+<!--<div class="container">-->
+
+<!--    <div class="row align-items-center">-->
+
+
+<!--        <h3>Select a category: &nbsp;&nbsp;</h3>-->
+
+<!--        <div><select id="selectButton" style="text-align: center"></select></div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Create a div where the graph will take place &ndash;&gt;-->
+<!--    <div id="my_dataviz" style="text-align: center"></div>-->
+
+<!--</div>-->
+
+<!--<div class="container">-->
+
+<!--    <div class="row align-items-center">-->
+<!--        <div><h3>How much can you earn in 2020 or 2021?</h3></div>-->
+<!--    </div>-->
+<!--    <p>The prediction for <b>Mining</b> may be around $2862.6 and $2937.73 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Manufacturing</b> may be around $1434.2 and $1466.91 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Electricity, Gas, Water and Waste Services</b> maybe around $2022.4 and $2076.52 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Construction</b> maybe around $1615.091 and $1656.539 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Wholesale Trade</b> maybe around $1474.11 and $1511.01 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Retail Trade</b> maybe around $795.6 and $813.88 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Accommodation and Food Services</b> maybe around $570.8 and $581.34 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Transport, Postal and Warehousing</b> maybe around $1539.944 and $1574.735 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Information Media and Telecommunications</b> maybe around $1778.157 and $1826.45 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Financial and Insurance Services</b> maybe around $1764.073 and $1809.13 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Rental, Hiring and Real Estate Services</b> maybe around $1265.67 and $1296.141 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Professional, Scientific and Technical Services</b> maybe around $1748.929 and $1796.114 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Administrative and Support Services</b> maybe around $1105.6 and $1130.38 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Public Administration and Safety</b> maybe around $1584 and $1623.2 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Education and Training</b> maybe around $1243.2 and $1271.86 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Health Care and Social Assistance</b> maybe around $1129.8 and $1156.29 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Arts and Recreation Services</b> maybe around $876.6 and $895.93 in 2020 and 2021.-->
+<!--        <br>The prediction for <b>Other Services</b> maybe around $1021.618 and $1046.969 in 2020 and 2021.<br>-->
+<!--        <font size="3" color="red">Claim: the predictions may not 100% correct, it is just a reference. If your salary was too much lower than it, please find some entitlement from our website.</font>    </p>-->
+<!--</div>-->
+<!--&lt;!&ndash; Color Scale &ndash;&gt;-->
+<!--<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>-->
 
 <script>
 

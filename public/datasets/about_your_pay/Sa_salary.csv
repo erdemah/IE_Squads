@@ -1,0 +1,12 @@
+state,STATE_NAME,category,avg_salary,abr,color
+SA,South Australia,Architecture and Building,114217.0314913845,A&B,0.91
+SA,South Australia,Engineering,108914.40977952155,EN,0.82
+SA,South Australia,Information Technology,107546.30170412455,IT,0.73
+SA,South Australia,Health,100142.61283127201,H,0.64
+SA,South Australia,Education,93959.68838260873,ED,0.55
+SA,South Australia,Natural and Physical Sciences,89123.54,N&P,0.45
+SA,South Australia,Management and Commerce,85268.08739676987,M&C,0.36
+SA,South Australia,Society and Culture,75107.50733116119,S&C,0.27
+SA,South Australia,Creative Arts,72736.1,CA,0.18
+SA,South Australia,Agriculture and Environment,66186.0,A&E,0.09
+SA,South Australia,Food and Hospitality,57887.049739282615,F&H,0.0

@@ -1,0 +1,12 @@
+state,STATE_NAME,category,avg_salary,abr,color
+ACT,Australian Capital Territory,Architecture and Building,119122.11029761909,A&B,0.91
+ACT,Australian Capital Territory,Information Technology,107838.34241305004,IT,0.82
+ACT,Australian Capital Territory,Engineering,103118.40395698586,EN,0.73
+ACT,Australian Capital Territory,Health,98338.02951665965,H,0.64
+ACT,Australian Capital Territory,Education,87425.4638547731,ED,0.55
+ACT,Australian Capital Territory,Management and Commerce,83931.52926195043,M&C,0.45
+ACT,Australian Capital Territory,Natural and Physical Sciences,81577.01999999999,N&P,0.36
+ACT,Australian Capital Territory,Society and Culture,81275.16434663151,S&C,0.27
+ACT,Australian Capital Territory,Agriculture and Environment,79277.6875,A&E,0.18
+ACT,Australian Capital Territory,Creative Arts,76228.858974359,CA,0.09
+ACT,Australian Capital Territory,Food and Hospitality,59869.412555517374,F&H,0.0

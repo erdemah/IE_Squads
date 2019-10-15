@@ -1,0 +1,12 @@
+state,STATE_NAME,category,avg_salary,abr,color
+NSW,New South Wales,Engineering,110856.5439362016,EN,0.91
+NSW,New South Wales,Architecture and Building,110671.66631727984,A&B,0.82
+NSW,New South Wales,Information Technology,108780.24948015208,IT,0.73
+NSW,New South Wales,Health,99756.31924785102,H,0.64
+NSW,New South Wales,Education,93610.55053601912,ED,0.55
+NSW,New South Wales,Natural and Physical Sciences,91445.6383783784,N&P,0.45
+NSW,New South Wales,Management and Commerce,91040.17134262777,M&C,0.36
+NSW,New South Wales,Society and Culture,81881.95571874588,S&C,0.27
+NSW,New South Wales,Creative Arts,77979.1940298507,CA,0.18
+NSW,New South Wales,Agriculture and Environment,69111.73243051644,A&E,0.09
+NSW,New South Wales,Food and Hospitality,57999.06887312831,F&H,0.0

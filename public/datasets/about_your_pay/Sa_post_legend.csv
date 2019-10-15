@@ -1,0 +1,12 @@
+state,STATE_NAME,category,abr,job_post,color
+SA,South Australia,Management and Commerce,M&C,412,0.91
+SA,South Australia,Health,H,64,0.82
+SA,South Australia,Engineering,EN,56,0.73
+SA,South Australia,Information Technology,IT,54,0.64
+SA,South Australia,Society and Culture,S&C,53,0.55
+SA,South Australia,Food and Hospitality,F&H,41,0.45
+SA,South Australia,Architecture and Building,A&B,33,0.36
+SA,South Australia,Education,ED,23,0.27
+SA,South Australia,Agriculture and Environment,A&E,6,0.18
+SA,South Australia,Natural and Physical Sciences,N&P,4,0.09
+SA,South Australia,Creative Arts,CA,0,0.0

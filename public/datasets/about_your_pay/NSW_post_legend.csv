@@ -1,0 +1,12 @@
+state,STATE_NAME,category,abr,job_post,color
+NSW,New South Wales,Management and Commerce,M&C,3798,0.91
+NSW,New South Wales,Information Technology,IT,694,0.82
+NSW,New South Wales,Society and Culture,S&C,578,0.73
+NSW,New South Wales,Architecture and Building,A&B,518,0.64
+NSW,New South Wales,Food and Hospitality,F&H,518,0.55
+NSW,New South Wales,Health,H,393,0.45
+NSW,New South Wales,Engineering,EN,294,0.36
+NSW,New South Wales,Education,ED,237,0.27
+NSW,New South Wales,Creative Arts,CA,67,0.18
+NSW,New South Wales,Natural and Physical Sciences,N&P,37,0.09
+NSW,New South Wales,Agriculture and Environment,A&E,30,0.0

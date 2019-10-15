@@ -1,0 +1,12 @@
+state,STATE_NAME,category,avg_salary,abr,color
+VIC,Victoria,Engineering,111676,EN,0.91
+VIC,Victoria,Architecture and Building,109806,A&B,0.82
+VIC,Victoria,Information Technology,107799,IT,0.73
+VIC,Victoria,Health,98147,H,0.64
+VIC,Victoria,Education,94420,ED,0.55
+VIC,Victoria,Natural and Physical Sciences,91128,N&P,0.45
+VIC,Victoria,Management and Commerce,89792,M&C,0.36
+VIC,Victoria,Society and Culture,81234,S&C,0.27
+VIC,Victoria,Creative Arts,78752,CA,0.18
+VIC,Victoria,Agriculture and Environment,78571,A&E,0.09
+VIC,Victoria,Food and Hospitality,57216,F&H,0.0

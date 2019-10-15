@@ -1,0 +1,12 @@
+state,STATE_NAME,category,avg_salary,abr,color
+QLD,Queensland,Architecture and Building,109860.12455323205,A&B,0.91
+QLD,Queensland,Engineering,107266.59417246976,EN,0.82
+QLD,Queensland,Information Technology,106139.79292716013,IT,0.73
+QLD,Queensland,Health,100672.01041340113,H,0.64
+QLD,Queensland,Education,94417.80405106388,ED,0.55
+QLD,Queensland,Management and Commerce,88155.17921185236,M&C,0.45
+QLD,Queensland,Natural and Physical Sciences,87607.70900000002,N&P,0.36
+QLD,Queensland,Creative Arts,80066.31768255691,CA,0.27
+QLD,Queensland,Society and Culture,78589.85758417266,S&C,0.18
+QLD,Queensland,Agriculture and Environment,72992.27496742958,A&E,0.09
+QLD,Queensland,Food and Hospitality,60498.05621045658,F&H,0.0

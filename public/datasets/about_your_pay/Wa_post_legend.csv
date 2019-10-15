@@ -1,0 +1,12 @@
+state,STATE_NAME,category,abr,job_post,color
+WA,Western Australia,Management and Commerce,M&C,702,0.91
+WA,Western Australia,Engineering,EN,250,0.82
+WA,Western Australia,Health,H,100,0.73
+WA,Western Australia,Society and Culture,S&C,99,0.64
+WA,Western Australia,Architecture and Building,A&B,88,0.55
+WA,Western Australia,Food and Hospitality,F&H,84,0.45
+WA,Western Australia,Information Technology,IT,65,0.36
+WA,Western Australia,Education,ED,38,0.27
+WA,Western Australia,Natural and Physical Sciences,N&P,9,0.18
+WA,Western Australia,Creative Arts,CA,7,0.09
+WA,Western Australia,Agriculture and Environment,A&E,5,0.0

@@ -1,9 +1,9 @@
-,STATE_NAME,avg_salary,state
-0,New South Wales,92214,NSW
-1,Queensland,90657,QLD
-2,Victoria,91392,VIC
-3,South Australia,89120,SA
-4,Western Australia,91576,WA
-5,Tasmania,90582,TAS
-6,Australian Capital Territory,89973,ACT
-7,Northern Territory,89345,NT
+,state,STATE_NAME,avg_salary
+0,NSW,New South Wales,92214
+1,QLD,Queensland,90657
+2,VIC,Victoria,91392
+3,SA,South Australia,89120
+4,WA,Western Australia,91576
+5,TAS,Tasmania,90582
+6,ACT,Australian Capital Territory,89973
+7,NT,Northern Territory,89345

@@ -1,0 +1,13 @@
+state,STATE_NAME,category,abr,job_post,color
+,,VIC,,,
+VIC,Victoria,Management and Commerce,M&C,2842.0,0.91
+VIC,Victoria,Information Technology,IT,443.0,0.82
+VIC,Victoria,Society and Culture,S&C,385.0,0.73
+VIC,Victoria,Architecture and Building,A&B,367.0,0.64
+VIC,Victoria,Food and Hospitality,F&H,364.0,0.55
+VIC,Victoria,Health,H,360.0,0.45
+VIC,Victoria,Education,ED,224.0,0.36
+VIC,Victoria,Engineering,EN,216.0,0.27
+VIC,Victoria,Natural and Physical Sciences,N&P,34.0,0.18
+VIC,Victoria,Creative Arts,CA,32.0,0.09
+VIC,Victoria,Agriculture and Environment,A&E,16.0,0.0
