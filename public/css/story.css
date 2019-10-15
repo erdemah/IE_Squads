@@ -177,10 +177,12 @@ p {
 .text_in_tree_qld2{
     font-family: 'Architects Daughter', cursive;
     font-size: .50em;
+    fill:white;
 }
 .text_in_tree_nsw2{
     font-family: 'Architects Daughter', cursive;
     font-size: .50em;
+    fill:white;
 }
 .text_in_tree_tas2{
     font-family: 'Architects Daughter', cursive;
