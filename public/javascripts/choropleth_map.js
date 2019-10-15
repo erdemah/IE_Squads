@@ -560,7 +560,7 @@ var svg_vic_job_post = d3.select("#vic_job_post").append("svg")
 .attr("height", height-100);
     //adding group to svg
 var g_vic_job_post = svg_vic_job_post.append("g")
-.attr("transform", "translate(50,50)");
+.attr("transform", "translate(100,100)");
 //+ margin_treemap.left + "," + margin_treemap.top + ","+ margin_treemap.right + "," + margin_treemap.bottom +")");
 //treemap legend coloring
 //key:abr, value:color
@@ -657,7 +657,7 @@ d3.csv("datasets/about_your_pay/Vic_post_Tree.csv", type, function(data_vic_tree
         .attr("class","leg_vic_text")
         .style("fill","black")
         .attr("x",12)
-        .attr("y",25)
+        .attr("y",-75)
         .text("Highest");
     d3.select('.leg_treemap_vic')
         .append("text")
@@ -666,7 +666,7 @@ d3.csv("datasets/about_your_pay/Vic_post_Tree.csv", type, function(data_vic_tree
         .attr("class","leg_vic_text")
         .style("fill","black")
         .attr("x",295)
-        .attr("y",25)
+        .attr("y", -75)
         .text("Lowest");
     //LEGEND VIC TREEMAP ENDS
       // and to add the text labels ON THE TREEMAP
@@ -684,8 +684,13 @@ d3.csv("datasets/about_your_pay/Vic_post_Tree.csv", type, function(data_vic_tree
     })    // +20 to adjust position (lower)
         .attr("font-size", "0.9em")
         .attr("fill", "black")
-        .attr("x", function(d){
-        return d.x0+5;
+        .attr("x", function(d,i){
+            if(i==10){
+                return d.x0+3;
+            }
+            else{
+                return d.x0+5;
+            }
     })
         .attr("y", function(d,i){
             if(i<8){
@@ -698,7 +703,12 @@ d3.csv("datasets/about_your_pay/Vic_post_Tree.csv", type, function(data_vic_tree
         .text(function(d,i){
         d3.select(this)
         .classed("text_in_tree_vic2", i >7)
-        return d.data.abr;
+            if(d.data.abr == "A&E"){
+                return "A";
+            }
+            else{
+                return d.data.abr;
+            }
     });
 });
 //LEGEND RECTANGLES VICTORIA TREEMAP
@@ -729,7 +739,7 @@ d3.csv("datasets/about_your_pay/Vic_post_legend.csv", type, function(data_vic_tr
         return 69 +i*20;
     })
     .attr("y",function(){
-        return 10;
+        return -90;
     })
     .style("fill", function(d){
         return d3.interpolateSpectral(parseFloat(parseFloat(d.color)));
@@ -2621,9 +2631,13 @@ d3.csv("datasets/about_your_pay/Sa_post_Tree.csv", type, function(data_sa_treema
             }
         })
         .text(function(d,i){
-        d3.select(this)
-        .classed("text_in_tree_sa2", i >7)
-        return d.data.abr;
+            d3.select(this)
+                .classed("text_in_tree_sa2", i >7)
+            if(d.data.abr == "CA"){
+                return "";
+            }
+            else{
+                return d.data.abr; }
     });
 });
 //LEGEND RECTANGLES SOUTH AUSTRALIA TREEMAP
