@@ -1,4 +1,4 @@
-var width = 760,
+var width = 860,
     height = 500,
     barHeight = height / 2 - 40;
 
@@ -60,9 +60,10 @@ d3.json("datasets/about_leave/leave.json", function(error, data) {
         .each(function(d) { d.outerRadius = 0; })
         .style("fill", function (d) { return color(d.name); })
         .attr("d", arc)
-        .on("mouseover",function(){
+        .on("mouseover",function(d){
+            console.log(d.value);
             d3.select(this).style("stroke","rgb(0,0,255)")
-                .style("stroke-width","2");
+                .style("stroke-width","1.5");
         })
         .on("mouseout",function(){
             d3.select(this).style("stroke","none")
@@ -129,12 +130,14 @@ d3.json("datasets/about_leave/leave.json", function(error, data) {
         .attr("x", width - 33)
         .attr("width", 18)
         .attr("height", 18)
+        .attr("transform", "translate(15, -5)")
         .style("fill", color);
 
     legend.append("text")
         .attr("x", width - 39)
         .attr("y", 9)
         .attr("dy", ".35em")
+        .attr("transform", "translate(15, -5)")
         .style("text-anchor", "end")
         .attr("font-size","0.75em")
         .text(function(d) { return d; });
