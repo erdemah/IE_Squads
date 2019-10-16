@@ -3188,7 +3188,8 @@ d3.csv("datasets/about_your_pay/Nt_salary.csv", type, function(data_nt_circle){
         tooltip.transition()
 			.duration(500)
 			.style("opacity", 1);
-        var salary_str = d.avg_salary.toString()
+        let salary_str = d.avg_salary.toString()
+        // console.log(salary_str);
         if(salary_str.length == 5){
             salary_str = [salary_str.slice(0,2),",",salary_str.slice(2)].join('')
         }
@@ -3471,7 +3472,6 @@ d3.csv("datasets/about_your_pay/Nt_post_legend.csv", type, function(data_nt_tree
 //
 ////Read the data
 //d3.csv("Pay_raise.csv", function(data) {
-//    console.log(data)
 //    // List of groups (here I have one group per column)
 //    var allGroup = d3.map(data, function(d){return(d.Industry)}).keys()
 //    console.log(allGroup)

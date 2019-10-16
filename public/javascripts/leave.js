@@ -1,4 +1,4 @@
-var width = 760,
+var width = 860,
     height = 500,
     barHeight = height / 2 - 40;
 
@@ -7,6 +7,10 @@ var formatNumber = d3.format("s");
 var color = d3.scale.ordinal()
     .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
+//tooltip
+var tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
 var svg = d3.select('#leave_vis').append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -14,6 +18,7 @@ var svg = d3.select('#leave_vis').append("svg")
     .attr("transform", "translate(" + width/2 + "," + height/2 + ")");
 
 d3.json("datasets/about_leave/leave.json", function(error, data) {
+    console.log(data);
 
     var statesNames = data.map(function(d) { return d.status; });
     var ageNames = data[0].profession.map(function(d) { return d.name; });
@@ -60,13 +65,32 @@ d3.json("datasets/about_leave/leave.json", function(error, data) {
         .each(function(d) { d.outerRadius = 0; })
         .style("fill", function (d) { return color(d.name); })
         .attr("d", arc)
-        .on("mouseover",function(){
+        .on("mouseover",function(d){
+            console.log(d.value);
             d3.select(this).style("stroke","rgb(0,0,255)")
-                .style("stroke-width","2");
+                .style("stroke-width","1.5");
+            tooltip.transition()
+                .duration(500)
+                .style("opacity", 1);
+            var salary = parseInt(d.value);
+            var salary_str = salary.toString();
+            if(salary_str.length == 4){
+                salary_str = [salary_str.slice(0,1),",",salary_str.slice(1)].join('')
+            }
+            //ADDING TOOLTIP
+            tooltip.html(
+                "<p><strong style='font-family:Architects Daughter, cursive;'>" + d.name +
+                "<table><tbody><tr><td style='font-family:Architects Daughter, cursive;'>Average Salary: " +"$" + "<span>" + salary_str +"</span>" + "</td></tr></tbody</table>")
+                .style("left", (d3.event.pageX - 10) + "px")
+                .style("top", (d3.event.pageY -80) + "px");
         })
         .on("mouseout",function(){
             d3.select(this).style("stroke","none")
                 .style("stroke-width","0");
+            //REMOVING TOOLTIP
+            tooltip.transition()
+                .duration(250)
+                .style("opacity", 0);
         });
 
     segments.transition().ease("elastic").duration(1200).delay(function(d,i,u) { return u * 200 + 400;})
@@ -129,12 +153,14 @@ d3.json("datasets/about_leave/leave.json", function(error, data) {
         .attr("x", width - 33)
         .attr("width", 18)
         .attr("height", 18)
+        .attr("transform", "translate(15, -5)")
         .style("fill", color);
 
     legend.append("text")
         .attr("x", width - 39)
         .attr("y", 9)
         .attr("dy", ".35em")
+        .attr("transform", "translate(15, -5)")
         .style("text-anchor", "end")
         .attr("font-size","0.75em")
         .text(function(d) { return d; });

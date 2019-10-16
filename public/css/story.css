@@ -97,6 +97,9 @@ p {
     font-family: 'Architects Daughter', cursive;
     text-align: center;
 }
+.choose_state{
+    text-align: center;
+}
 /*
 #state-borders{
     fill: none;
@@ -339,6 +342,7 @@ p {
 #nt_job_post{
     text-align: center;
 }
+
 .tooltip {
   position: absolute;
   padding: 7px;

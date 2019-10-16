@@ -21,7 +21,8 @@
 <!--    VISUALIZATION LINK D3-->
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <!--    <script src="https://d3js.org/d3.v4.js"></script>-->
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+<!--    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+    <script type="text/javascript" src="javascripts/d3.v3.js"></script>
     <script src="https://d3js.org/d3-color.v1.min.js"></script>
     <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
@@ -45,7 +46,7 @@
             <ul class="navbar-nav ml-auto">
                 <div id="menu_area" class="menu-area">
                     <div class="container">
-                        <div class="row">
+                        <div class="row" style="margin-right:5.5em;">
                             <nav class="navbar navbar-light navbar-expand-lg mainmenu">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
@@ -60,7 +61,6 @@
 
                                                     <a class="dropdown-toggle" href="#" id="navbar1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Pay</span></a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li ><a  id="myfont_1" href="#">Minimum Wage</a></li>
                                                         <li ><a  id="myfont_1" href="minimum_wage">Minimum Wage</a></li>
                                                         <li><a  id="myfont_2" href="pay_slip">Pay Slip</a></li>
                                                         <li><a id="myfont_3"  href="superannuation">Superannuation</a></li>
@@ -84,7 +84,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Your Contract</a>
+                                                    <a class="dropdown-toggle" href="#" id="navbar3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-family: Josefin Sans;">About Your Contract</span></a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                         <li>
                                                             <a id="myfont_12" href="contract_termination">Contract Termination</a>
@@ -129,10 +129,10 @@
 </nav>
 
 <!-- Visualisation code-->
-<div class="container">
+<div class="container vis_2_head">
     <div class="row">
         <div class="col-12">
-            <h1 class="head_title">How much will we be paid for annual leave?</h1>
+            <h1 class="head_title">How much will we be paid weekly in annual leave?</h1>
             <h2 class="head_title">Pay leave depends on two main factors:</h2>
             <h5 class="head_title">---Check the category you work in---</h5>
             <h5 class="head_title">---Compare salary difference with or without annual leave---</h5>
