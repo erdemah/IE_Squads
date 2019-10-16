@@ -15,12 +15,11 @@
 /*    font-family: "Josefin Sans";*/
 /*    !*margin-bottom : -0.2em;*!*/
 /*}*/
+
 .dropdown-toggle{
     font-family: "Josefin Sans";
 }
-/*.nav_home{*/
-/*    margin-bottom: 5px;*/
-/*}*/
+
 #dropdownMenuLink{
     margin:0.2em;
 }
