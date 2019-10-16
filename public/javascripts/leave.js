@@ -7,6 +7,10 @@ var formatNumber = d3.format("s");
 var color = d3.scale.ordinal()
     .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
+//tooltip
+var tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
 var svg = d3.select('#leave_vis').append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -64,6 +68,9 @@ d3.json("datasets/about_leave/leave.json", function(error, data) {
             console.log(d.value);
             d3.select(this).style("stroke","rgb(0,0,255)")
                 .style("stroke-width","1.5");
+            tooltip.transition()
+                .duration(500)
+                .style("opacity", 1);
         })
         .on("mouseout",function(){
             d3.select(this).style("stroke","none")
