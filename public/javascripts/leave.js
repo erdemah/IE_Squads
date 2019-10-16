@@ -1,5 +1,5 @@
-var width = 960,
-    height = 700,
+var width = 760,
+    height = 500,
     barHeight = height / 2 - 40;
 
 var formatNumber = d3.format("s");
