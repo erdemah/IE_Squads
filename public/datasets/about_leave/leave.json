@@ -1,0 +1,76 @@
+[
+   {
+      "status": "With paid leave entitlements",
+      "profession": [
+         {
+            "name": "Managers",
+            "value": 972.2320262000001
+         },
+         {
+            "name": "Professionals",
+            "value": 2248.735699
+         },
+         {
+            "name": "Technicians and trades workers",
+            "value": 1072.616619
+         },
+         {
+            "name": "Community and personal service workers",
+            "value": 704.0251178999999
+         },
+         {
+            "name": "Clerical and administrative workers",
+            "value": 1315.744197
+         },
+         {
+            "name": "Sales workers",
+            "value": 558.5700501
+         },
+         {
+            "name": "Machinery operators and drivers",
+            "value": 527.2643247
+         },
+         {
+            "name": "Labourers",
+            "value": 529.3168223
+         }
+      ]
+   },
+   {
+      "status": "Without paid leave entitlements",
+      "profession": [
+         {
+            "name": "Managers",
+            "value": 66.46881569
+         },
+         {
+            "name": "Professionals",
+            "value": 320.38134069999995
+         },
+         {
+            "name": "Technicians and trades workers",
+            "value": 288.07266360000006
+         },
+         {
+            "name": "Community and personal service workers",
+            "value": 489.0568928
+         },
+         {
+            "name": "Clerical and administrative workers",
+            "value": 257.232679
+         },
+         {
+            "name": "Sales workers",
+            "value": 460.36482800000005
+         },
+         {
+            "name": "Machinery operators and drivers",
+            "value": 205.737704
+         },
+         {
+            "name": "Labourers",
+            "value": 496.2293539
+         }
+      ]
+   }
+]
