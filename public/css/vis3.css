@@ -1,0 +1,50 @@
+#vis_injury{
+    text-align: center;
+}
+.customFont {
+    font-family: 'Architects Daughter','cursive';
+}
+.center {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Architects Daughter','cursive';
+    background-color: #f0f0f0;
+}
+.d3ez{
+    font-family: 'Architects Daughter','cursive';
+    font-size: 0.9em;
+}
+#legendBox{
+    font-size: 0.8em;
+}
+.text1{
+     font-size: 0.70em;
+ }
+.text2{
+      font-size: 1.2em;
+  }
+.vis3_title{
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+}
+/*.tooltip3{*/
+/*    position: absolute;*/
+/*    padding: 7px;*/
+/*    font-size: 0.9em;*/
+/*    pointer-events: none;*/
+/*    background: #fff;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+
+/*    -moz-box-shadow:    3px 3px 10px 0px rgba(0, 0, 0, 0.25);*/
+/*    -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);*/
+/*    box-shadow:         3px 3px 10px 0px rgba(0, 0, 0, 0.25);*/
+/*}*/
+#message{
+    font-size:1em;
+    font-weight: 900;
+    text-decoration: underline;
+}
